@@ -18,6 +18,11 @@
 		1E9E5BF524E454E000A67728 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BF424E454E000A67728 /* ButtonView.swift */; };
 		1E9E5BF724E4555C00A67728 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BF624E4555C00A67728 /* SearchBar.swift */; };
 		1E9E5BFA24E45E2800A67728 /* ListViewWithHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BF924E45E2800A67728 /* ListViewWithHeader.swift */; };
+		1E9E5BFD24E46DF600A67728 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BFC24E46DF600A67728 /* DashboardView.swift */; };
+		1E9E5BFF24E46E0F00A67728 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BFE24E46E0F00A67728 /* MessagesView.swift */; };
+		1E9E5C0124E46E3100A67728 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0024E46E3100A67728 /* TasksView.swift */; };
+		1E9E5C0324E46EA000A67728 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0224E46EA000A67728 /* ToolsView.swift */; };
+		1E9E5C0524E4716E00A67728 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0424E4716E00A67728 /* TabItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		1E9E5BF424E454E000A67728 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		1E9E5BF624E4555C00A67728 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		1E9E5BF924E45E2800A67728 /* ListViewWithHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewWithHeader.swift; sourceTree = "<group>"; };
+		1E9E5BFC24E46DF600A67728 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		1E9E5BFE24E46E0F00A67728 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		1E9E5C0024E46E3100A67728 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		1E9E5C0224E46EA000A67728 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		1E9E5C0424E4716E00A67728 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,11 +179,24 @@
 		1E9E5BF824E45DD100A67728 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1E9E5BFB24E46DE800A67728 /* HomeScreen */,
 				1E9E5BF424E454E000A67728 /* ButtonView.swift */,
 				1E9E5BF624E4555C00A67728 /* SearchBar.swift */,
 				1E9E5BF924E45E2800A67728 /* ListViewWithHeader.swift */,
+				1E9E5C0424E4716E00A67728 /* TabItem.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1E9E5BFB24E46DE800A67728 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1E9E5BFC24E46DF600A67728 /* DashboardView.swift */,
+				1E9E5BFE24E46E0F00A67728 /* MessagesView.swift */,
+				1E9E5C0024E46E3100A67728 /* TasksView.swift */,
+				1E9E5C0224E46EA000A67728 /* ToolsView.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,9 +357,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9E5BE124E454AA00A67728 /* ContentView.swift in Sources */,
+				1E9E5BFD24E46DF600A67728 /* DashboardView.swift in Sources */,
 				1E9E5BF724E4555C00A67728 /* SearchBar.swift in Sources */,
+				1E9E5C0324E46EA000A67728 /* ToolsView.swift in Sources */,
+				1E9E5C0124E46E3100A67728 /* TasksView.swift in Sources */,
 				1E9E5BFA24E45E2800A67728 /* ListViewWithHeader.swift in Sources */,
+				1E9E5BFF24E46E0F00A67728 /* MessagesView.swift in Sources */,
 				1E9E5BDF24E454AA00A67728 /* ToDoListApp.swift in Sources */,
+				1E9E5C0524E4716E00A67728 /* TabItem.swift in Sources */,
 				1E9E5BF524E454E000A67728 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
