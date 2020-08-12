@@ -25,14 +25,17 @@ struct ButtonView: View {
                 VStack(alignment: .leading, spacing: 40) {
                     HStack(spacing: 80) {
                         Image(systemName: imageName)
+                            .renderingMode(.original)
                             .padding(5)
                             .background(backgroundColor)
                             .clipShape(Circle())
                             .padding(.top, 6)
                         Text("2")
                             .font(.title)
+                            .foregroundColor(Color.black)
                     }
                     Text(title)
+                        .foregroundColor(Color.black)
                 }
             }
         }

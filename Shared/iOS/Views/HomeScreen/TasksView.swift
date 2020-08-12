@@ -21,18 +21,27 @@ struct TasksView: View {
                     }
                     
                     HStack(spacing: 60) {
-                        ButtonView(title: "Inbox", imageName: "tray.and.arrow.down", backgroundColor: Color.blue)
-                            .frame(width: 150, height: 100)
+                        NavigationLink(destination: Text("Details View")) {
+                            ButtonView(title: "Inbox", imageName: "tray.and.arrow.down", backgroundColor: Color.green)
+                                .frame(width: 150, height: 100)
+                        }
                         
-                        ButtonView(title: "Inbox", imageName: "tray.and.arrow.down", backgroundColor: Color.red)
-                            .frame(width: 150, height: 100)
+                        NavigationLink(destination: Text("Details View")) {
+                            ButtonView(title: "Inbox", imageName: "tray.and.arrow.down", backgroundColor: Color.red)
+                                .frame(width: 150, height: 100)
+                        }
+                        
                     }
                     HStack(spacing: 60) {
-                        ButtonView(title: "Inbox", imageName: "tray.and.arrow.down", backgroundColor: Color.gray)
-                            .frame(width: 150, height: 100)
+                        NavigationLink(destination: Text("Details View")) {
+                            ButtonView(title: "Inbox", imageName: "tray.and.arrow.down", backgroundColor: Color.blue)
+                                .frame(width: 150, height: 100)
+                        }
                         
-                        ButtonView(title: "Inbox", imageName: "tray.and.arrow.down", backgroundColor: Color.orange)
-                            .frame(width: 150, height: 100)
+                        NavigationLink(destination: Text("Details View")) {
+                            ButtonView(title: "Inbox", imageName: "tray.and.arrow.down", backgroundColor: Color.orange)
+                                .frame(width: 150, height: 100)
+                        }
                     }
                     Spacer()
                 }
