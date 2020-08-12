@@ -37,6 +37,11 @@ struct ContentView: View {
                     }
                     Spacer()
                 }
+                ListViewWithHeader(listData: [
+                    ListData(headerTitle: "SENDERS", rows: ["Threat Response","Training","Vulnerability Management"]),
+                    ListData(headerTitle: "STATE", rows: ["Pending Acceptance","Assigned","Copied"])
+                ])
+                .frame(height: 300)
             })
             .navigationTitle("Tasks")
             .navigationBarItems(trailing:
@@ -46,7 +51,6 @@ struct ContentView: View {
                                         Image(systemName: "gear")
                                     })
         }
-        
     }
 }
 
