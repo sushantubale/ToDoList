@@ -12,4 +12,10 @@ struct Constants {
     enum Tasks {
         static let headerTitle = "Tasks"
     }
+    
+    enum ImageNames {
+        static let trayArrowDown = "tray.and.arrow.down"
+        static let gear = "gear"
+        static let checkmarkShield = "checkmark.shield"
+    }
 }

@@ -13,7 +13,8 @@ class TasksViewModel: ObservableObject {
     private var tasksNetworkService: TasksNetworkService = TasksNetworkService()
     @Published var taskTypes: [String] = []
     @Published var taskCount: [Int] = []
-
+    @Published var showActivityIndicator = true
+    
     init() {
         self.getTasksData()
     }
@@ -30,14 +31,12 @@ class TasksViewModel: ObservableObject {
                             self.taskTypes.append(t1[i])
                         }
                     }
-                }
-                DispatchQueue.main.async {
-                    
                     if let t2 = formattedData?.taksCount {
                         for i in 0..<t2.count {
                             self.taskCount.append(t2[i])
                         }
                     }
+                    self.showActivityIndicator = false
                 }
             } 
         }
