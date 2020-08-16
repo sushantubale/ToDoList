@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TasksView: View {
     @State private var searchText : String = ""
+    @ObservedObject var taskViewModel: TasksViewModel = TasksViewModel()
     
     var body: some View {
         GeometryReader { geo in
@@ -18,7 +19,7 @@ struct TasksView: View {
                     VStack(spacing: 20) {
                         
                         VStack {
-                            SearchBar(text: $searchText)
+                            SearchBar(text: searchText)
                         }
                         
                         HStack(spacing: 60) {
@@ -49,12 +50,12 @@ struct TasksView: View {
 //                    .frame(width: geo.size.width, height: geo.size.height/2, alignment: .center)
 
                     ListViewWithHeader(listData: [
-                        ListData(headerTitle: "SENDERS", rows: ["Threat Response","Training","Vulnerability Management"]),
-                        ListData(headerTitle: "STATE", rows: ["Pending Acceptance","Assigned","Copied", "Pending Acceptance","Assigned","Copied"])
+                        ListData(headerTitle: "SENDERS", rows: taskViewModel.taskTypes),
+                        ListData(headerTitle: "STATE", rows: taskViewModel.taskTypes)
                     ])
                     .frame(width: geo.size.width, height: geo.size.height/2, alignment: .center)
                 })
-                .navigationTitle("Tasks")
+                .navigationTitle(Constants.Tasks.headerTitle)
                 .navigationBarItems(trailing:
                                         Button(action: {
                                             print("Edit button pressed...")
@@ -62,7 +63,6 @@ struct TasksView: View {
                                             Image(systemName: "gear")
                                         })
             }
-            
 
         }
         .tabItem {

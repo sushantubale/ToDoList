@@ -42,9 +42,10 @@ struct ButtonView: View {
         .frame(width: 150, height: 100)
         .font(.system(size: 20, weight: .semibold, design: .rounded))
         .background(Color.white)
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .shadow(color: Color(#colorLiteral(red: 0.7608050108, green: 0.8164883852, blue: 0.9259157777, alpha: 1)), radius: 20, x: 20, y: 20)
-        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 20, x: -20, y: -20)
+        .clipShape(RoundedRectangle(cornerRadius: 16, style: .circular))
+        .shadow(color: Color(#colorLiteral(red: 0.7608050108, green: 0.8164883852, blue: 0.9259157777, alpha: 1)), radius: 2, x: 2, y: 2)
+        .shadow(color: Color.blue, radius: 2, x: 2, y: 2)
+        .buttonStyle(BorderlessButtonStyle())
     }
 }
 

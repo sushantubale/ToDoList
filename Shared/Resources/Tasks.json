@@ -1,0 +1,15 @@
+{
+     "taksTypes": [
+         "Inbox",
+         "Outbox",
+         "Urgent",
+         "All"
+     ],
+     "taksCount": [
+         1,
+         2,
+         3,
+         4
+     ]
+
+}
