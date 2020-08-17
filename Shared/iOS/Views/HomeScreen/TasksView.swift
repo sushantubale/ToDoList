@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct TasksView: View {
+struct TasksView: View, ViewLifeCycle {
     @State private var searchText : String = ""
-    @ObservedObject private var taskViewModel: TasksViewModel = TasksViewModel()
+    @ObservedObject var taskViewModel: TasksViewModel = TasksViewModel()
     var activityIndicator = ActivityIndicatorView()
+    @State var didAppear = false
+    @State var appearCount = 0
+
     
     var body: some View {
+
         GeometryReader { geo in
             NavigationView {
                 if taskViewModel.showActivityIndicator == true {
@@ -20,12 +24,11 @@ struct TasksView: View {
                         activityIndicator
                             .frame(width: 200, height: 200)
                             .foregroundColor(.orange)
-                        }
+                    }
                 } else {
                     ScrollView(.vertical, showsIndicators: true, content: {
                         
                         VStack(spacing: 20) {
-                            
                             VStack {
                                 SearchBar(text: searchText)
                             }
@@ -55,8 +58,8 @@ struct TasksView: View {
                             }
                             Spacer()
                         }
-    //                    .frame(width: geo.size.width, height: geo.size.height/2, alignment: .center)
-
+                        //                    .frame(width: geo.size.width, height: geo.size.height/2, alignment: .center)
+                        
                         ListViewWithHeader(listData: [
                             ListData(headerTitle: "SENDERS", rows: taskViewModel.taskTypes),
                             ListData(headerTitle: "STATE", rows: taskViewModel.taskTypes)
@@ -71,16 +74,28 @@ struct TasksView: View {
                                                 Image(systemName: Constants.ImageNames.gear)
                                             })
                 }
-
+                
             }
-            .tabItem {
-                Image(systemName: Constants.ImageNames.checkmarkShield)
-                Text("Tasks")
-            }.tag(2)
-
-
-                }
+        }
+        .tabItem {
+            Image(systemName: Constants.ImageNames.checkmarkShield)
+            Text("Tasks")
+        }.tag(2)
+        .onAppear(perform: onLoad)
+        .onDisappear(perform: onUnload)
     }
+    
+    func onUnload() {
+        print("onUnload called")
+    }
+    
+    func onLoad() {
+            if didAppear == false {
+                appearCount += 1
+                taskViewModel.getTasksData()
+            }
+            didAppear = true
+        }
 }
 
 struct TasksView_Previews: PreviewProvider {
@@ -88,3 +103,4 @@ struct TasksView_Previews: PreviewProvider {
         TasksView()
     }
 }
+

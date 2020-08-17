@@ -15,11 +15,8 @@ class TasksViewModel: ObservableObject {
     @Published var taskCount: [Int] = []
     @Published var showActivityIndicator = true
     
-    init() {
-        self.getTasksData()
-    }
-    
     func getTasksData() {
+        print("tasksNetworkService.fetchTasksData")
         tasksNetworkService.fetchTasksData("https://www.abc.com") { (data, error) in
             guard let data = data else {return}
             do {
