@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TasksNetworkService {
+public class TasksNetworkService {
     
     private let tasksData: Data = {
         var data: Data? = Data()
@@ -18,7 +18,6 @@ class TasksNetworkService {
                 data = try! Data(contentsOf: url1)
             }
         }
-
         return data ?? Data()
     }()
     

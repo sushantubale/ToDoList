@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E35C4E324EC8AF80086D25C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35C4E224EC8AF80086D25C /* CollectionViewCell.swift */; };
+		1E35C4E424EC8AF80086D25C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35C4E224EC8AF80086D25C /* CollectionViewCell.swift */; };
 		1E4AD20F24E867A20051CA4C /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */; };
 		1E4AD21024E867A20051CA4C /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */; };
 		1E4AD21624E86C1B0051CA4C /* TasksNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */; };
@@ -74,6 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E35C4E224EC8AF80086D25C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 		1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksNetworkService.swift; sourceTree = "<group>"; };
 		1E4AD21824E86F450051CA4C /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
@@ -262,6 +265,7 @@
 				1E9E5BF624E4555C00A67728 /* SearchBar.swift */,
 				1E9E5BF924E45E2800A67728 /* ListViewWithHeader.swift */,
 				1E9E5C0424E4716E00A67728 /* TabItem.swift */,
+				1E35C4E224EC8AF80086D25C /* CollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -490,6 +494,7 @@
 			files = (
 				1E9E5BE124E454AA00A67728 /* ContentView.swift in Sources */,
 				1E4AD21624E86C1B0051CA4C /* TasksNetworkService.swift in Sources */,
+				1E35C4E324EC8AF80086D25C /* CollectionViewCell.swift in Sources */,
 				1E9E5BFD24E46DF600A67728 /* DashboardView.swift in Sources */,
 				1E9E5BF724E4555C00A67728 /* SearchBar.swift in Sources */,
 				1E9E5C0324E46EA000A67728 /* ToolsView.swift in Sources */,
@@ -528,6 +533,7 @@
 			files = (
 				1E9E5BD224E454AA00A67728 /* Tests_iOS.swift in Sources */,
 				1EF492DA24E9BB7800FBFDA5 /* TasksViewModel.swift in Sources */,
+				1E35C4E424EC8AF80086D25C /* CollectionViewCell.swift in Sources */,
 				1EF492E024E9BCD100FBFDA5 /* MessagesView.swift in Sources */,
 				1EF492DF24E9BCD100FBFDA5 /* ButtonView.swift in Sources */,
 				1EF492DC24E9BCD100FBFDA5 /* ListViewWithHeader.swift in Sources */,

@@ -13,70 +13,51 @@ struct TasksView: View, ViewLifeCycle {
     var activityIndicator = ActivityIndicatorView()
     @State var didAppear = false
     @State var appearCount = 0
-
     
     var body: some View {
-
-        GeometryReader { geo in
-            NavigationView {
+        
+        NavigationView {
+            GeometryReader { geometryReader in
+                
                 if taskViewModel.showActivityIndicator == true {
                     VStack {
                         activityIndicator
-                            .frame(width: 200, height: 200)
+                            .frame(width: geometryReader.size.width, height: geometryReader.size.width)
                             .foregroundColor(.orange)
                     }
                 } else {
                     ScrollView(.vertical, showsIndicators: true, content: {
                         
-                        VStack(spacing: 20) {
+                        VStack(alignment: .center, spacing: 10) {
                             VStack {
                                 SearchBar(text: searchText)
+                                ForEach(0..<2) { i in
+                                    HStack(spacing: geometryReader.size.width/8) {
+                                        ForEach(0..<2) { j in
+                                            CollectionViewCell(row: 2, column: 2)
+                                        }
+                                    }
+                                }
+                                ListViewWithHeader(listData: [
+                                    ListData(headerTitle: "SENDERS", rows: taskViewModel.taskTypes),
+                                    ListData(headerTitle: "STATE", rows: taskViewModel.taskTypes)
+                                ])
+                                .frame(minWidth: geometryReader.size.width, maxWidth: .infinity, minHeight: geometryReader.size.height/2, maxHeight: .infinity, alignment: .center)
                             }
-                            
-                            HStack(spacing: 60) {
-                                NavigationLink(destination: Text("Details View")) {
-                                    ButtonView(title: "Inbox", imageName: Constants.ImageNames.trayArrowDown, backgroundColor: Color.green)
-                                        .frame(width: 150, height: 100)
-                                }
-                                
-                                NavigationLink(destination: Text("Details View")) {
-                                    ButtonView(title: "Inbox", imageName: Constants.ImageNames.trayArrowDown, backgroundColor: Color.red)
-                                        .frame(width: 150, height: 100)
-                                }
-                                
-                            }
-                            HStack(spacing: 60) {
-                                NavigationLink(destination: Text("Details View")) {
-                                    ButtonView(title: "Inbox", imageName: Constants.ImageNames.trayArrowDown, backgroundColor: Color.blue)
-                                        .frame(width: 150, height: 100)
-                                }
-                                
-                                NavigationLink(destination: Text("Details View")) {
-                                    ButtonView(title: "Inbox", imageName: Constants.ImageNames.trayArrowDown, backgroundColor: Color.orange)
-                                        .frame(width: 150, height: 100)
-                                }
-                            }
-                            Spacer()
                         }
-                        //                    .frame(width: geo.size.width, height: geo.size.height/2, alignment: .center)
-                        
-                        ListViewWithHeader(listData: [
-                            ListData(headerTitle: "SENDERS", rows: taskViewModel.taskTypes),
-                            ListData(headerTitle: "STATE", rows: taskViewModel.taskTypes)
-                        ])
-                        .frame(width: geo.size.width, height: geo.size.height/2, alignment: .center)
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
                     })
                     .navigationTitle(Constants.Tasks.headerTitle)
                     .navigationBarItems(trailing:
                                             Button(action: {
-                                                print("Edit button pressed...")
+                                                print("Edit button pressed ")
                                             }) {
                                                 Image(systemName: Constants.ImageNames.gear)
                                             })
                 }
-                
             }
         }
+        .phoneOnlyNavigationView()
         .tabItem {
             Image(systemName: Constants.ImageNames.checkmarkShield)
             Text("Tasks")
@@ -90,17 +71,31 @@ struct TasksView: View, ViewLifeCycle {
     }
     
     func onLoad() {
-            if didAppear == false {
-                appearCount += 1
-                taskViewModel.getTasksData()
-            }
-            didAppear = true
+        if didAppear == false {
+            appearCount += 1
+            taskViewModel.getTasksData()
         }
+        didAppear = true
+    }
 }
 
 struct TasksView_Previews: PreviewProvider {
     static var previews: some View {
         TasksView()
+            .previewDevice(PreviewDevice(rawValue: "iPad (7th generation)"))
+        TasksView()
     }
 }
 
+extension View {
+    func phoneOnlyNavigationView() -> some View {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return AnyView(self.navigationViewStyle(StackNavigationViewStyle()))
+        } else if UIDevice.current.userInterfaceIdiom == .pad {
+            return AnyView(self.navigationViewStyle(StackNavigationViewStyle()))
+        } else {
+            return AnyView(self)
+
+        }
+    }
+}
