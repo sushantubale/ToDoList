@@ -13,51 +13,138 @@ struct TasksView: View, ViewLifeCycle {
     var activityIndicator = ActivityIndicatorView()
     @State var didAppear = false
     @State var appearCount = 0
+    @State private var numbers = [1,2,3,4,5,6,7,8,9]
     
     var body: some View {
         
         NavigationView {
-            GeometryReader { geometryReader in
+            GeometryReader { g in
                 
-                if taskViewModel.showActivityIndicator == true {
-                    VStack {
-                        activityIndicator
-                            .frame(width: geometryReader.size.width, height: geometryReader.size.width)
-                            .foregroundColor(.orange)
-                    }
-                } else {
-                    ScrollView(.vertical, showsIndicators: true, content: {
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    
+                    HStack(alignment: .center, spacing: 20) {
                         
-                        VStack(alignment: .center, spacing: 10) {
-                            VStack {
-                                SearchBar(text: searchText)
-                                ForEach(0..<2) { i in
-                                    HStack(spacing: geometryReader.size.width/8) {
-                                        ForEach(0..<2) { j in
-                                            CollectionViewCell(row: 2, column: 2)
-                                        }
+                        NavigationLink(destination: Text("Hi")) {
+                            
+                            Button(action: {}, label: {
+                                VStack(alignment: .leading) {
+                                    HStack {
+                                        Image(systemName: Constants.ImageNames.trayArrowDown)
+                                            .padding()
+                                        Spacer()
+                                        Text("2")
+                                            .padding()
+                                        
                                     }
+                                    Text("Inbox")
+                                        .padding()
                                 }
-                                ListViewWithHeader(listData: [
-                                    ListData(headerTitle: "SENDERS", rows: taskViewModel.taskTypes),
-                                    ListData(headerTitle: "STATE", rows: taskViewModel.taskTypes)
-                                ])
-                                .frame(minWidth: geometryReader.size.width, maxWidth: .infinity, minHeight: geometryReader.size.height/2, maxHeight: .infinity, alignment: .center)
-                            }
+                                
+                            })
+                            
                         }
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                    })
-                    .navigationTitle(Constants.Tasks.headerTitle)
-                    .navigationBarItems(trailing:
-                                            Button(action: {
-                                                print("Edit button pressed ")
-                                            }) {
-                                                Image(systemName: Constants.ImageNames.gear)
-                                            })
-                }
+                        .frame(maxWidth: .infinity)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.purple, lineWidth: 2))
+                        
+                        NavigationLink(destination: Text("Hi")) {
+                            
+                            Button(action: {}, label: {
+                                VStack(alignment: .leading) {
+                                    HStack {
+                                        Image(systemName: Constants.ImageNames.trayArrowDown)
+                                            .padding()
+                                        Spacer()
+                                        Text("2")
+                                            .padding()
+                                        
+                                    }
+                                    Text("Inbox")
+                                        .padding()
+                                }
+                                
+                            })
+                            
+                        }
+                        .frame(maxWidth: .infinity)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.purple, lineWidth: 2))
+                    }
+                    .padding()
+                    
+                    Spacer()
+                    
+                    HStack(alignment: .center, spacing: 20) {
+                        
+                        NavigationLink(destination: Text("Hi")) {
+                            
+                            Button(action: {}, label: {
+                                VStack(alignment: .leading) {
+                                    HStack {
+                                        Image(systemName: Constants.ImageNames.trayArrowDown)
+                                            .padding()
+                                        Spacer()
+                                        Text("2")
+                                            .padding()
+                                        
+                                    }
+                                    Text("Inbox")
+                                        .padding()
+                                }
+                                
+                            })
+                            
+                        }
+                        .frame(maxWidth: .infinity)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.purple, lineWidth: 2))
+                        
+                        NavigationLink(destination: Text("Hi")) {
+                            
+                            Button(action: {}, label: {
+                                VStack(alignment: .leading) {
+                                    HStack {
+                                        Image(systemName: Constants.ImageNames.trayArrowDown)
+                                            .padding()
+                                        Spacer()
+                                        Text("2")
+                                            .padding()
+                                        
+                                    }
+                                    Text("Inbox")
+                                        .padding()
+                                }
+                            })
+                        }
+                        .frame(maxWidth: .infinity)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.purple, lineWidth: 2))
+                    }
+                    .padding()
+                    
+                    List(0..<self.numbers.count) { number in
+                        NavigationLink(destination: Text("Destination")) {
+                            Text("\(number)")
+                        }
+                        
+                    }.frame(width: g.size.width - 5, height: g.size.height - 50, alignment: .center)
+                    
+                    
+                })
             }
+            .navigationTitle(Constants.Tasks.headerTitle)
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                                        print("Edit button pressed ")
+                                    }) {
+                                        Image(systemName: Constants.ImageNames.gear)
+                                    })
+            
         }
-        .phoneOnlyNavigationView()
         .tabItem {
             Image(systemName: Constants.ImageNames.checkmarkShield)
             Text("Tasks")
@@ -84,6 +171,8 @@ struct TasksView_Previews: PreviewProvider {
         TasksView()
             .previewDevice(PreviewDevice(rawValue: "iPad (7th generation)"))
         TasksView()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
+        
     }
 }
 
@@ -95,7 +184,7 @@ extension View {
             return AnyView(self.navigationViewStyle(StackNavigationViewStyle()))
         } else {
             return AnyView(self)
-
+            
         }
     }
 }
