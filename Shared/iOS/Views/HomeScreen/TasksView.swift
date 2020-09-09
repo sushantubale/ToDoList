@@ -29,7 +29,8 @@ struct TasksView: View, ViewLifeCycle {
                 } else if self.taskViewModel.showActivityIndicator == false {
                     
                     ScrollView(.vertical, showsIndicators: false, content: {
-                        
+                        SearchBar(text: "Search")
+
                         HStack(alignment: .center, spacing: 20) {
                             
                             NavigationLink(destination: Text("Hi")) {
