@@ -11,9 +11,11 @@ import Combine
 class TasksViewModel: ObservableObject {
     
     private var tasksNetworkService: TasksNetworkService = TasksNetworkService(dict: ["name": "testName"])
-    @Published var taskData: [String: String] = [:]
+    var taskData: [String: String] = [:]
     @Published var showActivityIndicator: Bool = true
     @Published var stateViewModel: StateViewModel?
+    @Published var dummyTaskData: [String: Int] = [:]
+    var count = 0
     
     func getTasksData() {
         print("tasksNetworkService.fetchTasksData")
@@ -22,7 +24,7 @@ class TasksViewModel: ObservableObject {
         tasksNetworkService.fetchTasksData("http://localhost:9002/graphql?query={todoByPerson{name state}}") { [weak self] (err, result) in
             guard let strongSelf = self else {return}
             if(err != nil) {
-                print(err?.localizedDescription)
+                print(err?.localizedDescription as Any)
                 return
             }
             if let data = result {
@@ -33,8 +35,14 @@ class TasksViewModel: ObservableObject {
                     if let mappedData = mappedData {
                         for i in mappedData.enumerated() {
                             strongSelf.taskData[i.element.name] = i.element.state
-                                strongSelf.showActivityIndicator = false
+                            if var val = self?.dummyTaskData[i.element.state] {
+                                self?.dummyTaskData[i.element.state]! += 1
+                            } else {
+                                strongSelf.dummyTaskData[i.element.state] = strongSelf.count + 1
+                            }
                         }
+                        strongSelf.showActivityIndicator = false
+
                     }
                 }
             }

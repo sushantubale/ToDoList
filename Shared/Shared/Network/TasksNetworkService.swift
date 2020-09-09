@@ -63,7 +63,7 @@ public class TasksNetworkService {
             HTTPPostJSON(url: "http://localhost:9002/graphql?query={todoByPerson{name state}}", data: data) { [weak self] (error, result) in
                 guard let _ = self else {return}
                 if(error != nil) {
-                    print(error?.localizedDescription)
+                    print(error?.localizedDescription as Any)
                     completionHandler(error, nil)
                     return
                 }

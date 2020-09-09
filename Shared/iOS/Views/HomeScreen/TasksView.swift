@@ -122,22 +122,32 @@ struct TasksView: View, ViewLifeCycle {
                         .padding()
                         
                         List {
-                                Section(header: Text("STATE")) {
-                                    if let todoPerson = self.taskViewModel.stateViewModel?.data.todoByPerson {
-                                        ForEach(todoPerson, id: \.self, content: { item in
-                                            NavigationLink(
-                                                destination: Text(item.name),
-                                                label: {
-                                                    Image(systemName: Constants.ImageNames.checkmarkShield)
-                                                    Text("\(item.name)")
-                                                    Spacer()
-                                                    Text("\(item.state)")
+                            Section(header: Text("STATE")) {
 
-                                                })
+                                ForEach(self.taskViewModel.dummyTaskData.keys.sorted(), id: \.self) { key in
+                                    NavigationLink(
+                                        destination: Text("Destination"),
+                                        label: {
+                                            HStack {
+                                                Image(systemName: Constants.ImageNames.checkmarkShield)
+                                                    .renderingMode(.template)
+                                                    .foregroundColor(.blue)
+                                                Text("\(key)")
+                                                    .font(.title3)
+                                                Spacer()
+                                                Text("\(self.taskViewModel.dummyTaskData[key] ?? 0)")
+                                                    .foregroundColor(.white)
+                                                    .fixedSize(horizontal: false, vertical: true)
+                                                    .multilineTextAlignment(.center)
+                                                    .padding()
+                                                    .background(Circle().fill(Color.gray))
+
+                                            }
                                         })
-                                    }
 
                                 }
+
+                            }
                         }
                         .frame(width: geometryReader.size.width - 5, height: geometryReader.size.height - 50, alignment: .center)
                         .navigationTitle(Constants.Tasks.headerTitle)
