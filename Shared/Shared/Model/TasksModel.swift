@@ -15,7 +15,7 @@ struct DataModel: Decodable {
     var todoByPerson: [ToDoByPersonModel]
 }
 
-struct ToDoByPersonModel: Decodable {
+struct ToDoByPersonModel: Decodable, Hashable {
     var name: String
     var state: String
 }

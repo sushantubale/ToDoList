@@ -121,27 +121,35 @@ struct TasksView: View, ViewLifeCycle {
                         }
                         .padding()
                         
-                        List(0..<self.taskViewModel.taskData.count) { i in
-                            NavigationLink(destination: Text("Destination")) {
-                                if let name = self.taskViewModel.stateViewModel?.data.todoByPerson[i].name, let state = self.taskViewModel.stateViewModel?.data.todoByPerson[i].state {
-                                    Text("\(name)")
-                                    Spacer()
-                                    Text("\(state)")
-                                    
+                        List {
+                                Section(header: Text("STATE")) {
+                                    if let todoPerson = self.taskViewModel.stateViewModel?.data.todoByPerson {
+                                        ForEach(todoPerson, id: \.self, content: { item in
+                                            NavigationLink(
+                                                destination: Text(item.name),
+                                                label: {
+                                                    Image(systemName: Constants.ImageNames.checkmarkShield)
+                                                    Text("\(item.name)")
+                                                    Spacer()
+                                                    Text("\(item.state)")
+
+                                                })
+                                        })
+                                    }
+
                                 }
-                            }
-                            
-                        }.frame(width: geometryReader.size.width - 5, height: geometryReader.size.height - 50, alignment: .center)
-                        
+                        }
+                        .frame(width: geometryReader.size.width - 5, height: geometryReader.size.height - 50, alignment: .center)
+                        .navigationTitle(Constants.Tasks.headerTitle)
+                        .navigationBarItems(trailing:
+                                                Button(action: {
+                                                    print("Edit button pressed ")
+                                                }) {
+                                                    Image(systemName: Constants.ImageNames.gear)
+                                                })
                         
                     })
-                    .navigationTitle(Constants.Tasks.headerTitle)
-                    .navigationBarItems(trailing:
-                                            Button(action: {
-                                                print("Edit button pressed ")
-                                            }) {
-                                                Image(systemName: Constants.ImageNames.gear)
-                                            })
+
                 }
                 
             }

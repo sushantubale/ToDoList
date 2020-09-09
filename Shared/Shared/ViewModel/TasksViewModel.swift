@@ -33,10 +33,7 @@ class TasksViewModel: ObservableObject {
                     if let mappedData = mappedData {
                         for i in mappedData.enumerated() {
                             strongSelf.taskData[i.element.name] = i.element.state
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                                 strongSelf.showActivityIndicator = false
-                            }
-
                         }
                     }
                 }
