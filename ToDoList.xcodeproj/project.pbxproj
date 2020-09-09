@@ -15,6 +15,10 @@
 		1E4AD21724E86C1B0051CA4C /* TasksNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */; };
 		1E4AD21924E86F450051CA4C /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21824E86F450051CA4C /* TasksModel.swift */; };
 		1E4AD21A24E86F450051CA4C /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21824E86F450051CA4C /* TasksModel.swift */; };
+		1E59DF9E25081FB400C06991 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1E59DF9D25081FB400C06991 /* schema.graphql */; };
+		1E59DF9F25081FB400C06991 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1E59DF9D25081FB400C06991 /* schema.graphql */; };
+		1E59DFA025081FB400C06991 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1E59DF9D25081FB400C06991 /* schema.graphql */; };
+		1E59DFA125081FB400C06991 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1E59DF9D25081FB400C06991 /* schema.graphql */; };
 		1E9E5BD224E454AA00A67728 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BD124E454AA00A67728 /* Tests_iOS.swift */; };
 		1E9E5BDD24E454AA00A67728 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BDC24E454AA00A67728 /* Tests_macOS.swift */; };
 		1E9E5BDF24E454AA00A67728 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BB624E454A800A67728 /* ToDoListApp.swift */; };
@@ -80,6 +84,7 @@
 		1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 		1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksNetworkService.swift; sourceTree = "<group>"; };
 		1E4AD21824E86F450051CA4C /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
+		1E59DF9D25081FB400C06991 /* schema.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.graphql; sourceTree = "<group>"; };
 		1E9E5BB624E454A800A67728 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		1E9E5BB724E454A800A67728 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E9E5BB824E454AA00A67728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -196,6 +201,7 @@
 				1E9E5BB624E454A800A67728 /* ToDoListApp.swift */,
 				1E9E5BB724E454A800A67728 /* ContentView.swift */,
 				1E9E5BB824E454AA00A67728 /* Assets.xcassets */,
+				1E59DF9D25081FB400C06991 /* schema.graphql */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -457,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EF492D224E8833300FBFDA5 /* Tasks.json in Resources */,
+				1E59DF9E25081FB400C06991 /* schema.graphql in Resources */,
 				1E9E5BE324E454AA00A67728 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EF492D324E8833300FBFDA5 /* Tasks.json in Resources */,
+				1E59DF9F25081FB400C06991 /* schema.graphql in Resources */,
 				1E9E5BE424E454AA00A67728 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E59DFA025081FB400C06991 /* schema.graphql in Resources */,
 				1EF492E724E9BD2D00FBFDA5 /* Tasks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E59DFA125081FB400C06991 /* schema.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

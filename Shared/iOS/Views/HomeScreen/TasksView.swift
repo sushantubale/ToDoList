@@ -9,140 +9,152 @@ import SwiftUI
 
 struct TasksView: View, ViewLifeCycle {
     @State private var searchText : String = ""
-    @ObservedObject var taskViewModel: TasksViewModel = TasksViewModel()
-    var activityIndicator = ActivityIndicatorView()
+    @ObservedObject var taskViewModel: TasksViewModel = TasksViewModel(dict: ["name": "testName"])
+    private var activityIndicator = ActivityIndicatorView()
     @State var didAppear = false
-    @State var appearCount = 0
-    @State private var numbers = [1,2,3,4,5,6,7,8,9]
     
     var body: some View {
-        
         NavigationView {
-            GeometryReader { g in
+            GeometryReader { geometryReader in
+                if self.taskViewModel.showActivityIndicator == true {
+                    VStack {
+                        activityIndicator
+                            .frame(width: 100, height: 100, alignment: .center)
+                            .foregroundColor(.orange)
+                        }
+                    
+                } else if self.taskViewModel.showActivityIndicator == false {
+                    
+                    ScrollView(.vertical, showsIndicators: false, content: {
+                        
+                        HStack(alignment: .center, spacing: 20) {
+                            
+                            NavigationLink(destination: Text("Hi")) {
+                                
+                                Button(action: {}, label: {
+                                    VStack(alignment: .leading) {
+                                        HStack {
+                                            Image(systemName: Constants.ImageNames.trayArrowDown)
+                                                .padding()
+                                            Spacer()
+                                            Text("2")
+                                                .padding()
+                                            
+                                        }
+                                        Text("Inbox")
+                                            .padding()
+                                    }
+                                    
+                                })
+                                
+                            }
+                            .frame(maxWidth: .infinity)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.purple, lineWidth: 2))
+                            
+                            NavigationLink(destination: Text("Hi")) {
+                                
+                                Button(action: {}, label: {
+                                    VStack(alignment: .leading) {
+                                        HStack {
+                                            Image(systemName: Constants.ImageNames.trayArrowDown)
+                                                .padding()
+                                            Spacer()
+                                            Text("2")
+                                                .padding()
+                                            
+                                        }
+                                        Text("Inbox")
+                                            .padding()
+                                    }
+                                    
+                                })
+                                
+                            }
+                            .frame(maxWidth: .infinity)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.purple, lineWidth: 2))
+                        }
+                        .padding()
+                        
+                        Spacer()
+                        
+                        HStack(alignment: .center, spacing: 20) {
+                            
+                            NavigationLink(destination: Text("Hi")) {
+                                
+                                Button(action: {}, label: {
+                                    VStack(alignment: .leading) {
+                                        HStack {
+                                            Image(systemName: Constants.ImageNames.trayArrowDown)
+                                                .padding()
+                                            Spacer()
+                                            Text("2")
+                                                .padding()
+                                            
+                                        }
+                                        Text("Inbox")
+                                            .padding()
+                                    }
+                                    
+                                })
+                                
+                            }
+                            .frame(maxWidth: .infinity)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.purple, lineWidth: 2))
+                            
+                            NavigationLink(destination: Text("Hi")) {
+                                
+                                Button(action: {}, label: {
+                                    VStack(alignment: .leading) {
+                                        HStack {
+                                            Image(systemName: Constants.ImageNames.trayArrowDown)
+                                                .padding()
+                                            Spacer()
+                                            Text("2")
+                                                .padding()
+                                            
+                                        }
+                                        Text("Inbox")
+                                            .padding()
+                                    }
+                                })
+                            }
+                            .frame(maxWidth: .infinity)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.purple, lineWidth: 2))
+                        }
+                        .padding()
+                        
+                        List(0..<self.taskViewModel.taskData.count) { i in
+                            NavigationLink(destination: Text("Destination")) {
+                                if let name = self.taskViewModel.stateViewModel?.data.todoByPerson[i].name, let state = self.taskViewModel.stateViewModel?.data.todoByPerson[i].state {
+                                    Text("\(name)")
+                                    Spacer()
+                                    Text("\(state)")
+                                    
+                                }
+                            }
+                            
+                        }.frame(width: geometryReader.size.width - 5, height: geometryReader.size.height - 50, alignment: .center)
+                        
+                        
+                    })
+                    .navigationTitle(Constants.Tasks.headerTitle)
+                    .navigationBarItems(trailing:
+                                            Button(action: {
+                                                print("Edit button pressed ")
+                                            }) {
+                                                Image(systemName: Constants.ImageNames.gear)
+                                            })
+                }
                 
-                ScrollView(.vertical, showsIndicators: false, content: {
-                    
-                    HStack(alignment: .center, spacing: 20) {
-                        
-                        NavigationLink(destination: Text("Hi")) {
-                            
-                            Button(action: {}, label: {
-                                VStack(alignment: .leading) {
-                                    HStack {
-                                        Image(systemName: Constants.ImageNames.trayArrowDown)
-                                            .padding()
-                                        Spacer()
-                                        Text("2")
-                                            .padding()
-                                        
-                                    }
-                                    Text("Inbox")
-                                        .padding()
-                                }
-                                
-                            })
-                            
-                        }
-                        .frame(maxWidth: .infinity)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.purple, lineWidth: 2))
-                        
-                        NavigationLink(destination: Text("Hi")) {
-                            
-                            Button(action: {}, label: {
-                                VStack(alignment: .leading) {
-                                    HStack {
-                                        Image(systemName: Constants.ImageNames.trayArrowDown)
-                                            .padding()
-                                        Spacer()
-                                        Text("2")
-                                            .padding()
-                                        
-                                    }
-                                    Text("Inbox")
-                                        .padding()
-                                }
-                                
-                            })
-                            
-                        }
-                        .frame(maxWidth: .infinity)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.purple, lineWidth: 2))
-                    }
-                    .padding()
-                    
-                    Spacer()
-                    
-                    HStack(alignment: .center, spacing: 20) {
-                        
-                        NavigationLink(destination: Text("Hi")) {
-                            
-                            Button(action: {}, label: {
-                                VStack(alignment: .leading) {
-                                    HStack {
-                                        Image(systemName: Constants.ImageNames.trayArrowDown)
-                                            .padding()
-                                        Spacer()
-                                        Text("2")
-                                            .padding()
-                                        
-                                    }
-                                    Text("Inbox")
-                                        .padding()
-                                }
-                                
-                            })
-                            
-                        }
-                        .frame(maxWidth: .infinity)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.purple, lineWidth: 2))
-                        
-                        NavigationLink(destination: Text("Hi")) {
-                            
-                            Button(action: {}, label: {
-                                VStack(alignment: .leading) {
-                                    HStack {
-                                        Image(systemName: Constants.ImageNames.trayArrowDown)
-                                            .padding()
-                                        Spacer()
-                                        Text("2")
-                                            .padding()
-                                        
-                                    }
-                                    Text("Inbox")
-                                        .padding()
-                                }
-                            })
-                        }
-                        .frame(maxWidth: .infinity)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.purple, lineWidth: 2))
-                    }
-                    .padding()
-                    
-                    List(0..<self.numbers.count) { number in
-                        NavigationLink(destination: Text("Destination")) {
-                            Text("\(number)")
-                        }
-                        
-                    }.frame(width: g.size.width - 5, height: g.size.height - 50, alignment: .center)
-                    
-                    
-                })
             }
-            .navigationTitle(Constants.Tasks.headerTitle)
-            .navigationBarItems(trailing:
-                                    Button(action: {
-                                        print("Edit button pressed ")
-                                    }) {
-                                        Image(systemName: Constants.ImageNames.gear)
-                                    })
             
         }
         .tabItem {
@@ -151,6 +163,8 @@ struct TasksView: View, ViewLifeCycle {
         }.tag(2)
         .onAppear(perform: onLoad)
         .onDisappear(perform: onUnload)
+
+        
     }
     
     func onUnload() {
@@ -159,7 +173,6 @@ struct TasksView: View, ViewLifeCycle {
     
     func onLoad() {
         if didAppear == false {
-            appearCount += 1
             taskViewModel.getTasksData()
         }
         didAppear = true

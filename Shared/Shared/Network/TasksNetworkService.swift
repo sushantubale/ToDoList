@@ -39,11 +39,7 @@ public class TasksNetworkService {
                         completionHandler(nil, error)
                     }
                 }.resume()
-
             }
-        
-
-
     }
     
     func testFetchTasksData(_ completionHandler: @escaping (Data?, Error?) -> Void) {

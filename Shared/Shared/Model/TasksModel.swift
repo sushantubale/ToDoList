@@ -7,8 +7,15 @@
 
 import Foundation
 
-struct TasksModel: Codable {
-    
-    let taksTypes: [String]
-    let taksCount: [Int]
+struct StateViewModel: Decodable {
+    var data: DataModel
+}
+
+struct DataModel: Decodable {
+    var todoByPerson: [ToDoByPersonModel]
+}
+
+struct ToDoByPersonModel: Decodable {
+    var name: String
+    var state: String
 }
