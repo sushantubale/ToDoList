@@ -34,7 +34,7 @@ class TasksViewTest: XCTestCase {
         app.tabBars["Tab Bar"].buttons["gauge"].tap()
         let tabBarsQuery = XCUIApplication().tabBars
         tabBarsQuery.buttons.element(boundBy: 2).tap()
-        XCTAssertTrue(app.tables.children(matching: .cell).matching(identifier: "Inbox").element(boundBy: 0).buttons["Inbox"].exists)
+        XCTAssertTrue(app.scrollViews.children(matching: .button).matching(identifier: "2\nInbox").element(boundBy: 0).exists)
     }
 }
 
