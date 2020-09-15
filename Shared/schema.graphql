@@ -1,0 +1,15 @@
+{
+  todoByPerson {
+    name
+    state
+    description
+    dueDate
+    conversations{
+      message
+      sender {
+        firstName
+        lastName
+      }
+    }
+  }
+}

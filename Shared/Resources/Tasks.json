@@ -1,0 +1,18 @@
+{
+  "data": {
+    "todoByPerson": [
+      {
+        "name": "Todo Item 1",
+        "state": "REJECTED"
+      },
+      {
+        "name": "Todo Item 1",
+        "state": "BLOCKED"
+      },
+      {
+        "name": "Todo Item 5",
+        "state": "BLOCKED"
+      }
+    ]
+  }
+}
