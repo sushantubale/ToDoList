@@ -290,7 +290,7 @@
 		1EF14C6724E5BF7C00B14E1B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				1EF492C824E8748700FBFDA5 /* Localization */,
+				1EF492C824E8748700FBFDA5 /* Constants */,
 				1E4AD21424E869780051CA4C /* Model */,
 				1E4AD21324E869650051CA4C /* Network */,
 				1E4AD21224E8694E0051CA4C /* ViewModel */,
@@ -298,12 +298,12 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		1EF492C824E8748700FBFDA5 /* Localization */ = {
+		1EF492C824E8748700FBFDA5 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
 				1EF492C924E8749C00FBFDA5 /* Strings.swift */,
 			);
-			path = Localization;
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		1EF492D024E8832200FBFDA5 /* Resources */ = {

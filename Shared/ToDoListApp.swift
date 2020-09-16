@@ -9,9 +9,23 @@ import SwiftUI
 
 @main
 struct ToDoListApp: App {
+    @State private var hasOnboarded = false
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+           WindowGroup {
+               if hasOnboarded {
+                   ContentView()
+                       .onAppear(perform: checkOnboarding)
+               } else {
+                   MessagesView()
+                       .onAppear(perform: checkOnboarding)
+               }
+           }
+       }
+    
+    func checkOnboarding() {
+        // Login flow
+        // Login authenticated, hasOnboarded = truee
     }
+
 }
