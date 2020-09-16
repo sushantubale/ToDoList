@@ -10,6 +10,11 @@ import SwiftUI
 @main
 struct ToDoListApp: App {
     @State private var hasOnboarded = false
+//    private let pushNotificationController = PushNotificationsController()
+    private let appleConnectController = AppleConnectController()
+    private var observers: [NotificationObserver] = []
+    private var appStarting = false
+    private var pushNotificationDeviceToken: String?
 
     var body: some Scene {
            WindowGroup {
@@ -25,7 +30,9 @@ struct ToDoListApp: App {
     
     func checkOnboarding() {
         // Login flow
-        // Login authenticated, hasOnboarded = truee
+        // Login authenticated, hasOnboarded = true
+        appleConnectController.authenticationControllerDelegate = AuthenticationController.shared
+        AuthenticationController.shared.appleConnectAuthenticator = appleConnectController
     }
 
 }

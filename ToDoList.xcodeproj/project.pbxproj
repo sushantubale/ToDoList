@@ -35,8 +35,17 @@
 		1E9E5C0124E46E3100A67728 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0024E46E3100A67728 /* TasksView.swift */; };
 		1E9E5C0324E46EA000A67728 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0224E46EA000A67728 /* ToolsView.swift */; };
 		1E9E5C0524E4716E00A67728 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0424E4716E00A67728 /* TabItem.swift */; };
-		1EB8D69525129ACA00BD8319 /* AppleConnectClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB8D69325129AC600BD8319 /* AppleConnectClient.framework */; };
+		1EB8D69525129ACA00BD8319 /* AppleConnectClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB8D69325129AC600BD8319 /* AppleConnectClient.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		1EB8D69625129ACA00BD8319 /* AppleConnectClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB8D69325129AC600BD8319 /* AppleConnectClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1EB8D69825129BB900BD8319 /* AppleConnectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8D69725129BB900BD8319 /* AppleConnectController.swift */; };
+		1EB8D69A25129BE600BD8319 /* AppleConnectAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8D69925129BE600BD8319 /* AppleConnectAuthenticator.swift */; };
+		1EB8D69D25129C5A00BD8319 /* TypedNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8D69C25129C5A00BD8319 /* TypedNotification.swift */; };
+		1EB8D69F25129C8500BD8319 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8D69E25129C8500BD8319 /* User.swift */; };
+		1EB8D6A125129CF100BD8319 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8D6A025129CF100BD8319 /* AuthenticationController.swift */; };
+		1EB8D6A42512A6B900BD8319 /* AppEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8D6A32512A6B900BD8319 /* AppEnviroment.swift */; };
+		1EB8D6A62512A6DC00BD8319 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8D6A52512A6DC00BD8319 /* AppInfo.swift */; };
+		1EB8D6A82512A76000BD8319 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8D6A72512A76000BD8319 /* Enviroment.swift */; };
+		1EB8D6AA2512A7A000BD8319 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB8D6A92512A7A000BD8319 /* DeviceInfo.swift */; };
 		1EF492CA24E8749C00FBFDA5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492C924E8749C00FBFDA5 /* Strings.swift */; };
 		1EF492CB24E8749C00FBFDA5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492C924E8749C00FBFDA5 /* Strings.swift */; };
 		1EF492D224E8833300FBFDA5 /* Tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF492D124E8833300FBFDA5 /* Tasks.json */; };
@@ -124,6 +133,15 @@
 		1E9E5C0224E46EA000A67728 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		1E9E5C0424E4716E00A67728 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		1EB8D69325129AC600BD8319 /* AppleConnectClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppleConnectClient.framework; sourceTree = "<group>"; };
+		1EB8D69725129BB900BD8319 /* AppleConnectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleConnectController.swift; sourceTree = "<group>"; };
+		1EB8D69925129BE600BD8319 /* AppleConnectAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleConnectAuthenticator.swift; sourceTree = "<group>"; };
+		1EB8D69C25129C5A00BD8319 /* TypedNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypedNotification.swift; sourceTree = "<group>"; };
+		1EB8D69E25129C8500BD8319 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1EB8D6A025129CF100BD8319 /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		1EB8D6A32512A6B900BD8319 /* AppEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnviroment.swift; sourceTree = "<group>"; };
+		1EB8D6A52512A6DC00BD8319 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		1EB8D6A72512A76000BD8319 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		1EB8D6A92512A7A000BD8319 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		1EF492C924E8749C00FBFDA5 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		1EF492D124E8833300FBFDA5 /* Tasks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tasks.json; sourceTree = "<group>"; };
 		1EF492D524E9B5AD00FBFDA5 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
@@ -184,6 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */,
+				1EB8D69725129BB900BD8319 /* AppleConnectController.swift */,
+				1EB8D69925129BE600BD8319 /* AppleConnectAuthenticator.swift */,
+				1EB8D6A72512A76000BD8319 /* Enviroment.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -192,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				1E4AD21824E86F450051CA4C /* TasksModel.swift */,
+				1EB8D69E25129C8500BD8319 /* User.swift */,
+				1EB8D6A025129CF100BD8319 /* AuthenticationController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,9 +328,29 @@
 			path = HomeScreen;
 			sourceTree = "<group>";
 		};
+		1EB8D69B25129C4800BD8319 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				1EB8D69C25129C5A00BD8319 /* TypedNotification.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		1EB8D6A22512A6AD00BD8319 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1EB8D6A32512A6B900BD8319 /* AppEnviroment.swift */,
+				1EB8D6A52512A6DC00BD8319 /* AppInfo.swift */,
+				1EB8D6A92512A7A000BD8319 /* DeviceInfo.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		1EF14C6724E5BF7C00B14E1B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1EB8D6A22512A6AD00BD8319 /* Utility */,
+				1EB8D69B25129C4800BD8319 /* Notifications */,
 				1EF492C824E8748700FBFDA5 /* Constants */,
 				1E4AD21424E869780051CA4C /* Model */,
 				1E4AD21324E869650051CA4C /* Network */,
@@ -525,12 +568,19 @@
 				1E9E5BE124E454AA00A67728 /* ContentView.swift in Sources */,
 				1E4AD21624E86C1B0051CA4C /* TasksNetworkService.swift in Sources */,
 				1E35C4E324EC8AF80086D25C /* CollectionViewCell.swift in Sources */,
+				1EB8D69D25129C5A00BD8319 /* TypedNotification.swift in Sources */,
 				1E9E5BFD24E46DF600A67728 /* DashboardView.swift in Sources */,
+				1EB8D6A62512A6DC00BD8319 /* AppInfo.swift in Sources */,
 				1E9E5BF724E4555C00A67728 /* SearchBar.swift in Sources */,
+				1EB8D6A82512A76000BD8319 /* Enviroment.swift in Sources */,
 				1E9E5C0324E46EA000A67728 /* ToolsView.swift in Sources */,
+				1EB8D69A25129BE600BD8319 /* AppleConnectAuthenticator.swift in Sources */,
 				1E9E5C0124E46E3100A67728 /* TasksView.swift in Sources */,
 				1EF492D624E9B5AD00FBFDA5 /* ActivityIndicatorView.swift in Sources */,
+				1EB8D6A42512A6B900BD8319 /* AppEnviroment.swift in Sources */,
 				1EF492CA24E8749C00FBFDA5 /* Strings.swift in Sources */,
+				1EB8D69825129BB900BD8319 /* AppleConnectController.swift in Sources */,
+				1EB8D6AA2512A7A000BD8319 /* DeviceInfo.swift in Sources */,
 				1E9E5BFA24E45E2800A67728 /* ListViewWithHeader.swift in Sources */,
 				1EF492F924EA13CB00FBFDA5 /* ViewLifeCycle.swift in Sources */,
 				1E9E5BFF24E46E0F00A67728 /* MessagesView.swift in Sources */,
@@ -538,7 +588,9 @@
 				1E9E5BDF24E454AA00A67728 /* ToDoListApp.swift in Sources */,
 				1E9E5C0524E4716E00A67728 /* TabItem.swift in Sources */,
 				1E9E5BF524E454E000A67728 /* ButtonView.swift in Sources */,
+				1EB8D6A125129CF100BD8319 /* AuthenticationController.swift in Sources */,
 				1E4AD20F24E867A20051CA4C /* TasksViewModel.swift in Sources */,
+				1EB8D69F25129C8500BD8319 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +780,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AppleConnectIntegration/iphoneos",
+					"$(PROJECT_DIR)/AppleConnectIntegration/iphonesimulator",
 				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -754,6 +808,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AppleConnectIntegration/iphoneos",
+					"$(PROJECT_DIR)/AppleConnectIntegration/iphonesimulator",
 				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
