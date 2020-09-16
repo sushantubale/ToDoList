@@ -35,6 +35,8 @@
 		1E9E5C0124E46E3100A67728 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0024E46E3100A67728 /* TasksView.swift */; };
 		1E9E5C0324E46EA000A67728 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0224E46EA000A67728 /* ToolsView.swift */; };
 		1E9E5C0524E4716E00A67728 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0424E4716E00A67728 /* TabItem.swift */; };
+		1EB8D69525129ACA00BD8319 /* AppleConnectClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB8D69325129AC600BD8319 /* AppleConnectClient.framework */; };
+		1EB8D69625129ACA00BD8319 /* AppleConnectClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB8D69325129AC600BD8319 /* AppleConnectClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1EF492CA24E8749C00FBFDA5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492C924E8749C00FBFDA5 /* Strings.swift */; };
 		1EF492CB24E8749C00FBFDA5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492C924E8749C00FBFDA5 /* Strings.swift */; };
 		1EF492D224E8833300FBFDA5 /* Tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF492D124E8833300FBFDA5 /* Tasks.json */; };
@@ -79,6 +81,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1EB8D69225129A1E00BD8319 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1EB8D69625129ACA00BD8319 /* AppleConnectClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1E35C4E224EC8AF80086D25C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
@@ -107,6 +123,7 @@
 		1E9E5C0024E46E3100A67728 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		1E9E5C0224E46EA000A67728 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		1E9E5C0424E4716E00A67728 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		1EB8D69325129AC600BD8319 /* AppleConnectClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppleConnectClient.framework; sourceTree = "<group>"; };
 		1EF492C924E8749C00FBFDA5 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		1EF492D124E8833300FBFDA5 /* Tasks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tasks.json; sourceTree = "<group>"; };
 		1EF492D524E9B5AD00FBFDA5 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
@@ -120,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EB8D69525129ACA00BD8319 /* AppleConnectClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +343,7 @@
 		1EF492ED24E9F10200FBFDA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1EB8D69325129AC600BD8319 /* AppleConnectClient.framework */,
 				1EF492EE24E9F10200FBFDA5 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
@@ -348,6 +367,7 @@
 				1E9E5BB924E454AA00A67728 /* Sources */,
 				1E9E5BBA24E454AA00A67728 /* Frameworks */,
 				1E9E5BBB24E454AA00A67728 /* Resources */,
+				1EB8D69225129A1E00BD8319 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -705,6 +725,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 276TT98E76;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -727,6 +751,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 276TT98E76;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
