@@ -12,7 +12,7 @@ struct TasksView: View, ViewLifeCycle {
     @ObservedObject var taskViewModel: TasksViewModel = TasksViewModel()
     private var activityIndicator = ActivityIndicatorView()
     @State var didAppear = false
-    
+        
     var body: some View {
         NavigationView {
             GeometryReader { geometryReader in
@@ -24,13 +24,12 @@ struct TasksView: View, ViewLifeCycle {
                             .foregroundColor(.gray)
                          Spacer()
                     }
-
-                    
                 } else if self.taskViewModel.showActivityIndicator == false {
                     
                     ScrollView(.vertical, showsIndicators: false, content: {
-                        SearchBar(text: "Search")
+                        SearchBar(text: $searchText)
 
+                            .navigationTitle(Constants.Tasks.headerTitle)
                         HStack(alignment: .center, spacing: 20) {
                             
                             NavigationLink(destination: Text("Hi")) {
@@ -42,7 +41,6 @@ struct TasksView: View, ViewLifeCycle {
                                         Spacer()
                                         Text("2")
                                             .padding()
-                                        
                                     }
                                     Text("Inbox")
                                         .padding()
@@ -150,7 +148,6 @@ struct TasksView: View, ViewLifeCycle {
                             }
                         }
                         .frame(width: geometryReader.size.width - 5, height: geometryReader.size.height - 50, alignment: .center)
-                        .navigationTitle(Constants.Tasks.headerTitle)
                         .navigationBarItems(trailing:
                                                 Button(action: {
                                                     print("Edit button pressed ")
@@ -171,8 +168,6 @@ struct TasksView: View, ViewLifeCycle {
         }.tag(2)
         .onAppear(perform: onLoad)
         .onDisappear(perform: onUnload)
-
-        
     }
     
     func onUnload() {
@@ -209,3 +204,18 @@ extension View {
         }
     }
 }
+
+//.trace
+//Appropriate for messages that contain information only when debugging a program.
+//.debug
+//Appropriate for messages that contain information normally of use only when debugging a program.
+//.info
+//Appropriate for informational messages.
+//.notice
+//Appropriate for conditions that are not error conditions, but that may require special handling.
+//.warning
+//Appropriate for messages that are not error conditions, but more severe than .notice
+//.error
+//Appropriate for error conditions.
+//.critical
+//Appropriate for critical error conditions that usually require i
