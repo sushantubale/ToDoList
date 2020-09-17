@@ -19,6 +19,18 @@
 		1E59DF9F25081FB400C06991 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1E59DF9D25081FB400C06991 /* schema.graphql */; };
 		1E59DFA025081FB400C06991 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1E59DF9D25081FB400C06991 /* schema.graphql */; };
 		1E59DFA125081FB400C06991 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1E59DF9D25081FB400C06991 /* schema.graphql */; };
+		1E5FE64925140A3600D08F42 /* AppleConnectClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5FE64825140A2300D08F42 /* AppleConnectClient.framework */; };
+		1E5FE64A25140A3600D08F42 /* AppleConnectClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5FE64825140A2300D08F42 /* AppleConnectClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E5FE64E25140B1700D08F42 /* AppleConnectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FE64D25140B1700D08F42 /* AppleConnectController.swift */; };
+		1E5FE65025140EAB00D08F42 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FE64F25140EAB00D08F42 /* Environment.swift */; };
+		1E5FE65225140EDA00D08F42 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FE65125140EDA00D08F42 /* DeviceInfo.swift */; };
+		1E5FE679251412C400D08F42 /* TypedNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FE671251412C200D08F42 /* TypedNotification.swift */; };
+		1E5FE67B251412C400D08F42 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FE673251412C300D08F42 /* AuthenticationController.swift */; };
+		1E5FE67C251412C400D08F42 /* TypedNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FE674251412C300D08F42 /* TypedNotificationCenter.swift */; };
+		1E5FE67D251412C400D08F42 /* AppleConnectAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FE675251412C300D08F42 /* AppleConnectAuthenticator.swift */; };
+		1E5FE67E251412C400D08F42 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FE676251412C300D08F42 /* AppEnvironment.swift */; };
+		1E5FE67F251412C400D08F42 /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FE677251412C400D08F42 /* NotificationObserver.swift */; };
+		1E5FE6812514133800D08F42 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FE6802514133800D08F42 /* AppInfo.swift */; };
 		1E9E5BD224E454AA00A67728 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BD124E454AA00A67728 /* Tests_iOS.swift */; };
 		1E9E5BDD24E454AA00A67728 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BDC24E454AA00A67728 /* Tests_macOS.swift */; };
 		1E9E5BDF24E454AA00A67728 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BB624E454A800A67728 /* ToDoListApp.swift */; };
@@ -63,6 +75,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1E5FE64525140A2300D08F42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E5FE64025140A2300D08F42 /* AppleConnectIntegration.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEAE22331BEA84A1002DD349;
+			remoteInfo = AppleConnectApp;
+		};
+		1E5FE64725140A2300D08F42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E5FE64025140A2300D08F42 /* AppleConnectIntegration.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEAE22821BEA9BE6002DD349;
+			remoteInfo = AppleConnectClient;
+		};
 		1E9E5BCE24E454AA00A67728 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1E9E5BB124E454A700A67728 /* Project object */;
@@ -79,12 +105,37 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1E5FE64B25140A3600D08F42 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E5FE64A25140A3600D08F42 /* AppleConnectClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1E35C4E224EC8AF80086D25C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 		1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksNetworkService.swift; sourceTree = "<group>"; };
 		1E4AD21824E86F450051CA4C /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
 		1E59DF9D25081FB400C06991 /* schema.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.graphql; sourceTree = "<group>"; };
+		1E5FE64025140A2300D08F42 /* AppleConnectIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppleConnectIntegration.xcodeproj; path = AppleConnectIntegration/AppleConnectIntegration.xcodeproj; sourceTree = "<group>"; };
+		1E5FE64D25140B1700D08F42 /* AppleConnectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppleConnectController.swift; path = ../../../../../Desktop/AppleConnectController.swift; sourceTree = "<group>"; };
+		1E5FE64F25140EAB00D08F42 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1E5FE65125140EDA00D08F42 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		1E5FE671251412C200D08F42 /* TypedNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypedNotification.swift; sourceTree = "<group>"; };
+		1E5FE673251412C300D08F42 /* AuthenticationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		1E5FE674251412C300D08F42 /* TypedNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypedNotificationCenter.swift; sourceTree = "<group>"; };
+		1E5FE675251412C300D08F42 /* AppleConnectAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleConnectAuthenticator.swift; sourceTree = "<group>"; };
+		1E5FE676251412C300D08F42 /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		1E5FE677251412C400D08F42 /* NotificationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
+		1E5FE6802514133800D08F42 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		1E9E5BB624E454A800A67728 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		1E9E5BB724E454A800A67728 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E9E5BB824E454AA00A67728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5FE64925140A3600D08F42 /* AppleConnectClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +230,36 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1E5FE64125140A2300D08F42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E5FE64625140A2300D08F42 /* AppleConnectApp.app */,
+				1E5FE64825140A2300D08F42 /* AppleConnectClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E5FE64C25140B0900D08F42 /* AppleConnect */ = {
+			isa = PBXGroup;
+			children = (
+				1E5FE676251412C300D08F42 /* AppEnvironment.swift */,
+				1E5FE675251412C300D08F42 /* AppleConnectAuthenticator.swift */,
+				1E5FE673251412C300D08F42 /* AuthenticationController.swift */,
+				1E5FE677251412C400D08F42 /* NotificationObserver.swift */,
+				1E5FE671251412C200D08F42 /* TypedNotification.swift */,
+				1E5FE674251412C300D08F42 /* TypedNotificationCenter.swift */,
+				1E5FE64D25140B1700D08F42 /* AppleConnectController.swift */,
+				1E5FE64F25140EAB00D08F42 /* Environment.swift */,
+				1E5FE65125140EDA00D08F42 /* DeviceInfo.swift */,
+				1E5FE6802514133800D08F42 /* AppInfo.swift */,
+			);
+			path = AppleConnect;
+			sourceTree = "<group>";
+		};
 		1E9E5BB024E454A700A67728 = {
 			isa = PBXGroup;
 			children = (
+				1E5FE64025140A2300D08F42 /* AppleConnectIntegration.xcodeproj */,
 				1E9E5BB524E454A800A67728 /* Shared */,
 				1E9E5BBF24E454AA00A67728 /* iOS */,
 				1E9E5BC624E454AA00A67728 /* macOS */,
@@ -256,6 +335,7 @@
 		1E9E5BF324E454D100A67728 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				1E5FE64C25140B0900D08F42 /* AppleConnect */,
 				1EF492F724EA13B800FBFDA5 /* Protocols */,
 				1E9E5BF824E45DD100A67728 /* Views */,
 			);
@@ -348,6 +428,7 @@
 				1E9E5BB924E454AA00A67728 /* Sources */,
 				1E9E5BBA24E454AA00A67728 /* Frameworks */,
 				1E9E5BBB24E454AA00A67728 /* Resources */,
+				1E5FE64B25140A3600D08F42 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -447,6 +528,12 @@
 			mainGroup = 1E9E5BB024E454A700A67728;
 			productRefGroup = 1E9E5BBE24E454AA00A67728 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1E5FE64125140A2300D08F42 /* Products */;
+					ProjectRef = 1E5FE64025140A2300D08F42 /* AppleConnectIntegration.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1E9E5BBC24E454AA00A67728 /* ToDoList (iOS) */,
@@ -456,6 +543,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1E5FE64625140A2300D08F42 /* AppleConnectApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AppleConnectApp.app;
+			remoteRef = 1E5FE64525140A2300D08F42 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1E5FE64825140A2300D08F42 /* AppleConnectClient.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AppleConnectClient.framework;
+			remoteRef = 1E5FE64725140A2300D08F42 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1E9E5BBB24E454AA00A67728 /* Resources */ = {
@@ -509,16 +613,26 @@
 				1E9E5BF724E4555C00A67728 /* SearchBar.swift in Sources */,
 				1E9E5C0324E46EA000A67728 /* ToolsView.swift in Sources */,
 				1E9E5C0124E46E3100A67728 /* TasksView.swift in Sources */,
+				1E5FE67F251412C400D08F42 /* NotificationObserver.swift in Sources */,
+				1E5FE6812514133800D08F42 /* AppInfo.swift in Sources */,
 				1EF492D624E9B5AD00FBFDA5 /* ActivityIndicatorView.swift in Sources */,
 				1EF492CA24E8749C00FBFDA5 /* Strings.swift in Sources */,
+				1E5FE64E25140B1700D08F42 /* AppleConnectController.swift in Sources */,
 				1E9E5BFA24E45E2800A67728 /* ListViewWithHeader.swift in Sources */,
 				1EF492F924EA13CB00FBFDA5 /* ViewLifeCycle.swift in Sources */,
 				1E9E5BFF24E46E0F00A67728 /* MessagesView.swift in Sources */,
+				1E5FE67D251412C400D08F42 /* AppleConnectAuthenticator.swift in Sources */,
 				1E4AD21924E86F450051CA4C /* TasksModel.swift in Sources */,
+				1E5FE67E251412C400D08F42 /* AppEnvironment.swift in Sources */,
 				1E9E5BDF24E454AA00A67728 /* ToDoListApp.swift in Sources */,
+				1E5FE65025140EAB00D08F42 /* Environment.swift in Sources */,
 				1E9E5C0524E4716E00A67728 /* TabItem.swift in Sources */,
 				1E9E5BF524E454E000A67728 /* ButtonView.swift in Sources */,
+				1E5FE679251412C400D08F42 /* TypedNotification.swift in Sources */,
+				1E5FE67B251412C400D08F42 /* AuthenticationController.swift in Sources */,
 				1E4AD20F24E867A20051CA4C /* TasksViewModel.swift in Sources */,
+				1E5FE67C251412C400D08F42 /* TypedNotificationCenter.swift in Sources */,
+				1E5FE65225140EDA00D08F42 /* DeviceInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
