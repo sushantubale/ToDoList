@@ -35,7 +35,7 @@ class TasksViewModel: ObservableObject {
                     if let mappedData = mappedData {
                         for i in mappedData.enumerated() {
                             strongSelf.taskData[i.element.name] = i.element.state
-                            if var val = self?.dummyTaskData[i.element.state] {
+                            if var _ = self?.dummyTaskData[i.element.state] {
                                 self?.dummyTaskData[i.element.state]! += 1
                             } else {
                                 strongSelf.dummyTaskData[i.element.state] = strongSelf.count + 1
