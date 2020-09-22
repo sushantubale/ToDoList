@@ -2,8 +2,8 @@
 //  URLEncoding.swift
 //  NetworkLayer
 //
-//  Created by Malcolm Kumwenda on 2018/03/05.
-//  Copyright © 2018 Malcolm Kumwenda. All rights reserved.
+//  Created by Sushant Ubale on 2020/09/22.
+//  Copyright © 2018 Sushant Ubale. All rights reserved.
 //
 
 import Foundation
@@ -29,6 +29,5 @@ public struct URLParameterEncoder: ParameterEncoder {
         if urlRequest.value(forHTTPHeaderField: "Content-Type") == nil {
             urlRequest.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
         }
-        
     }
 }

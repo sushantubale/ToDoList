@@ -10,8 +10,8 @@ import Combine
 
 class TasksViewModel: ObservableObject {
     
-    private var tasksNetworkService: NetworkManager = NetworkManager()
-    var taskData: [String: String] = [:]
+    private var tasksNetworkService: TasksNetworkService = TasksNetworkService()
+    @Published var taskData: [String: String] = [:]
     @Published var showActivityIndicator: Bool = true
     @Published var stateViewModel: StateViewModel?
     @Published var dummyTaskData: [String: Int] = [:]
@@ -20,8 +20,31 @@ class TasksViewModel: ObservableObject {
     func getTasksData() {
         print("tasksNetworkService.fetchTasksData")
         
-        tasksNetworkService.getTasks { (stateViewModel, error) in
-            
+        tasksNetworkService.getTasks { [weak self] (stateViewModel, error) in
+            guard let strongSelf = self else {return}
+            if(error != nil) {
+                print(error?.localizedUppercase as Any)
+                return
+            }
+            if let data = stateViewModel {
+                DispatchQueue.main.async {
+                strongSelf.stateViewModel = data
+                    let mappedData = strongSelf.stateViewModel.map { $0.data.todoByPerson }
+                    if let mappedData = mappedData {
+                        for i in mappedData.enumerated() {
+                            strongSelf.taskData[i.element.name] = i.element.state
+                            if var _ = strongSelf.dummyTaskData[i.element.state] {
+                                strongSelf.dummyTaskData[i.element.state]! += 1
+                            } else {
+                                strongSelf.dummyTaskData[i.element.state] = strongSelf.count + 1
+                            }
+                        }
+                        strongSelf.showActivityIndicator = false
+
+                    }
+                }
+            }
+
         }
     }
 }

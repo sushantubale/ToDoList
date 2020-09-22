@@ -20,55 +20,48 @@ public class TasksNetworkService {
         }
         return data ?? Data()
     }()
-    private var dict: [String : Any]
-
-    init(dict: [String : Any]) {
-        self.dict = dict
-    }
     
-    private func HTTPsendRequest(request: URLRequest,
-                         callback: @escaping (Error?, Data?) -> Void) {
-        let task = URLSession.shared.dataTask(with: request) { (data, res, err) in
-            if (err != nil) {
-                callback(err,nil)
-            } else {
-                callback(nil, data)
+    static let environment : NetworkEnvironment = .production
+    let router = Router<TasksAPI>()
+    
+    func getTasks(completion: @escaping (_ tasks: StateViewModel?,_ error: String?)->()) {
+        router.request(.tasks) { (data, response, error) in
+            if error != nil {
+                completion(nil, "Please check your network connection.")
             }
-        }
-        task.resume()
-    }
-
-    private func HTTPPostJSON(url: String,  data: Data,
-                      callback: @escaping (Error?, Data?) -> Void) {
-        let  urlWithQueryAllowed = URL(string: url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
-        var request = URLRequest(url: urlWithQueryAllowed!)
-        request.httpMethod = "POST"
-        request.addValue("application/json",forHTTPHeaderField: "Content-Type")
-        request.httpBody = data
-        HTTPsendRequest(request: request) { (error, data) in
-            callback(nil, data)
-        }
-    }
-    
-    func fetchTasksData(_ url: String,_ completionHandler: @escaping (Error?, Data?) -> Void) {
-        let arguments = ProcessInfo.processInfo.arguments
-        if arguments.contains("UI_TESTING") {
-            print("UI_TESTING available")
-            completionHandler(nil, self.tasksData)
-
             
-        } else {
-            let data = try! JSONSerialization.data(withJSONObject: dict, options: [])
-            
-            HTTPPostJSON(url: "http://localhost:9002/graphql?query={todoByPerson{name state}}", data: data) { [weak self] (error, result) in
-                guard let _ = self else {return}
-                if(error != nil) {
-                    print(error?.localizedDescription as Any)
-                    completionHandler(error, nil)
-                    return
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard let responseData = data else {
+                        completion(nil, NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    do {
+                        print(responseData)
+                        let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
+                        print(jsonData)
+                        let apiResponse = try JSONDecoder().decode(StateViewModel.self, from: responseData)
+                        completion(apiResponse, nil)
+                    }catch {
+                        print(error)
+                        completion(nil, NetworkResponse.unableToDecode.rawValue)
+                    }
+                case .failure(let networkFailureError):
+                    completion(nil, networkFailureError)
                 }
-                completionHandler(nil, result)
             }
+        }
+    }
+    
+    fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
+        switch response.statusCode {
+        case 200...299: return .success
+        case 401...500: return .failure(NetworkResponse.authenticationError.rawValue)
+        case 501...599: return .failure(NetworkResponse.badRequest.rawValue)
+        case 600: return .failure(NetworkResponse.outdated.rawValue)
+        default: return .failure(NetworkResponse.failed.rawValue)
         }
     }
 }

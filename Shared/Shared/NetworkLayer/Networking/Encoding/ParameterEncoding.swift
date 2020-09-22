@@ -2,13 +2,13 @@
 //  ParameterEncoding.swift
 //  NetworkLayer
 //
-//  Created by Malcolm Kumwenda on 2018/03/05.
-//  Copyright © 2018 Malcolm Kumwenda. All rights reserved.
+//  Created by Sushant Ubale on 2020/09/22.
+//  Copyright © 2018 Sushant Ubale. All rights reserved.
 //
 
 import Foundation
 
-public typealias Parameters = [String:Any]
+public typealias Parameters = [String: Any]
 
 public protocol ParameterEncoder {
     func encode(urlRequest: inout URLRequest, with parameters: Parameters) throws
@@ -35,17 +35,16 @@ public enum ParameterEncoding {
                 
             case .urlAndJsonEncoding:
                 guard let bodyParameters = bodyParameters,
-                    let urlParameters = urlParameters else { return }
+                      let urlParameters = urlParameters else { return }
                 try URLParameterEncoder().encode(urlRequest: &urlRequest, with: urlParameters)
                 try JSONParameterEncoder().encode(urlRequest: &urlRequest, with: bodyParameters)
                 
             }
-        }catch {
+        } catch {
             throw error
         }
     }
 }
-
 
 public enum NetworkError : String, Error {
     case parametersNil = "Parameters were nil."

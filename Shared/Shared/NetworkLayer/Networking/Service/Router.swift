@@ -2,8 +2,8 @@
 //  NetworkService.swift
 //  NetworkLayer
 //
-//  Created by Malcolm Kumwenda on 2018/03/07.
-//  Copyright © 2018 Malcolm Kumwenda. All rights reserved.
+//  Created by Sushant Ubale on 2018/03/07.
+//  Copyright © 2018 Sushant Ubale. All rights reserved.
 //
 
 import Foundation
@@ -41,9 +41,13 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
         
         var request = URLRequest(url: route.baseURL.appendingPathComponent(route.path),
                                  cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
-                                 timeoutInterval: 10.0)
-        
+                                 timeoutInterval: 30.0)
+        let dict: [String : Any] = [:]
+        let data = try! JSONSerialization.data(withJSONObject: dict, options: [])
+
         request.httpMethod = route.httpMethod.rawValue
+        request.httpBody = data
+        
         do {
             switch route.task {
             case .request:
@@ -62,7 +66,7 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
                                               let bodyEncoding,
                                               let urlParameters,
                                               let additionalHeaders):
-                
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
                 self.addAdditionalHeaders(additionalHeaders, request: &request)
                 try self.configureParameters(bodyParameters: bodyParameters,
                                              bodyEncoding: bodyEncoding,
@@ -93,6 +97,5 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
             request.setValue(value, forHTTPHeaderField: key)
         }
     }
-    
 }
 
