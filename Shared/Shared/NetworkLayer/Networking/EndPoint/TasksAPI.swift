@@ -22,11 +22,19 @@ public enum TasksAPI {
 extension TasksAPI: EndPointType {
     
     var environmentBaseURL : String {
-        switch NetworkManager.environment {
-        case .production: return "http://localhost:9002/graphql?query={todoByPerson{name state}}"
-        case .qa: return ""
-        case .uat: return ""
-        case .dev: return ""
+        let server_url = Environment().configuration(PlistKey.ServerURL)
+
+        switch server_url {
+        case "UAT":
+            return "http://localhost:9002-UAT/graphql?query={todoByPerson{name state}}"
+        case "QA":
+            return "http://localhost:9002-QA/graphql?query={todoByPerson{name state}}"
+        case "DEV":
+            return "http://localhost:9002-DEV/graphql?query={todoByPerson{name state}}"
+        case "PROD":
+            return "http://localhost:9002/graphql?query={todoByPerson{name state}}"
+        default:
+            return "http://localhost:9002/graphql?query={todoByPerson{name state}}"
         }
     }
     
@@ -59,4 +67,31 @@ extension TasksAPI: EndPointType {
     }
 }
 
-
+public enum PlistKey {
+    case ServerURL
+    
+    func value() -> String {
+        switch self {
+        case .ServerURL:
+            return "server_url"
+        }
+    }
+}
+public struct Environment {
+    
+    fileprivate var infoDict: [String: Any]  {
+        get {
+            if let dict = Bundle.main.infoDictionary {
+                return dict
+            }else {
+                fatalError("Plist file not found")
+            }
+        }
+    }
+    public func configuration(_ key: PlistKey) -> String {
+        switch key {
+        case .ServerURL:
+            return infoDict[PlistKey.ServerURL.value()] as! String
+        }
+    }
+}

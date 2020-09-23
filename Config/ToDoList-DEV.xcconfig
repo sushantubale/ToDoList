@@ -1,0 +1,11 @@
+//
+//  ToDoList-DEV.xcconfig
+//  ToDoList
+//
+//  Created by Sushant-Old on 9/22/20.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+server_url = DEV
