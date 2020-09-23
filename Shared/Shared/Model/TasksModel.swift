@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct StateViewModel: Decodable {
+public struct StateViewModel: Decodable {
     var data: DataModel
 }
 
-struct DataModel: Decodable {
+public struct DataModel: Decodable {
     var todoByPerson: [ToDoByPersonModel]
 }
 
-struct ToDoByPersonModel: Decodable, Hashable {
+public struct ToDoByPersonModel: Decodable, Hashable {
     var name: String
     var state: String
 }

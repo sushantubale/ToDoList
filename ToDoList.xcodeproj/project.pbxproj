@@ -86,7 +86,6 @@
 		1EF492E124E9BCD100FBFDA5 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BFC24E46DF600A67728 /* DashboardView.swift */; };
 		1EF492E224E9BCD100FBFDA5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BF624E4555C00A67728 /* SearchBar.swift */; };
 		1EF492E324E9BCD100FBFDA5 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0224E46EA000A67728 /* ToolsView.swift */; };
-		1EF492E424E9BCD900FBFDA5 /* TasksNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */; };
 		1EF492E524E9BCF100FBFDA5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492C924E8749C00FBFDA5 /* Strings.swift */; };
 		1EF492E624E9BCF500FBFDA5 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21824E86F450051CA4C /* TasksModel.swift */; };
 		1EF492E724E9BD2D00FBFDA5 /* Tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF492D124E8833300FBFDA5 /* Tasks.json */; };
@@ -346,6 +345,7 @@
 			children = (
 				1EF492D024E8832200FBFDA5 /* Resources */,
 				1E4AD21124E868DB0051CA4C /* Mac */,
+				1E34DB94251A798A003E2995 /* NetworkLayer */,
 				1EF14C6724E5BF7C00B14E1B /* Shared */,
 				1E9E5BF324E454D100A67728 /* iOS */,
 				1E9E5BB824E454AA00A67728 /* Assets.xcassets */,
@@ -480,7 +480,6 @@
 		1EF14C6724E5BF7C00B14E1B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				1E34DB94251A798A003E2995 /* NetworkLayer */,
 				1EF492C824E8748700FBFDA5 /* Localization */,
 				1E4AD21424E869780051CA4C /* Model */,
 				1E4AD21324E869650051CA4C /* Network */,
@@ -782,7 +781,6 @@
 				1EF492D924E9BA4C00FBFDA5 /* TasksViewTest.swift in Sources */,
 				1EF492E624E9BCF500FBFDA5 /* TasksModel.swift in Sources */,
 				1EF492E224E9BCD100FBFDA5 /* SearchBar.swift in Sources */,
-				1EF492E424E9BCD900FBFDA5 /* TasksNetworkService.swift in Sources */,
 				1EF492DB24E9BC6800FBFDA5 /* TasksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
