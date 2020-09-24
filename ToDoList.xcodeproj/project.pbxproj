@@ -43,8 +43,8 @@
 		1E59DF9F25081FB400C06991 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1E59DF9D25081FB400C06991 /* schema.graphql */; };
 		1E59DFA025081FB400C06991 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1E59DF9D25081FB400C06991 /* schema.graphql */; };
 		1E59DFA125081FB400C06991 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 1E59DF9D25081FB400C06991 /* schema.graphql */; };
-		1E5FE687251432B800D08F42 /* AppleConnectClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5FE686251432B800D08F42 /* AppleConnectClient.xcframework */; };
-		1E5FE688251432B800D08F42 /* AppleConnectClient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5FE686251432B800D08F42 /* AppleConnectClient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E60CD3B251D25FA00A5AD3E /* AppleConnectClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E60CD39251D25E800A5AD3E /* AppleConnectClient.xcframework */; };
+		1E60CD3C251D25FA00A5AD3E /* AppleConnectClient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E60CD39251D25E800A5AD3E /* AppleConnectClient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1E9E5BD224E454AA00A67728 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BD124E454AA00A67728 /* Tests_iOS.swift */; };
 		1E9E5BDD24E454AA00A67728 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BDC24E454AA00A67728 /* Tests_macOS.swift */; };
 		1E9E5BDF24E454AA00A67728 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BB624E454A800A67728 /* ToDoListApp.swift */; };
@@ -119,7 +119,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1E5FE688251432B800D08F42 /* AppleConnectClient.xcframework in Embed Frameworks */,
+				1E60CD3C251D25FA00A5AD3E /* AppleConnectClient.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +151,7 @@
 		1E5D4A95251B03EC009C09DC /* ToDoList-UAT.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoList-UAT.plist"; sourceTree = "<group>"; };
 		1E5D4A96251B0400009C09DC /* ToDoList-DEV.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoList-DEV.plist"; sourceTree = "<group>"; };
 		1E5D4A97251B0429009C09DC /* ToDoList-QA.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoList-QA.plist"; sourceTree = "<group>"; };
-		1E5FE686251432B800D08F42 /* AppleConnectClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AppleConnectClient.xcframework; path = "../../Downloads/AppleConnectClientDistribution 2/Samples/iOS/ACMInternalSample/AppleConnectClient.xcframework"; sourceTree = "<group>"; };
+		1E60CD39251D25E800A5AD3E /* AppleConnectClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppleConnectClient.xcframework; sourceTree = "<group>"; };
 		1E9E5BB624E454A800A67728 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		1E9E5BB724E454A800A67728 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E9E5BB824E454AA00A67728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5FE687251432B800D08F42 /* AppleConnectClient.xcframework in Frameworks */,
+				1E60CD3B251D25FA00A5AD3E /* AppleConnectClient.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +329,7 @@
 		1E9E5BB024E454A700A67728 = {
 			isa = PBXGroup;
 			children = (
+				1E60CD39251D25E800A5AD3E /* AppleConnectClient.xcframework */,
 				1E5D4A8C251AFE88009C09DC /* Config */,
 				1E9E5BB524E454A800A67728 /* Shared */,
 				1E9E5BBF24E454AA00A67728 /* iOS */,
@@ -515,7 +516,6 @@
 		1EF492ED24E9F10200FBFDA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E5FE686251432B800D08F42 /* AppleConnectClient.xcframework */,
 				1EF492EE24E9F10200FBFDA5 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;

@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:           [ x86_64 ]
+uuids:           [ 'x86_64: F4D03BF2-9CFB-37AB-AAA2-825150C87362' ]
+platform:        iosmac
+install-name:    '@rpath/AppleConnectClient.framework/Versions/A/AppleConnectClient'
+current-version: 403.9
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ _kACClientMessageAppIDKey ]
+    objc-classes:    [ ACAuthenticationContext, ACAuthenticationRequest, ACAuthenticationResponse, 
+                       ACContext, ACMobileAuthenticationContext, ACMobileRetailAuthenticationContext, 
+                       ACMobileRetailManagerAuthenticationContext, ACRequest, ACResponse, 
+                       ACVerifyServiceTicketRequest, ACVerifyServiceTicketResponse ]
+...
