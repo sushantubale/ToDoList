@@ -63,6 +63,10 @@ extension TasksAPI: EndPointType {
     }
     
     public var headers: HTTPHeaders? {
+        switch self {
+        case .tasks:
+            return ["name": "testName"]
+        }
         return nil
     }
 }

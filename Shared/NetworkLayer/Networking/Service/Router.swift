@@ -44,8 +44,8 @@ public class Router<EndPoint: EndPointType>: NetworkRouter {
                                  timeoutInterval: 30.0)
         let dict: [String : Any] = [:]
         let data = try! JSONSerialization.data(withJSONObject: dict, options: [])
-
-        request.httpMethod = route.httpMethod.rawValue
+        request.allHTTPHeaderFields = route.headers
+//        request.httpMethod = route.httpMethod.rawValue
         request.httpBody = data
         
         do {
