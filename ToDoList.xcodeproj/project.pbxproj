@@ -234,9 +234,10 @@
 		1E34DB95251A798A003E2995 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				1E730008251D32870034B9B3 /* IndividualNetworkAPI */,
 				1E34DB96251A798A003E2995 /* Encoding */,
 				1E34DB9A251A798A003E2995 /* Manager */,
-				1E34DB9C251A798A003E2995 /* EndPoint */,
+				1E34DB9C251A798A003E2995 /* EndPoints */,
 				1E34DB9E251A798A003E2995 /* Service */,
 			);
 			path = Networking;
@@ -262,12 +263,12 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		1E34DB9C251A798A003E2995 /* EndPoint */ = {
+		1E34DB9C251A798A003E2995 /* EndPoints */ = {
 			isa = PBXGroup;
 			children = (
 				1E34DB9D251A798A003E2995 /* TasksAPI.swift */,
 			);
-			path = EndPoint;
+			path = EndPoints;
 			sourceTree = "<group>";
 		};
 		1E34DB9E251A798A003E2995 /* Service */ = {
@@ -282,28 +283,12 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		1E4AD21124E868DB0051CA4C /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mac;
-			sourceTree = "<group>";
-		};
 		1E4AD21224E8694E0051CA4C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		1E4AD21324E869650051CA4C /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */,
-				1EE4D02F251579C60085414A /* AppleConnectHelper.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		1E4AD21424E869780051CA4C /* Model */ = {
@@ -326,10 +311,34 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		1E730006251D30730034B9B3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1EE4CFF725151EBA0085414A /* Storyboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1E730007251D31E70034B9B3 /* AppleConnect */ = {
+			isa = PBXGroup;
+			children = (
+				1EE4D015251574210085414A /* AppleConnectFacadeLayer.swift */,
+				1EE4D02F251579C60085414A /* AppleConnectHelper.swift */,
+			);
+			path = AppleConnect;
+			sourceTree = "<group>";
+		};
+		1E730008251D32870034B9B3 /* IndividualNetworkAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */,
+			);
+			path = IndividualNetworkAPI;
+			sourceTree = "<group>";
+		};
 		1E9E5BB024E454A700A67728 = {
 			isa = PBXGroup;
 			children = (
-				1E60CD39251D25E800A5AD3E /* AppleConnectClient.xcframework */,
 				1E5D4A8C251AFE88009C09DC /* Config */,
 				1E9E5BB524E454A800A67728 /* Shared */,
 				1E9E5BBF24E454AA00A67728 /* iOS */,
@@ -344,12 +353,13 @@
 		1E9E5BB524E454A800A67728 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1E4AD21224E8694E0051CA4C /* ViewModel */,
+				1E4AD21424E869780051CA4C /* Model */,
+				1EF492C824E8748700FBFDA5 /* Localization */,
+				1EF492F724EA13B800FBFDA5 /* Protocols */,
+				1E730007251D31E70034B9B3 /* AppleConnect */,
 				1EF492D024E8832200FBFDA5 /* Resources */,
-				1E4AD21124E868DB0051CA4C /* Mac */,
 				1E34DB94251A798A003E2995 /* NetworkLayer */,
-				1EF14C6724E5BF7C00B14E1B /* Shared */,
-				1E9E5BF324E454D100A67728 /* iOS */,
-				1E9E5BB824E454AA00A67728 /* Assets.xcassets */,
 				1E59DF9D25081FB400C06991 /* schema.graphql */,
 			);
 			path = Shared;
@@ -369,6 +379,7 @@
 		1E9E5BBF24E454AA00A67728 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				1E9E5BF824E45DD100A67728 /* Views */,
 				1E9E5BC024E454AA00A67728 /* Info.plist */,
 				1E5D4A95251B03EC009C09DC /* ToDoList-UAT.plist */,
 				1E5D4A96251B0400009C09DC /* ToDoList-DEV.plist */,
@@ -405,24 +416,16 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
-		1E9E5BF324E454D100A67728 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				1EF492F724EA13B800FBFDA5 /* Protocols */,
-				1E9E5BF824E45DD100A67728 /* Views */,
-				1EE4CFF725151EBA0085414A /* Storyboard.storyboard */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
 		1E9E5BF824E45DD100A67728 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1E730006251D30730034B9B3 /* Storyboard */,
 				1EE4D012251570980085414A /* MainStartView */,
 				1EF492D424E9B59C00FBFDA5 /* Common */,
 				1E9E5BFB24E46DE800A67728 /* HomeScreen */,
 			);
-			path = Views;
+			name = Views;
+			path = ../Shared/iOS/Views;
 			sourceTree = "<group>";
 		};
 		1E9E5BFB24E46DE800A67728 /* HomeScreen */ = {
@@ -478,17 +481,6 @@
 			path = MainStartView;
 			sourceTree = "<group>";
 		};
-		1EF14C6724E5BF7C00B14E1B /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				1EF492C824E8748700FBFDA5 /* Localization */,
-				1E4AD21424E869780051CA4C /* Model */,
-				1E4AD21324E869650051CA4C /* Network */,
-				1E4AD21224E8694E0051CA4C /* ViewModel */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
 		1EF492C824E8748700FBFDA5 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
@@ -501,6 +493,7 @@
 			isa = PBXGroup;
 			children = (
 				1EF492D124E8833300FBFDA5 /* Tasks.json */,
+				1E9E5BB824E454AA00A67728 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -516,6 +509,7 @@
 		1EF492ED24E9F10200FBFDA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E60CD39251D25E800A5AD3E /* AppleConnectClient.xcframework */,
 				1EF492EE24E9F10200FBFDA5 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
@@ -525,7 +519,6 @@
 			isa = PBXGroup;
 			children = (
 				1EF492F824EA13CB00FBFDA5 /* ViewLifeCycle.swift */,
-				1EE4D015251574210085414A /* AppleConnectFacadeLayer.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
