@@ -25,35 +25,59 @@ public class TasksNetworkService {
     let router = Router<TasksAPI>()
     
     func getTasks(completion: @escaping (_ tasks: StateViewModel?,_ error: String?)->()) {
-        router.request(.tasks) { (data, response, error) in
-            if error != nil {
-                completion(nil, "Please check your network connection.")
+        
+        let arguments = ProcessInfo.processInfo.arguments
+        if arguments.contains("UI_TESTING") {
+            print("UI_TESTING available")
+            self.testFetchTasksData { (data, error) in
+                completion(data, nil)
             }
-            
-            if let response = response as? HTTPURLResponse {
-                let result = self.handleNetworkResponse(response)
-                switch result {
-                case .success:
-                    guard let responseData = data else {
-                        completion(nil, NetworkResponse.noData.rawValue)
-                        return
+        } else {
+            router.request(.tasks) { (data, response, error) in
+                if error != nil {
+                    completion(nil, "Please check your network connection.")
+                }
+                
+                if let response = response as? HTTPURLResponse {
+                    let result = self.handleNetworkResponse(response)
+                    switch result {
+                    case .success:
+                        guard let responseData = data else {
+                            completion(nil, NetworkResponse.noData.rawValue)
+                            return
+                        }
+                        do {
+                            print(responseData)
+                            let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
+                            print(jsonData)
+                            let apiResponse = try JSONDecoder().decode(StateViewModel.self, from: responseData)
+                            completion(apiResponse, nil)
+                        }catch {
+                            print(error)
+                            completion(nil, NetworkResponse.unableToDecode.rawValue)
+                        }
+                    case .failure(let networkFailureError):
+                        completion(nil, networkFailureError)
                     }
-                    do {
-                        print(responseData)
-                        let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
-                        print(jsonData)
-                        let apiResponse = try JSONDecoder().decode(StateViewModel.self, from: responseData)
-                        completion(apiResponse, nil)
-                    }catch {
-                        print(error)
-                        completion(nil, NetworkResponse.unableToDecode.rawValue)
-                    }
-                case .failure(let networkFailureError):
-                    completion(nil, networkFailureError)
                 }
             }
         }
+        
     }
+    
+    fileprivate func testFetchTasksData(_ completionHandler: @escaping (StateViewModel?, Error?) -> Void) {
+        do {
+            print(self.tasksData)
+            let jsonData = try JSONSerialization.jsonObject(with: self.tasksData, options: .mutableContainers)
+            print(jsonData)
+            let apiResponse = try JSONDecoder().decode(StateViewModel.self, from: self.tasksData)
+            completionHandler(apiResponse, nil)
+        } catch {
+            print(error)
+            completionHandler(nil, error)
+        }
+    }
+    
     
     fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
         switch response.statusCode {
