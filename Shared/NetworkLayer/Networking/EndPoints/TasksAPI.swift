@@ -77,6 +77,7 @@ public enum PlistKey {
         }
     }
 }
+
 public struct Environment {
     
     fileprivate var infoDict: [String: Any]  {

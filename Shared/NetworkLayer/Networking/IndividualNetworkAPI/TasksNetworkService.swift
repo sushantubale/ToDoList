@@ -62,7 +62,6 @@ public class TasksNetworkService {
                 }
             }
         }
-        
     }
     
     fileprivate func testFetchTasksData(_ completionHandler: @escaping (StateViewModel?, Error?) -> Void) {

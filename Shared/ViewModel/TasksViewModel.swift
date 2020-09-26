@@ -27,24 +27,27 @@ class TasksViewModel: ObservableObject {
                 return
             }
             if let data = stateViewModel {
-                DispatchQueue.main.async {
-                strongSelf.stateViewModel = data
-                    let mappedData = strongSelf.stateViewModel.map { $0.data.todoByPerson }
-                    if let mappedData = mappedData {
-                        for i in mappedData.enumerated() {
-                            strongSelf.taskData[i.element.name] = i.element.state
-                            if var _ = strongSelf.dummyTaskData[i.element.state] {
-                                strongSelf.dummyTaskData[i.element.state]! += 1
-                            } else {
-                                strongSelf.dummyTaskData[i.element.state] = strongSelf.count + 1
-                            }
-                        }
-                        strongSelf.showActivityIndicator = false
-
+                strongSelf.configureTasksData(data)
+            }
+        }
+    }
+    
+    func configureTasksData(_ stateViewModel: StateViewModel) {
+        DispatchQueue.main.async { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.stateViewModel = stateViewModel
+            let mappedData = strongSelf.stateViewModel.map { $0.data.todoByPerson }
+            if let mappedData = mappedData {
+                for i in mappedData.enumerated() {
+                    strongSelf.taskData[i.element.name] = i.element.state
+                    if var _ = strongSelf.dummyTaskData[i.element.state] {
+                        strongSelf.dummyTaskData[i.element.state]! += 1
+                    } else {
+                        strongSelf.dummyTaskData[i.element.state] = strongSelf.count + 1
                     }
                 }
+                strongSelf.showActivityIndicator = false
             }
-
         }
     }
 }
