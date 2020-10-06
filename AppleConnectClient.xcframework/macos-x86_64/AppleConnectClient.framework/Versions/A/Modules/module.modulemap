@@ -1,0 +1,6 @@
+framework module AppleConnectClient {
+  umbrella header "AppleConnectClient.h"
+
+  export *
+  module * { export * }
+}

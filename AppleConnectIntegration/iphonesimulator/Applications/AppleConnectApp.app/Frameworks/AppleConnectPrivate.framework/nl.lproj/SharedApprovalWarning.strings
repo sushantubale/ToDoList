@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "What Are Shared Devices?"; ObjectID = "1Nw-nm-x9V"; */
+"1Nw-nm-x9V.normalTitle" = "What Are Shared Devices?";
+
+/* Class = "UILabel"; text = "Secure access with approved devices"; ObjectID = "25Y-ab-k7z"; */
+"25Y-ab-k7z.text" = "Secure access with approved devices";
+
+/* Class = "UILabel"; text = "Approve this shared <<DEVICE MODEL>> so you can securely sign in to Apple internal apps and services."; ObjectID = "8z3-nG-FXP"; */
+"8z3-nG-FXP.text" = "Approve this shared <<DEVICE MODEL>> so you can securely sign in to Apple internal apps and services.";
+
+/* Class = "UINavigationItem"; title = "What Are Shared Devices?"; ObjectID = "FtA-16-ZD7"; */
+"FtA-16-ZD7.title" = "What Are Shared Devices?";
+
+/* Class = "UILabel"; text = "An approved device is a Mac or iOS device that is restricted to one AppleConnect account. Your approved device gives you an easy, secure way to access most Apple apps and services without entering a two-step verification (2SV) code. Do not delete your 2SV devices at this time. After you have one approved device, you can create more and you will be prompted to approve any other device you use to access Apple apps and services.\n\nA shared device is an approved device with sharing enabled. It is not restricted to one AppleConnect account — any AppleConnect user can sign in on a shared device. Approved users can access most Apple apps and services on a shared device without entering a two-step verification code. And any approved user can approve more users."; ObjectID = "QNh-PA-6Kn"; */
+"QNh-PA-6Kn.text" = "An approved device is a Mac or iOS device that is restricted to one AppleConnect account. Your approved device gives you an easy, secure way to access most Apple apps and services without entering a two-step verification (2SV) code. Do not delete your 2SV devices at this time. After you have one approved device, you can create more and you will be prompted to approve any other device you use to access Apple apps and services.\n\nA shared device is an approved device with sharing enabled. It is not restricted to one AppleConnect account — any AppleConnect user can sign in on a shared device. Approved users can access most Apple apps and services on a shared device without entering a two-step verification code. And any approved user can approve more users.";
+
+/* Class = "UIButton"; normalTitle = "Start Approval"; ObjectID = "doi-eJ-pz9"; */
+"doi-eJ-pz9.normalTitle" = "Start Approval";
+
+/* Class = "UIButton"; normalTitle = "Not Now"; ObjectID = "mT6-Wc-P31"; */
+"mT6-Wc-P31.normalTitle" = "Not Now";

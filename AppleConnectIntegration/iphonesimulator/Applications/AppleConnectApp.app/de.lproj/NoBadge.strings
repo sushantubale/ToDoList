@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Apple Badge is available only for Apple Park Employees. You do not have access to Apple Badge at this time."; ObjectID = "FMc-hS-Jtf"; */
+"FMc-hS-Jtf.text" = "Apple Badge is available only for Apple Park Employees. You do not have access to Apple Badge at this time.";
+
+/* Class = "UILabel"; text = "Exclusively for\nApple Park"; ObjectID = "VEL-nn-gKO"; */
+"VEL-nn-gKO.text" = "Exclusively for\nApple Park";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "cge-jP-KA9"; */
+"cge-jP-KA9.normalTitle" = "Cancel";

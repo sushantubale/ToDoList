@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Last 5 Digits of UDID:"; ObjectID = "3s1-ZC-nZN"; */
+"3s1-ZC-nZN.text" = "Last 5 Digits of UDID:";
+
+/* Class = "UILabel"; text = "<<DEVICE NAME>>"; ObjectID = "EI8-x7-1OX"; */
+"EI8-x7-1OX.text" = "<<DEVICE NAME>>";
+
+/* Class = "UILabel"; text = "30"; ObjectID = "Mjd-XK-gPC"; */
+"Mjd-XK-gPC.text" = "30";
+
+/* Class = "UILabel"; text = "Use this code as a second factor of authorization to verify your device."; ObjectID = "P90-u0-UcJ"; */
+"P90-u0-UcJ.text" = "Use this code as a second factor of authorization to verify your device.";
+
+/* Class = "UILabel"; text = "098 765"; ObjectID = "XQP-Or-ZG0"; */
+"XQP-Or-ZG0.text" = "098 765";
+
+/* Class = "UIViewController"; title = "Helpline Verification Code"; ObjectID = "fE6-RB-Ole"; */
+"fE6-RB-Ole.title" = "Helpline Verification Code";
+
+/* Class = "UILabel"; text = "This code will refresh after 30 seconds."; ObjectID = "mHY-lZ-hlU"; */
+"mHY-lZ-hlU.text" = "This code will refresh after 30 seconds.";
+
+/* Class = "UILabel"; text = "<<DEVICE UDID>>"; ObjectID = "rF9-jN-vJf"; */
+"rF9-jN-vJf.text" = "<<DEVICE UDID>>";
+
+/* Class = "UILabel"; text = "Device Name:"; ObjectID = "vda-Qh-VLP"; */
+"vda-Qh-VLP.text" = "Device Name:";

@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "What Are Approved Devices?"; ObjectID = "1Nw-nm-x9V"; */
+"1Nw-nm-x9V.normalTitle" = "What Are Approved Devices?";
+
+/* Class = "UILabel"; text = "Secure access with approved devices"; ObjectID = "25Y-ab-k7z"; */
+"25Y-ab-k7z.text" = "Secure access with approved devices";
+
+/* Class = "UILabel"; text = "Approve this <<DEVICE MODEL>> so Apple knows this device belongs to you.\n\nOnce approved, only you can securely sign in to Apple Internal Apps and services on this <<DEVICE MODEL>>."; ObjectID = "8z3-nG-FXP"; */
+"8z3-nG-FXP.text" = "Approve this <<DEVICE MODEL>> so Apple knows this device belongs to you.\n\nOnce approved, only you can securely sign in to Apple Internal Apps and services on this <<DEVICE MODEL>>.";
+
+/* Class = "UINavigationItem"; title = "What Are Approved Devices?"; ObjectID = "FtA-16-ZD7"; */
+"FtA-16-ZD7.title" = "What Are Approved Devices?";
+
+/* Class = "UILabel"; text = "An approved device is a Mac or iOS device that is restricted to one AppleConnect account. Your approved device gives you an easy, secure way to access most Apple apps and services without entering a two-step verification code.\n\nIf other people might use this device, enable sharing for this device on appleconnect.apple.com. Each approved user of a shared device can approve more users.\n\nOnce approved, you can use this device to approve any other devices you use to access Apple internal apps and services.\n\nDo not delete your two-step verification devices at this time."; ObjectID = "QNh-PA-6Kn"; */
+"QNh-PA-6Kn.text" = "An approved device is a Mac or iOS device that is restricted to one AppleConnect account. Your approved device gives you an easy, secure way to access most Apple apps and services without entering a two-step verification code.\n\nIf other people might use this device, enable sharing for this device on appleconnect.apple.com. Each approved user of a shared device can approve more users.\n\nOnce approved, you can use this device to approve any other devices you use to access Apple internal apps and services.\n\nDo not delete your two-step verification devices at this time.";
+
+/* Class = "UIButton"; normalTitle = "Start Approval"; ObjectID = "doi-eJ-pz9"; */
+"doi-eJ-pz9.normalTitle" = "Start Approval";
+
+/* Class = "UIButton"; normalTitle = "Not Now"; ObjectID = "mT6-Wc-P31"; */
+"mT6-Wc-P31.normalTitle" = "Not Now";

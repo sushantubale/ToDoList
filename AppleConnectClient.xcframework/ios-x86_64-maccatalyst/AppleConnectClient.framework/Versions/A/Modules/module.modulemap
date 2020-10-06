@@ -1,0 +1,11 @@
+framework module AppleConnectClient {
+  umbrella header "AppleConnectClient.h"
+
+  export *
+  module * { export * }
+}
+
+module AppleConnectClient.Swift {
+    header "AppleConnectClient-Swift.h"
+    requires objc
+}

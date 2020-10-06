@@ -1,0 +1,141 @@
+
+/* Class = "UILabel"; text = "Step 1"; ObjectID = "0K7-Y0-uO3"; */
+"0K7-Y0-uO3.text" = "Step 1";
+
+/* Class = "UINavigationItem"; title = "Setup"; ObjectID = "0n6-1J-35f"; */
+"0n6-1J-35f.title" = "Setup";
+
+/* Class = "UIButton"; accessibilityLabel = "Enter secret key manually"; ObjectID = "0qf-Py-Z34"; */
+"0qf-Py-Z34.accessibilityLabel" = "Enter secret key manually";
+
+/* Class = "UIButton"; normalTitle = "Enter secret key manually"; ObjectID = "0qf-Py-Z34"; */
+"0qf-Py-Z34.normalTitle" = "Enter secret key manually";
+
+/* Class = "UIView"; accessibilityHint = "Use this security code to finish configuring the code generator."; ObjectID = "131-C8-w6k"; */
+"131-C8-w6k.accessibilityHint" = "Use this security code to finish configuring the code generator.";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "50N-h6-VAh"; */
+"50N-h6-VAh.title" = "Cancel";
+
+/* Class = "UITextField"; accessibilityLabel = "Enter account name to identify generator"; ObjectID = "7qI-S3-DRb"; */
+"7qI-S3-DRb.accessibilityLabel" = "Enter account name to identify generator";
+
+/* Class = "UITextField"; placeholder = "Account"; ObjectID = "7qI-S3-DRb"; */
+"7qI-S3-DRb.placeholder" = "Account";
+
+/* Class = "UILabel"; accessibilityLabel = "Step 2: Use this app to scan the QR code displayed on your Mac now, or touch the button below to enter a secret key manually."; ObjectID = "9E2-6s-N2o"; */
+"9E2-6s-N2o.accessibilityLabel" = "Step 2: Use this app to scan the QR code displayed on your Mac now, or touch the button below to enter a secret key manually.";
+
+/* Class = "UILabel"; text = "Scan QR Code"; ObjectID = "9E2-6s-N2o"; */
+"9E2-6s-N2o.text" = "Scan QR Code";
+
+/* Class = "UILabel"; text = "<issuer>"; ObjectID = "EPd-mL-xrw"; */
+"EPd-mL-xrw.text" = "<issuer>";
+
+/* Class = "UILabel"; accessibilityLabel = "Use the security code below to finish configuring the code generator."; ObjectID = "F9J-XZ-K8I"; */
+"F9J-XZ-K8I.accessibilityLabel" = "Use the security code below to finish configuring the code generator.";
+
+/* Class = "UILabel"; text = "Use the security code below to finish configuring the code generator."; ObjectID = "F9J-XZ-K8I"; */
+"F9J-XZ-K8I.text" = "Use the security code below to finish configuring the code generator.";
+
+/* Class = "UIButton"; accessibilityLabel = "Press to enter Secret Key"; ObjectID = "FOW-kc-7tf"; */
+"FOW-kc-7tf.accessibilityLabel" = "Press to enter Secret Key";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Jpd-Hq-hDE"; */
+"Jpd-Hq-hDE.title" = "Back";
+
+/* Class = "UILabel"; accessibilityLabel = "Step 3, Confirmation"; ObjectID = "LRP-vu-Hvi"; */
+"LRP-vu-Hvi.accessibilityLabel" = "Step 3, Confirmation";
+
+/* Class = "UILabel"; text = "Confirmation"; ObjectID = "LRP-vu-Hvi"; */
+"LRP-vu-Hvi.text" = "Confirmation";
+
+/* Class = "UITextField"; accessibilityLabel = "Enter secret key without spaces"; ObjectID = "OtQ-Wo-B1L"; */
+"OtQ-Wo-B1L.accessibilityLabel" = "Enter secret key without spaces";
+
+/* Class = "UITextField"; placeholder = "Enter key without spaces"; ObjectID = "OtQ-Wo-B1L"; */
+"OtQ-Wo-B1L.placeholder" = "Enter key without spaces";
+
+/* Class = "UILabel"; text = "<user name>"; ObjectID = "PGa-nV-opQ"; */
+"PGa-nV-opQ.text" = "<user name>";
+
+/* Class = "UILabel"; text = "Cannot recognize the code"; ObjectID = "Qjk-e3-Os0"; */
+"Qjk-e3-Os0.text" = "Cannot recognize the code";
+
+/* Class = "UILabel"; accessibilityLabel = "Step 1, Get Started, Security Code Setup"; ObjectID = "V9A-Ge-iD1"; */
+"V9A-Ge-iD1.accessibilityLabel" = "Step 1, Get Started, Security Code Setup";
+
+/* Class = "UILabel"; text = "Get Started"; ObjectID = "V9A-Ge-iD1"; */
+"V9A-Ge-iD1.text" = "Get Started";
+
+/* Class = "UINavigationItem"; title = "Setup"; ObjectID = "Yys-7y-49I"; */
+"Yys-7y-49I.title" = "Setup";
+
+/* Class = "UILabel"; text = "<environment>"; ObjectID = "bSu-eQ-Rrw"; */
+"bSu-eQ-Rrw.text" = "<environment>";
+
+/* Class = "UILabel"; accessibilityLabel = "Step 2: Enter Secret Key"; ObjectID = "cHI-W2-vuV"; */
+"cHI-W2-vuV.accessibilityLabel" = "Step 2: Enter Secret Key";
+
+/* Class = "UILabel"; text = "Enter Secret Key"; ObjectID = "cHI-W2-vuV"; */
+"cHI-W2-vuV.text" = "Enter Secret Key";
+
+/* Class = "UIBarButtonItem"; title = "Scan Again"; ObjectID = "cnk-jI-6Sz"; */
+"cnk-jI-6Sz.title" = "Scan Again";
+
+/* Class = "UILabel"; text = "or"; ObjectID = "dYN-DR-nu0"; */
+"dYN-DR-nu0.text" = "or";
+
+/* Class = "UIViewController"; title = "Setup"; ObjectID = "h1W-nW-qbZ"; */
+"h1W-nW-qbZ.title" = "Setup";
+
+/* Class = "UIButton"; accessibilityLabel = "Switch to scan QR Code"; ObjectID = "hJT-Y9-86a"; */
+"hJT-Y9-86a.accessibilityLabel" = "Switch to scan QR Code";
+
+/* Class = "UIButton"; normalTitle = "Scan QR Code"; ObjectID = "hJT-Y9-86a"; */
+"hJT-Y9-86a.normalTitle" = "Scan QR Code";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "jWV-kq-mqa"; */
+"jWV-kq-mqa.title" = "Cancel";
+
+/* Class = "UILabel"; text = "098 765"; ObjectID = "kgt-BK-5EB"; */
+"kgt-BK-5EB.text" = "098 765";
+
+/* Class = "UILabel"; text = "or"; ObjectID = "koz-4C-3Mz"; */
+"koz-4C-3Mz.text" = "or";
+
+/* Class = "UILabel"; text = "Step 2"; ObjectID = "kpx-Ao-lka"; */
+"kpx-Ao-lka.text" = "Step 2";
+
+/* Class = "UINavigationItem"; title = "Setup"; ObjectID = "l0d-Tm-ACx"; */
+"l0d-Tm-ACx.title" = "Setup";
+
+/* Class = "UILabel"; text = "Step 3"; ObjectID = "lEv-7t-t3e"; */
+"lEv-7t-t3e.text" = "Step 3";
+
+/* Class = "UILabel"; text = "30"; ObjectID = "mEO-z3-X3r"; */
+"mEO-z3-X3r.text" = "30";
+
+/* Class = "UILabel"; text = "Copied"; ObjectID = "pBA-ly-49H"; */
+"pBA-ly-49H.text" = "Copied";
+
+/* Class = "UILabel"; accessibilityLabel = "Sign in to appleconnect dot apple dot com on your Mac."; ObjectID = "qo3-98-Seu"; */
+"qo3-98-Seu.accessibilityLabel" = "Sign in to appleconnect dot apple dot com on your Mac.";
+
+/* Class = "UILabel"; text = "Sign in to <b>appleconnect.apple.com</b> on your Mac."; ObjectID = "qo3-98-Seu"; */
+"qo3-98-Seu.text" = "Sign in to <b>appleconnect.apple.com</b> on your Mac.";
+
+/* Class = "UIBarButtonItem"; title = "Continue"; ObjectID = "rHP-Rs-etY"; */
+"rHP-Rs-etY.title" = "Continue";
+
+/* Class = "UILabel"; text = "Step 2"; ObjectID = "rZs-eP-khS"; */
+"rZs-eP-khS.text" = "Step 2";
+
+/* Class = "UILabel"; accessibilityLabel = "From the My Devices tab, enable two-step verification or add a back-up device using a TOTP application."; ObjectID = "sYe-tl-apB"; */
+"sYe-tl-apB.accessibilityLabel" = "From the My Devices tab, enable two-step verification or add a back-up device using a TOTP application.";
+
+/* Class = "UILabel"; text = "From the <b>My Devices</b> tab, enable two-step verification or add a back-up device using a TOTP application."; ObjectID = "sYe-tl-apB"; */
+"sYe-tl-apB.text" = "From the <b>My Devices</b> tab, enable two-step verification or add a back-up device using a TOTP application.";
+
+/* Class = "UINavigationItem"; title = "Setup"; ObjectID = "t5Q-OV-kpi"; */
+"t5Q-OV-kpi.title" = "Setup";

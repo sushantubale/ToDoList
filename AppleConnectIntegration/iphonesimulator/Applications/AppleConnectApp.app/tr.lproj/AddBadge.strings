@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Use iPhone or Apple Watch as a digital badge to access Apple Park. Start by adding the badge to your Wallet."; ObjectID = "FMc-hS-Jtf"; */
+"FMc-hS-Jtf.text" = "Use iPhone or Apple Watch as a digital badge to access Apple Park. Start by adding the badge to your Wallet.";
+
+/* Class = "UILabel"; text = "Apple Badge"; ObjectID = "VEL-nn-gKO"; */
+"VEL-nn-gKO.text" = "Apple Badge";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "cge-jP-KA9"; */
+"cge-jP-KA9.normalTitle" = "Continue";

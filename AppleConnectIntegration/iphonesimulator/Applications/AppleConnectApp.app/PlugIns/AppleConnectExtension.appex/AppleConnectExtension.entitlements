@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>get-task-allow</key>
+	<true/>
+	<key>com.apple.private.CoreAuthentication.SPI</key>
+	<true/>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.apple.ist.AppleConnect.Data</string>
+		<string>group.9WN7V47JGL.com.apple.ist.AppleConnect.Data</string>
+	</array>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>B9KKK75BAA.com.apple.AppleConnect</string>
+	</array>
+	<key>com.apple.private.MobileGestalt.AllowedProtectedKeys</key>
+	<array>
+		<string>EthernetMacAddress</string>
+		<string>SerialNumber</string>
+		<string>UniqueDeviceID</string>
+		<string>UniqueChipID</string>
+		<string>ChipID</string>
+	</array>
+	<key>com.apple.private.bmk.allow</key>
+	<true/>
+	<key>com.apple.keystore.auth-token</key>
+	<true/>
+	<key>com.apple.accounts.appleaccount.fullaccess</key>
+	<true/>
+	<key>com.apple.security.exception.mach-lookup.global-name</key>
+	<array>
+		<string>com.apple.passd.trusted-device-enrollment-info-provider</string>
+		<string>com.apple.ak.auth.xpc</string>
+	</array>
+	<key>com.apple.authkit.client</key>
+	<true/>
+	<key>com.apple.authkit.client.private</key>
+	<true/>
+	<key>com.apple.private.passkit.trusted-device-enrollment-info</key>
+	<true/>
+	<key>com.apple.private.bmkept.allow</key>
+	<true/>
+	<key>com.apple.private.network.intcoproc.restricted</key>
+	<true/>
+	<key>com.apple.private.LocalAuthentication.CallerName</key>
+	<true/>
+	<key>com.apple.security.attestation.access</key>
+	<true/>
+	<key>com.apple.wifivelocity</key>
+	<true/>
+	<key>com.apple.developer.payment-pass-provisioning</key>
+	<true/>
+	<key>com.apple.springboard.opensensitiveurl</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,369 @@
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "1bf-zu-fNk"; */
+"1bf-zu-fNk.title" = "Back";
+
+/* Class = "UILabel"; text = "Find a device you already approved"; ObjectID = "25Y-ab-k7z"; */
+"25Y-ab-k7z.text" = "Find a device you already approved";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "2Us-MP-Oom"; */
+"2Us-MP-Oom.title" = "Next";
+
+/* Class = "UILabel"; text = "6RFZ H6Z2 ZGEP"; ObjectID = "2pb-5g-Vjy"; */
+"2pb-5g-Vjy.text" = "6RFZ H6Z2 ZGEP";
+
+/* Class = "UINavigationItem"; title = "Approve on a Mac"; ObjectID = "3UB-6y-QyT"; */
+"3UB-6y-QyT.title" = "Approve on a Mac";
+
+/* Class = "UILabel"; text = "Your manager must open the <b>Connect</b> app from their approved iOS device."; ObjectID = "3ny-5H-0Fz"; */
+"3ny-5H-0Fz.text" = "Your manager must open the <b>Connect</b> app from their approved iOS device.";
+
+/* Class = "UILabel"; text = "If you want to see devices you’ve already approved, open <b>appleconnect.apple.com</b> on another device and go to <b>My Devices</b>."; ObjectID = "3t9-gr-7zV"; */
+"3t9-gr-7zV.text" = "If you want to see devices you’ve already approved, open <b>appleconnect.apple.com</b> on another device and go to <b>My Devices</b>.";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "4bp-fZ-lJY"; */
+"4bp-fZ-lJY.title" = "Back";
+
+/* Class = "UILabel"; text = "Expires in 7h 43m 08s"; ObjectID = "6C5-W6-SdI"; */
+"6C5-W6-SdI.text" = "Expires in 7h 43m 08s";
+
+/* Class = "UINavigationItem"; title = "Approve With Manager"; ObjectID = "6hB-cQ-5Pd"; */
+"6hB-cQ-5Pd.title" = "Approve With Manager";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "7aV-go-Qgs"; */
+"7aV-go-Qgs.title" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Close"; ObjectID = "7eM-qD-L6g"; */
+"7eM-qD-L6g.title" = "Close";
+
+/* Class = "UILabel"; text = "Expires in 7h 43m 08s"; ObjectID = "866-W8-Ve9"; */
+"866-W8-Ve9.text" = "Expires in 7h 43m 08s";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "8Tq-Ad-min"; */
+"8Tq-Ad-min.title" = "Next";
+
+/* Class = "UILabel"; text = "Scan the QR code from your approved iPhone or iPad.\n\nTap <b>Approve</b>, then tap <b>OK</b>."; ObjectID = "8by-SM-ayK"; */
+"8by-SM-ayK.text" = "Scan the QR code from your approved iPhone or iPad.\n\nTap <b>Approve</b>, then tap <b>OK</b>.";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "8qa-l7-bE7"; */
+"8qa-l7-bE7.title" = "Back";
+
+/* Class = "UILabel"; text = "6RFZ H6Z2 ZGEP"; ObjectID = "9L5-n7-fLQ"; */
+"9L5-n7-fLQ.text" = "6RFZ H6Z2 ZGEP";
+
+/* Class = "UIBarButtonItem"; title = "Close"; ObjectID = "9s1-ej-e0h"; */
+"9s1-ej-e0h.title" = "Close";
+
+/* Class = "UILabel"; text = "The other device owner must find <<DEVICE NAME>> under <b>Shared Devices</b> and click <b>Approve</b>."; ObjectID = "AeA-9T-FqS"; */
+"AeA-9T-FqS.text" = "The other device owner must find <<DEVICE NAME>> under <b>Shared Devices</b> and click <b>Approve</b>.";
+
+/* Class = "UINavigationItem"; title = "Can't Find a Device?"; ObjectID = "Ag9-Ei-uno"; */
+"Ag9-Ei-uno.title" = "Can't Find a Device?";
+
+/* Class = "UINavigationItem"; title = "Approve With Manager"; ObjectID = "Aik-cK-J8b"; */
+"Aik-cK-J8b.title" = "Approve With Manager";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "BWG-pu-tKg"; */
+"BWG-pu-tKg.title" = "Back";
+
+/* Class = "UIBarButtonItem"; title = "Close"; ObjectID = "BZp-eD-ho6"; */
+"BZp-eD-ho6.title" = "Close";
+
+/* Class = "UINavigationItem"; title = "Approve on a Mac"; ObjectID = "CWC-lI-6L7"; */
+"CWC-lI-6L7.title" = "Approve on a Mac";
+
+/* Class = "UINavigationItem"; title = "Approve on a Mac"; ObjectID = "DHg-4I-YYg"; */
+"DHg-4I-YYg.title" = "Approve on a Mac";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "E5l-dD-tym"; */
+"E5l-dD-tym.title" = "Back";
+
+/* Class = "UILabel"; text = "Open <b>appleconnect.apple.com</b> from Safari on your approved Mac.\n\nClick <b>My Devices</b> from the sidebar."; ObjectID = "FAa-Ai-9HM"; */
+"FAa-Ai-9HM.text" = "Open <b>appleconnect.apple.com</b> from Safari on your approved Mac.\n\nClick <b>My Devices</b> from the sidebar.";
+
+/* Class = "UILabel"; text = "Expires in 7h 43m 08s"; ObjectID = "FX8-cr-AG8"; */
+"FX8-cr-AG8.text" = "Expires in 7h 43m 08s";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Fkh-fv-ehx"; */
+"Fkh-fv-ehx.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "Approve on a Mac"; ObjectID = "HGN-Hj-Ub0"; */
+"HGN-Hj-Ub0.title" = "Approve on a Mac";
+
+/* Class = "UILabel"; text = "Your manager must go to the <b>Accounts</b> tab and then tap <b>Approve Another Device</b>."; ObjectID = "HQM-3h-uNv"; */
+"HQM-3h-uNv.text" = "Your manager must go to the <b>Accounts</b> tab and then tap <b>Approve Another Device</b>.";
+
+/* Class = "UINavigationItem"; title = "Approve With Manager"; ObjectID = "HgH-64-dxK"; */
+"HgH-64-dxK.title" = "Approve With Manager";
+
+/* Class = "UINavigationItem"; title = "Approve With Manager"; ObjectID = "HgS-OE-hGB"; */
+"HgS-OE-hGB.title" = "Approve With Manager";
+
+/* Class = "UIBarButtonItem"; title = "Close"; ObjectID = "HgS-f2-0wd"; */
+"HgS-f2-0wd.title" = "Close";
+
+/* Class = "UIButton"; normalTitle = "Request Another Code"; ObjectID = "HjA-Qa-mAC"; */
+"HjA-Qa-mAC.normalTitle" = "Request Another Code";
+
+/* Class = "UILabel"; text = "You'll need your manager to approve this device.\n\nSelect the type of device your manager has access to:"; ObjectID = "HjN-Cu-hCz"; */
+"HjN-Cu-hCz.text" = "You'll need your manager to approve this device.\n\nSelect the type of device your manager has access to:";
+
+/* Class = "UILabel"; text = "If you can’t find your approved devices, the following people can approve this device for you:"; ObjectID = "Hpj-eU-eDu"; */
+"Hpj-eU-eDu.text" = "If you can’t find your approved devices, the following people can approve this device for you:";
+
+/* Class = "UILabel"; text = "You’ll need a device you already approved with you for the next steps."; ObjectID = "KaN-CK-ibp"; */
+"KaN-CK-ibp.text" = "You’ll need a device you already approved with you for the next steps.";
+
+/* Class = "UIButton"; normalTitle = "Request Another Code"; ObjectID = "M5w-sU-1Tw"; */
+"M5w-sU-1Tw.normalTitle" = "Request Another Code";
+
+/* Class = "UIButton"; normalTitle = "Request Another Code"; ObjectID = "MDH-a2-YO6"; */
+"MDH-a2-YO6.normalTitle" = "Request Another Code";
+
+/* Class = "UIButton"; normalTitle = "Approve From a Mac Instead"; ObjectID = "MUu-fm-aEQ"; */
+"MUu-fm-aEQ.normalTitle" = "Approve From a Mac Instead";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Mf4-tR-JC7"; */
+"Mf4-tR-JC7.title" = "Back";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Nuu-N0-BwS"; */
+"Nuu-N0-BwS.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "Approve on an iOS Device"; ObjectID = "O0X-hP-aMo"; */
+"O0X-hP-aMo.title" = "Approve on an iOS Device";
+
+/* Class = "UINavigationItem"; title = "Approve on an iOS Device"; ObjectID = "O4j-UX-jvi"; */
+"O4j-UX-jvi.title" = "Approve on an iOS Device";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "On9-ha-atf"; */
+"On9-ha-atf.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "Approve on an iOS Device"; ObjectID = "Ovb-h3-0tG"; */
+"Ovb-h3-0tG.title" = "Approve on an iOS Device";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "PDk-jm-qte"; */
+"PDk-jm-qte.title" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "PVn-P9-3vT"; */
+"PVn-P9-3vT.title" = "Back";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "QDh-nG-Vnx"; */
+"QDh-nG-Vnx.title" = "Back";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "QlE-1g-Udl"; */
+"QlE-1g-Udl.title" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "RE4-Sn-YYf"; */
+"RE4-Sn-YYf.title" = "Next";
+
+/* Class = "UILabel"; text = "Expires in 7h 43m 08s"; ObjectID = "RN1-Yi-Dur"; */
+"RN1-Yi-Dur.text" = "Expires in 7h 43m 08s";
+
+/* Class = "UINavigationItem"; title = "Approve With Manager"; ObjectID = "RjT-J7-C5y"; */
+"RjT-J7-C5y.title" = "Approve With Manager";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "SK5-Ob-ZEV"; */
+"SK5-Ob-ZEV.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Request Another Code"; ObjectID = "SfS-ty-ZnQ"; */
+"SfS-ty-ZnQ.normalTitle" = "Request Another Code";
+
+/* Class = "UILabel"; text = "The other device user must scan the QR code on their approved iOS device.\n\nTap <b>Approve</b>. Then tap <b>OK</b> to complete approval for this <<DEVICE MODEL>>."; ObjectID = "T1A-B9-RRy"; */
+"T1A-B9-RRy.text" = "The other device user must scan the QR code on their approved iOS device.\n\nTap <b>Approve</b>. Then tap <b>OK</b> to complete approval for this <<DEVICE MODEL>>.";
+
+/* Class = "UIButton"; normalTitle = "Request Another Code"; ObjectID = "Tko-Dg-HJb"; */
+"Tko-Dg-HJb.normalTitle" = "Request Another Code";
+
+/* Class = "UILabel"; text = "The other device user will need to find an approved device they have for the next steps.\n\nPlease select the type of device that person has access to:"; ObjectID = "TqK-mU-VV8"; */
+"TqK-mU-VV8.text" = "The other device user will need to find an approved device they have for the next steps.\n\nPlease select the type of device that person has access to:";
+
+/* Class = "UITableViewSection"; footerTitle = "If your manager is not available, your manager’s manager can also approve the device."; ObjectID = "UfZ-wn-B0M"; */
+"UfZ-wn-B0M.footerTitle" = "If your manager is not available, your manager’s manager can also approve the device.";
+
+/* Class = "UITableViewSection"; headerTitle = "Get help from"; ObjectID = "UfZ-wn-B0M"; */
+"UfZ-wn-B0M.headerTitle" = "Get help from";
+
+/* Class = "UINavigationItem"; title = "Approve on an iOS Device"; ObjectID = "UzT-aF-bmG"; */
+"UzT-aF-bmG.title" = "Approve on an iOS Device";
+
+/* Class = "UINavigationItem"; title = "Approve on a Mac"; ObjectID = "V5t-dA-XlM"; */
+"V5t-dA-XlM.title" = "Approve on a Mac";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "VHX-Mv-8fJ"; */
+"VHX-Mv-8fJ.title" = "Next";
+
+/* Class = "UILabel"; text = "Go to the <b>Accounts</b> tab and tap <b>Approve Another Device</b>."; ObjectID = "VtP-9Y-gYp"; */
+"VtP-9Y-gYp.text" = "Go to the <b>Accounts</b> tab and tap <b>Approve Another Device</b>.";
+
+/* Class = "UILabel"; text = "Have your manager scan the QR code shown above.\n\nYour manager must tap <b>Approve</b>, then tap <b>OK</b>."; ObjectID = "W2R-Rm-Mcz"; */
+"W2R-Rm-Mcz.text" = "Have your manager scan the QR code shown above.\n\nYour manager must tap <b>Approve</b>, then tap <b>OK</b>.";
+
+/* Class = "UINavigationItem"; title = "Approve With Manager"; ObjectID = "Wet-s1-UW0"; */
+"Wet-s1-UW0.title" = "Approve With Manager";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "WrF-9V-9Of"; */
+"WrF-9V-9Of.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Approve From an iOS Device Instead"; ObjectID = "Wyv-hc-R4C"; */
+"Wyv-hc-R4C.normalTitle" = "Approve From an iOS Device Instead";
+
+/* Class = "UILabel"; text = "My Manager's Approved iOS Device"; ObjectID = "XMM-6m-h85"; */
+"XMM-6m-h85.text" = "My Manager's Approved iOS Device";
+
+/* Class = "UILabel"; text = "Approved iOS Device"; ObjectID = "XV2-d7-cLr"; */
+"XV2-d7-cLr.text" = "Approved iOS Device";
+
+/* Class = "UILabel"; text = "Select the device type below:"; ObjectID = "XnM-3I-aL6"; */
+"XnM-3I-aL6.text" = "Select the device type below:";
+
+/* Class = "UIBarButtonItem"; title = "Close"; ObjectID = "ai3-Wd-tD7"; */
+"ai3-Wd-tD7.title" = "Close";
+
+/* Class = "UILabel"; text = "Your manager must find <<DEVICE NAME>> under your name and click <b>Approve</b>."; ObjectID = "auv-n3-rEj"; */
+"auv-n3-rEj.text" = "Your manager must find <<DEVICE NAME>> under your name and click <b>Approve</b>.";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "b6K-XI-O1B"; */
+"b6K-XI-O1B.title" = "Back";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "bdD-9d-ppN"; */
+"bdD-9d-ppN.title" = "Next";
+
+/* Class = "UILabel"; text = "Have the other device owner go to the <b>Accounts</b> tab and tap <b>Approve Another Device</b>."; ObjectID = "bj4-FD-Be4"; */
+"bj4-FD-Be4.text" = "Have the other device owner go to the <b>Accounts</b> tab and tap <b>Approve Another Device</b>.";
+
+/* Class = "UIButton"; normalTitle = "Approve From a Mac Instead"; ObjectID = "bjA-Xz-jme"; */
+"bjA-Xz-jme.normalTitle" = "Approve From a Mac Instead";
+
+/* Class = "UILabel"; text = "My Manager's Approved Mac"; ObjectID = "c5u-QW-zM5"; */
+"c5u-QW-zM5.text" = "My Manager's Approved Mac";
+
+/* Class = "UINavigationItem"; title = "Contact Your Manager"; ObjectID = "cPs-nZ-2jh"; */
+"cPs-nZ-2jh.title" = "Contact Your Manager";
+
+/* Class = "UILabel"; text = "Expires in 7h 43m 08s"; ObjectID = "crq-uy-chN"; */
+"crq-uy-chN.text" = "Expires in 7h 43m 08s";
+
+/* Class = "UIButton"; normalTitle = "macOS device"; ObjectID = "csA-Bo-9Lb"; */
+"csA-Bo-9Lb.normalTitle" = "macOS device";
+
+/* Class = "UINavigationItem"; title = "Approve on an iOS Device"; ObjectID = "d2o-7h-ME7"; */
+"d2o-7h-ME7.title" = "Approve on an iOS Device";
+
+/* Class = "UINavigationItem"; title = "Contact Device Users"; ObjectID = "f6V-UP-Qcb"; */
+"f6V-UP-Qcb.title" = "Contact Device Users";
+
+/* Class = "UILabel"; text = "Find <<DEVICE NAME>> under <b>Shared Devices</b> and click <b>Approve</b>."; ObjectID = "fvV-Ko-dQ3"; */
+"fvV-Ko-dQ3.text" = "Find <<DEVICE NAME>> under <b>Shared Devices</b> and click <b>Approve</b>.";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "gbO-oh-OBi"; */
+"gbO-oh-OBi.title" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "gt6-sr-OEN"; */
+"gt6-sr-OEN.title" = "Back";
+
+/* Class = "UILabel"; text = "On your approved iPhone or iPad, open the <b>Connect</b> app."; ObjectID = "h6p-xl-gyd"; */
+"h6p-xl-gyd.text" = "On your approved iPhone or iPad, open the <b>Connect</b> app.";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "hMz-b7-qRm"; */
+"hMz-b7-qRm.title" = "Back";
+
+/* Class = "UITableViewSection"; headerTitle = "Approve from"; ObjectID = "iFL-kd-f4T"; */
+"iFL-kd-f4T.headerTitle" = "Approve from";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "ihq-mc-dtA"; */
+"ihq-mc-dtA.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "iOS device"; ObjectID = "jhk-4J-IL4"; */
+"jhk-4J-IL4.normalTitle" = "iOS device";
+
+/* Class = "UIButton"; normalTitle = "Request Another Code"; ObjectID = "jp5-0p-FQd"; */
+"jp5-0p-FQd.normalTitle" = "Request Another Code";
+
+/* Class = "UILabel"; text = "The other device user, open the <b>Connect</b> app."; ObjectID = "k3S-Vx-S4M"; */
+"k3S-Vx-S4M.text" = "The other device user, open the <b>Connect</b> app.";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "kGh-Zj-DAI"; */
+"kGh-Zj-DAI.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "Approve on an iOS Device"; ObjectID = "lJZ-yg-g5d"; */
+"lJZ-yg-g5d.title" = "Approve on an iOS Device";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "lUG-Ap-xg0"; */
+"lUG-Ap-xg0.title" = "Next";
+
+/* Class = "UILabel"; text = " Give this code to your manager in person or over the phone.\n\nHave your manager enter the code and click <b>Approve</b>."; ObjectID = "mcE-T7-htR"; */
+"mcE-T7-htR.text" = " Give this code to your manager in person or over the phone.\n\nHave your manager enter the code and click <b>Approve</b>.";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "nGc-M9-ke2"; */
+"nGc-M9-ke2.title" = "Back";
+
+/* Class = "UILabel"; text = "My Manager"; ObjectID = "nKA-yC-CGd"; */
+"nKA-yC-CGd.text" = "My Manager";
+
+/* Class = "UILabel"; text = "Other Approved Users of this Device"; ObjectID = "ntf-8s-6nZ"; */
+"ntf-8s-6nZ.text" = "Other Approved Users of this Device";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "o0a-Xr-zkG"; */
+"o0a-Xr-zkG.title" = "Next";
+
+/* Class = "UILabel"; text = "Enter this device approval code on your approved Mac and click <b>Approve</b>."; ObjectID = "o1H-0V-Wa7"; */
+"o1H-0V-Wa7.text" = "Enter this device approval code on your approved Mac and click <b>Approve</b>.";
+
+/* Class = "UIBarButtonItem"; title = "Close"; ObjectID = "o8r-5K-gLl"; */
+"o8r-5K-gLl.title" = "Close";
+
+/* Class = "UIButton"; normalTitle = "Can’t Find an Approved Device?"; ObjectID = "owO-9w-WCG"; */
+"owO-9w-WCG.normalTitle" = "Can’t Find an Approved Device?";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "pYd-wn-C3L"; */
+"pYd-wn-C3L.title" = "Back";
+
+/* Class = "UILabel"; text = "6RFZ H6Z2 ZGEP"; ObjectID = "qhZ-bJ-5I7"; */
+"qhZ-bJ-5I7.text" = "6RFZ H6Z2 ZGEP";
+
+/* Class = "UITableViewSection"; headerTitle = "Approve from"; ObjectID = "suQ-N3-HE7"; */
+"suQ-N3-HE7.headerTitle" = "Approve from";
+
+/* Class = "UILabel"; text = "Give this code to the other device user in person or over the phone."; ObjectID = "t7W-w3-qDk"; */
+"t7W-w3-qDk.text" = "Give this code to the other device user in person or over the phone.";
+
+/* Class = "UINavigationItem"; title = "Approve on a Mac"; ObjectID = "u8r-kI-aNs"; */
+"u8r-kI-aNs.title" = "Approve on a Mac";
+
+/* Class = "UIButton"; normalTitle = "Approve Using Manager’s Mac"; ObjectID = "uF3-Su-fST"; */
+"uF3-Su-fST.normalTitle" = "Approve Using Manager’s Mac";
+
+/* Class = "UILabel"; text = "The other device user must open <b>appleconnect.apple.com</b> from Safari on their approved Mac.\n\nClick <b>My Devices</b> from the sidebar."; ObjectID = "um2-pq-UEQ"; */
+"um2-pq-UEQ.text" = "The other device user must open <b>appleconnect.apple.com</b> from Safari on their approved Mac.\n\nClick <b>My Devices</b> from the sidebar.";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "vhL-tC-Xpr"; */
+"vhL-tC-Xpr.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Approve Using Manager’s iOS Device"; ObjectID = "vjD-CX-oE6"; */
+"vjD-CX-oE6.normalTitle" = "Approve Using Manager’s iOS Device";
+
+/* Class = "UIButton"; normalTitle = "Approve From an iOS Device Instead"; ObjectID = "wwP-8l-zsg"; */
+"wwP-8l-zsg.normalTitle" = "Approve From an iOS Device Instead";
+
+/* Class = "UILabel"; text = "Your manager must open <b>appleconnect.apple.com</b> from Safari on their approved Mac.\n\nClick <b>My Team</b> from the sidebar to manage the team’s devices."; ObjectID = "x6F-qu-MIw"; */
+"x6F-qu-MIw.text" = "Your manager must open <b>appleconnect.apple.com</b> from Safari on their approved Mac.\n\nClick <b>My Team</b> from the sidebar to manage the team’s devices.";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "xOl-dy-Uqp"; */
+"xOl-dy-Uqp.title" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "xPO-lX-Rbi"; */
+"xPO-lX-Rbi.title" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "xzE-YK-aWT"; */
+"xzE-YK-aWT.title" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "ygH-Dx-8Zf"; */
+"ygH-Dx-8Zf.title" = "Back";
+
+/* Class = "UILabel"; text = "Expires in 7h 43m 08s"; ObjectID = "zRW-Ql-2sY"; */
+"zRW-Ql-2sY.text" = "Expires in 7h 43m 08s";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "zo7-7D-S2j"; */
+"zo7-7D-S2j.title" = "Next";
+
+/* Class = "UILabel"; text = "Approved Mac"; ObjectID = "zom-L0-7uv"; */
+"zom-L0-7uv.text" = "Approved Mac";

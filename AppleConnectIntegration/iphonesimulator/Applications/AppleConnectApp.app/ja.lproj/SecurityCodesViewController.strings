@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "30"; ObjectID = "00u-8K-AdG"; */
+"00u-8K-AdG.text" = "30";
+
+/* Class = "UILabel"; text = "User Name:"; ObjectID = "Be7-W6-cIe"; */
+"Be7-W6-cIe.text" = "User Name:";
+
+/* Class = "UILabel"; text = "Copied"; ObjectID = "JWw-5e-gm5"; */
+"JWw-5e-gm5.text" = "Copied";
+
+/* Class = "UIButton"; normalTitle = "Add code generator…"; ObjectID = "KTO-gN-lfN"; */
+"KTO-gN-lfN.normalTitle" = "Add code generator…";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "SNn-HQ-T4H"; */
+"SNn-HQ-T4H.normalTitle" = "Delete";
+
+/* Class = "UILabel"; text = "How does it work?"; ObjectID = "Sym-Cx-uF7"; */
+"Sym-Cx-uF7.text" = "How does it work?";
+
+/* Class = "UILabel"; text = "<issuer>"; ObjectID = "Uq4-TF-dPY"; */
+"Uq4-TF-dPY.text" = "<issuer>";
+
+/* Class = "UINavigationController"; title = "Setup"; ObjectID = "WMe-yE-Ivm"; */
+"WMe-yE-Ivm.title" = "Setup";
+
+/* Class = "UILabel"; text = "098 765"; ObjectID = "YpA-Fr-0Hr"; */
+"YpA-Fr-0Hr.text" = "098 765";
+
+/* Class = "UIViewController"; title = "Security Codes"; ObjectID = "aJH-1Z-VpS"; */
+"aJH-1Z-VpS.title" = "Security Codes";
+
+/* Class = "UINavigationItem"; title = "Security Codes"; ObjectID = "ah4-3F-JHg"; */
+"ah4-3F-JHg.title" = "Security Codes";
+
+/* Class = "UIButton"; normalTitle = "Begin Setup"; ObjectID = "c8x-g0-zj4"; */
+"c8x-g0-zj4.normalTitle" = "Begin Setup";
+
+/* Class = "UILabel"; text = "Add code generator…"; ObjectID = "khn-L8-u8C"; */
+"khn-L8-u8C.text" = "Add code generator…";
+
+/* Class = "UILabel"; text = "<environment>"; ObjectID = "mPu-6n-ZtX"; */
+"mPu-6n-ZtX.text" = "<environment>";
+
+/* Class = "UINavigationItem"; title = "Security Codes"; ObjectID = "nHW-XP-M5n"; */
+"nHW-XP-M5n.title" = "Security Codes";
+
+/* Class = "UINavigationItem"; title = "Security Code"; ObjectID = "o0T-qp-t8c"; */
+"o0T-qp-t8c.title" = "Security Code";
+
+/* Class = "UILabel"; text = "Receive verification codes as text messages, or use this AppleConnect mobile application to generate codes."; ObjectID = "pZQ-fc-UZX"; */
+"pZQ-fc-UZX.text" = "Receive verification codes as text messages, or use this AppleConnect mobile application to generate codes.";
+
+/* Class = "UILabel"; text = "With two-step verification, you will need your password and a verification code to manage your AppleConnect account."; ObjectID = "ptO-hY-qQV"; */
+"ptO-hY-qQV.text" = "With two-step verification, you will need your password and a verification code to manage your AppleConnect account.";
+
+/* Class = "UILabel"; text = "Comment:"; ObjectID = "uCG-pm-f0H"; */
+"uCG-pm-f0H.text" = "Comment:";
+
+/* Class = "UITableViewCell"; accessibilityHint = "Double-tap to hear your code"; ObjectID = "uHf-sj-3pi"; */
+"uHf-sj-3pi.accessibilityHint" = "Double-tap to hear your code";
+
+/* Class = "UILabel"; text = "<user name>"; ObjectID = "vCB-48-zmO"; */
+"vCB-48-zmO.text" = "<user name>";
+
+/* Class = "UIView"; accessibilityHint = "Receive verification codes as text messages, or use this AppleConnect mobile application to generate codes. With two-step verification, you will need your password and a verification code to manage your AppleConnect account."; ObjectID = "wJM-rM-04H"; */
+"wJM-rM-04H.accessibilityHint" = "Receive verification codes as text messages, or use this AppleConnect mobile application to generate codes. With two-step verification, you will need your password and a verification code to manage your AppleConnect account.";
+
+/* Class = "UIView"; accessibilityLabel = "Security Codes: How does it work?"; ObjectID = "wJM-rM-04H"; */
+"wJM-rM-04H.accessibilityLabel" = "Security Codes: How does it work?";
+
+/* Class = "UIViewController"; title = "Security Code"; ObjectID = "zFF-cF-wqS"; */
+"zFF-cF-wqS.title" = "Security Code";

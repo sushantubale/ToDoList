@@ -1,0 +1,15 @@
+
+/* Class = "UITabBarItem"; title = "Accounts"; ObjectID = "2wM-Mx-cHm"; */
+"2wM-Mx-cHm.title" = "Accounts";
+
+/* Class = "UINavigationController"; title = "Accounts"; ObjectID = "N2p-wh-LT8"; */
+"N2p-wh-LT8.title" = "Accounts";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "SSm-uw-tJy"; */
+"SSm-uw-tJy.title" = "Settings";
+
+/* Class = "UINavigationController"; title = "Security Codes"; ObjectID = "hhl-iL-nvV"; */
+"hhl-iL-nvV.title" = "Security Codes";
+
+/* Class = "UITabBarItem"; title = "Security Codes"; ObjectID = "hoE-Tn-QSs"; */
+"hoE-Tn-QSs.title" = "Security Codes";
