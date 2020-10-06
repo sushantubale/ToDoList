@@ -42,10 +42,10 @@ public class Router<EndPoint: EndPointType>: NetworkRouter {
         var request = URLRequest(url: route.baseURL.appendingPathComponent(route.path),
                                  cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
                                  timeoutInterval: 30.0)
-        let dict: [String : Any] = [:]
+        let dict: [String : Any] = ["name": "testname"]
         let data = try! JSONSerialization.data(withJSONObject: dict, options: [])
         request.allHTTPHeaderFields = route.headers
-//        request.httpMethod = route.httpMethod.rawValue
+        request.httpMethod = route.httpMethod.rawValue
         request.httpBody = data
         
         do {

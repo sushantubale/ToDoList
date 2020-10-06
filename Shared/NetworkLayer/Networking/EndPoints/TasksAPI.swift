@@ -23,7 +23,7 @@ extension TasksAPI: EndPointType {
     
     var environmentBaseURL : String {
         let server_url = Environment().configuration(PlistKey.ServerURL)
-
+        
         switch server_url {
         case "UAT":
             return "http://localhost:9002-UAT/graphql?query={todoByPerson{name state}}"
@@ -52,6 +52,10 @@ extension TasksAPI: EndPointType {
     }
     
     public var httpMethod: HTTPMethod {
+        switch self {
+        case .tasks:
+            return .post
+        }
         return .post
     }
     

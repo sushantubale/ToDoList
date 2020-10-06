@@ -10,27 +10,34 @@ import SwiftUI
 struct TasksView: View, ViewLifeCycle {
     @State private var searchText : String = ""
     @ObservedObject var taskViewModel: TasksViewModel = TasksViewModel()
-    private var activityIndicator = ActivityIndicatorView()
+    private var activityIndicator = ActivityIndicatorView(text: "Loading")
     @State var didAppear = false
     
     var body: some View {
         NavigationView {
             GeometryReader { geometryReader in
                 if self.taskViewModel.showActivityIndicator == true {
-                    HStack {
-                         Spacer()
-                        activityIndicator
-                            .frame(width: 100, height: 100, alignment: .center)
-                            .foregroundColor(.gray)
-                         Spacer()
+                    
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            Text("")
+                                .frame(width: geometryReader.size.width / 2, height: geometryReader.size.width / 2, alignment: .center)
+                                .cornerRadius(50)
+                                .overlay(activityIndicator)
+                            Spacer()
+                        }
+                        Spacer()
+                        
                     }
-
+                    
                     
                 } else if self.taskViewModel.showActivityIndicator == false {
                     
                     ScrollView(.vertical, showsIndicators: false, content: {
                         SearchBar(text: "Search")
-
+                        
                         HStack(alignment: .center, spacing: 20) {
                             
                             NavigationLink(destination: Text("Hi")) {
@@ -52,7 +59,7 @@ struct TasksView: View, ViewLifeCycle {
                             .overlay(
                                 RoundedRectangle(cornerRadius: 20)
                                     .stroke(Color.purple, lineWidth: 2))
-
+                            
                             NavigationLink(destination: Text("Hi")) {
                                 
                                 VStack(alignment: .leading) {
@@ -98,7 +105,7 @@ struct TasksView: View, ViewLifeCycle {
                             .overlay(
                                 RoundedRectangle(cornerRadius: 20)
                                     .stroke(Color.purple, lineWidth: 2))
-
+                            
                             NavigationLink(destination: Text("Hi")) {
                                 
                                 VStack(alignment: .leading) {
@@ -123,7 +130,7 @@ struct TasksView: View, ViewLifeCycle {
                         
                         List {
                             Section(header: Text("STATE")) {
-
+                                
                                 ForEach(self.taskViewModel.dummyTaskData.keys.sorted(), id: \.self) { key in
                                     NavigationLink(
                                         destination: Text("Destination"),
@@ -141,12 +148,12 @@ struct TasksView: View, ViewLifeCycle {
                                                     .multilineTextAlignment(.center)
                                                     .padding()
                                                     .background(Circle().fill(Color.gray))
-
+                                                
                                             }
                                         })
-
+                                    
                                 }
-
+                                
                             }
                         }
                         .frame(width: geometryReader.size.width - 5, height: geometryReader.size.height - 50, alignment: .center)
@@ -159,7 +166,7 @@ struct TasksView: View, ViewLifeCycle {
                                                 })
                         
                     })
-
+                    
                 }
                 
             }
@@ -171,7 +178,7 @@ struct TasksView: View, ViewLifeCycle {
         }.tag(2)
         .onAppear(perform: onLoad)
         .onDisappear(perform: onUnload)
-
+        
         
     }
     
