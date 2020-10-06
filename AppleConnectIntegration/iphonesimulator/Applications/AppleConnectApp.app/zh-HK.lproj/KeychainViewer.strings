@@ -1,0 +1,90 @@
+
+/* Class = "UINavigationItem"; title = "Details"; ObjectID = "1t5-yH-3vV"; */
+"1t5-yH-3vV.title" = "Details";
+
+/* Class = "UIBarButtonItem"; title = "Keychain"; ObjectID = "2NL-AM-pwb"; */
+"2NL-AM-pwb.title" = "Keychain";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "A6C-3A-BVo"; */
+"A6C-3A-BVo.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "Identyties"; ObjectID = "CPl-jm-dlW"; */
+"CPl-jm-dlW.title" = "Identyties";
+
+/* Class = "UILabel"; text = "Keys"; ObjectID = "HQ3-pI-zhG"; */
+"HQ3-pI-zhG.text" = "Keys";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "Jey-hQ-uzo"; */
+"Jey-hQ-uzo.text" = "Detail";
+
+/* Class = "UINavigationItem"; title = "Keys"; ObjectID = "LUf-hk-PPh"; */
+"LUf-hk-PPh.title" = "Keys";
+
+/* Class = "UILabel"; text = "Generic Passwords"; ObjectID = "Mwg-2I-dDl"; */
+"Mwg-2I-dDl.text" = "Generic Passwords";
+
+/* Class = "UILabel"; text = "Identities"; ObjectID = "NbD-Bj-jwQ"; */
+"NbD-Bj-jwQ.text" = "Identities";
+
+/* Class = "UINavigationItem"; title = "Keychain"; ObjectID = "PeQ-HR-het"; */
+"PeQ-HR-het.title" = "Keychain";
+
+/* Class = "UILabel"; text = "Internet Passwords"; ObjectID = "URz-SH-4jd"; */
+"URz-SH-4jd.text" = "Internet Passwords";
+
+/* Class = "UIBarButtonItem"; title = "Certificates"; ObjectID = "XjE-rh-am4"; */
+"XjE-rh-am4.title" = "Certificates";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "YQQ-NC-70I"; */
+"YQQ-NC-70I.text" = "Detail";
+
+/* Class = "UINavigationItem"; title = "Generic Passwords"; ObjectID = "ZgN-ON-kQg"; */
+"ZgN-ON-kQg.title" = "Generic Passwords";
+
+/* Class = "UINavigationItem"; title = "Certificates"; ObjectID = "bVl-lB-Djx"; */
+"bVl-lB-Djx.title" = "Certificates";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "cGE-zo-K85"; */
+"cGE-zo-K85.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "Internet Passwords"; ObjectID = "cKQ-2z-78r"; */
+"cKQ-2z-78r.title" = "Internet Passwords";
+
+/* Class = "UIBarButtonItem"; title = "Keys"; ObjectID = "h10-AQ-jVg"; */
+"h10-AQ-jVg.title" = "Keys";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "ipw-Ur-RY8"; */
+"ipw-Ur-RY8.text" = "Title";
+
+/* Class = "UIBarButtonItem"; title = "Passwords"; ObjectID = "iwa-kn-jPh"; */
+"iwa-kn-jPh.title" = "Passwords";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "lFD-Qp-ZZA"; */
+"lFD-Qp-ZZA.text" = "Detail";
+
+/* Class = "UIBarButtonItem"; title = "Identities"; ObjectID = "lfN-W4-kky"; */
+"lfN-W4-kky.title" = "Identities";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "ljV-w6-ppT"; */
+"ljV-w6-ppT.text" = "Detail";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "lxr-ci-H0v"; */
+"lxr-ci-H0v.text" = "Title";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "mfu-wz-S43"; */
+"mfu-wz-S43.text" = "Detail";
+
+/* Class = "UILabel"; text = "Certificates"; ObjectID = "mpE-iL-x66"; */
+"mpE-iL-x66.text" = "Certificates";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "paw-8D-6zg"; */
+"paw-8D-6zg.text" = "Title";
+
+/* Class = "UIBarButtonItem"; title = "Passwords"; ObjectID = "sS9-pn-Enc"; */
+"sS9-pn-Enc.title" = "Passwords";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "stP-cV-HIC"; */
+"stP-cV-HIC.text" = "Title";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "yUM-CU-x9f"; */
+"yUM-CU-x9f.text" = "Detail";

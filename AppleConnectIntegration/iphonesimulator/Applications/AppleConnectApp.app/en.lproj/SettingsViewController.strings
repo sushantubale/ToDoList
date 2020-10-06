@@ -1,0 +1,51 @@
+
+/* Class = "UITableViewSection"; headerTitle = "Advanced Settings"; ObjectID = "1aX-Wv-C98"; */
+"1aX-Wv-C98.headerTitle" = "Advanced Settings";
+
+/* Class = "UITableViewSection"; footerTitle = "Please never change these settings if you are not sure what you are doing"; ObjectID = "2dt-kb-S75"; */
+"2dt-kb-S75.footerTitle" = "Please never change these settings if you are not sure what you are doing";
+
+/* Class = "UILabel"; text = "Change my Password"; ObjectID = "7kr-Lo-bgL"; */
+"7kr-Lo-bgL.text" = "Change my Password";
+
+/* Class = "UILabel"; text = "Log Level"; ObjectID = "AkT-rD-0z3"; */
+"AkT-rD-0z3.text" = "Log Level";
+
+/* Class = "UINavigationItem"; title = "Advanced"; ObjectID = "HUa-5H-cg1"; */
+"HUa-5H-cg1.title" = "Advanced";
+
+/* Class = "UILabel"; text = "Single Sign On"; ObjectID = "I56-BB-nuM"; */
+"I56-BB-nuM.text" = "Single Sign On";
+
+/* Class = "UITableViewController"; title = "Settings"; ObjectID = "JvE-D2-Ofb"; */
+"JvE-D2-Ofb.title" = "Settings";
+
+/* Class = "UILabel"; text = "Change my Gesture"; ObjectID = "N2y-0d-fah"; */
+"N2y-0d-fah.text" = "Change my Gesture";
+
+/* Class = "UILabel"; text = "Advanced Settings"; ObjectID = "NrN-eF-het"; */
+"NrN-eF-het.text" = "Advanced Settings";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "Pa4-uc-AUA"; */
+"Pa4-uc-AUA.title" = "Settings";
+
+/* Class = "UILabel"; text = "Send AppleConnect Feedback"; ObjectID = "W8e-NO-JhU"; */
+"W8e-NO-JhU.text" = "Send AppleConnect Feedback";
+
+/* Class = "UILabel"; text = "Reset AppleConnect"; ObjectID = "dNt-Vc-zK4"; */
+"dNt-Vc-zK4.text" = "Reset AppleConnect";
+
+/* Class = "UILabel"; text = "Use Touch ID"; ObjectID = "lEx-iV-tLa"; */
+"lEx-iV-tLa.text" = "Use Touch ID";
+
+/* Class = "UILabel"; text = "<Log Level>"; ObjectID = "pU3-Rw-qYP"; */
+"pU3-Rw-qYP.text" = "<Log Level>";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "pv1-nc-N3G"; */
+"pv1-nc-N3G.title" = "Settings";
+
+/* Class = "UILabel"; text = "Prompt for Environment"; ObjectID = "s6K-O9-SQ3"; */
+"s6K-O9-SQ3.text" = "Prompt for Environment";
+
+/* Class = "UITableViewController"; title = "Advanced"; ObjectID = "swa-hA-oGE"; */
+"swa-hA-oGE.title" = "Advanced";

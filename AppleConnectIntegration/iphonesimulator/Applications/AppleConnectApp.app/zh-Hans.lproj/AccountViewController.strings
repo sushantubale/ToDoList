@@ -1,0 +1,75 @@
+
+/* Class = "UILabel"; text = "Sign Out"; ObjectID = "5Yu-ba-1Hv"; */
+"5Yu-ba-1Hv.text" = "Sign Out";
+
+/* Class = "UITableViewController"; title = "Accounts"; ObjectID = "7pi-aA-5dY"; */
+"7pi-aA-5dY.title" = "Accounts";
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "8rA-Lt-Eqc"; */
+"8rA-Lt-Eqc.text" = "Status";
+
+/* Class = "UIViewController"; title = "Accounts"; ObjectID = "C8y-PN-y8T"; */
+"C8y-PN-y8T.title" = "Accounts";
+
+/* Class = "UITabBarItem"; title = "Accounts"; ObjectID = "DcX-Az-62c"; */
+"DcX-Az-62c.title" = "Accounts";
+
+/* Class = "UILabel"; text = "Apple Badge"; ObjectID = "HaH-TA-02d"; */
+"HaH-TA-02d.text" = "Apple Badge";
+
+/* Class = "UINavigationItem"; title = "Accounts"; ObjectID = "I0h-rO-R81"; */
+"I0h-rO-R81.title" = "Accounts";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "LTy-3f-b7f"; */
+"LTy-3f-b7f.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Approve This Device"; ObjectID = "NUB-DV-OlF"; */
+"NUB-DV-OlF.normalTitle" = "Approve This Device";
+
+/* Class = "UILabel"; text = "You are not signed in to AppleConnect"; ObjectID = "PMW-PZ-9qI"; */
+"PMW-PZ-9qI.text" = "You are not signed in to AppleConnect";
+
+/* Class = "UILabel"; text = "<Environment>"; ObjectID = "TQW-sq-TOu"; */
+"TQW-sq-TOu.text" = "<Environment>";
+
+/* Class = "UILabel"; text = "Approve Another Device"; ObjectID = "XWT-wi-pa9"; */
+"XWT-wi-pa9.text" = "Approve Another Device";
+
+/* Class = "UILabel"; text = "Signed in as"; ObjectID = "YKn-Zf-VQF"; */
+"YKn-Zf-VQF.text" = "Signed in as";
+
+/* Class = "UILabel"; text = "<STATUS>"; ObjectID = "ZWk-FP-pSN"; */
+"ZWk-FP-pSN.text" = "<STATUS>";
+
+/* Class = "UILabel"; text = "Approve Another Device"; ObjectID = "cC8-hd-tTK"; */
+"cC8-hd-tTK.text" = "Approve Another Device";
+
+/* Class = "UILabel"; text = "Sign Out"; ObjectID = "dSK-M8-kUh"; */
+"dSK-M8-kUh.text" = "Sign Out";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "eER-yQ-vAl"; */
+"eER-yQ-vAl.title" = "Item";
+
+/* Class = "UILabel"; text = "Sign Out"; ObjectID = "ein-J3-47R"; */
+"ein-J3-47R.text" = "Sign Out";
+
+/* Class = "UILabel"; text = "<User Name>"; ObjectID = "gDe-Uh-hsa"; */
+"gDe-Uh-hsa.text" = "<User Name>";
+
+/* Class = "UIButton"; normalTitle = "Sign in as…"; ObjectID = "gOw-9Q-2OO"; */
+"gOw-9Q-2OO.normalTitle" = "Sign in as…";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "hF8-J1-Xaj"; */
+"hF8-J1-Xaj.title" = "Item";
+
+/* Class = "UIViewController"; title = "Account"; ObjectID = "qCf-S0-yLF"; */
+"qCf-S0-yLF.title" = "Account";
+
+/* Class = "UIViewController"; title = "Account"; ObjectID = "sRU-d7-p3T"; */
+"sRU-d7-p3T.title" = "Account";
+
+/* Class = "UILabel"; text = "Sign In As…"; ObjectID = "sdW-9f-pyt"; */
+"sdW-9f-pyt.text" = "Sign In As…";
+
+/* Class = "UILabel"; text = "Helpline Verification Code"; ObjectID = "wnc-FK-9L8"; */
+"wnc-FK-9L8.text" = "Helpline Verification Code";

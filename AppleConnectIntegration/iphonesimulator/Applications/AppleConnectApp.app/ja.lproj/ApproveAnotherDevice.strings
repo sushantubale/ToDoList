@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "<do not localize>"; ObjectID = "5a5-qo-kU4"; */
+"5a5-qo-kU4.text" = "<do not localize>";
+
+/* Class = "UILabel"; accessibilityLabel = "Step 2: Use this app to scan the QR code displayed on your Mac now, or touch the button below to enter a secret key manually."; ObjectID = "Fqr-Rj-IJz"; */
+"Fqr-Rj-IJz.accessibilityLabel" = "Step 2: Use this app to scan the QR code displayed on your Mac now, or touch the button below to enter a secret key manually.";
+
+/* Class = "UILabel"; text = "Scan QR Code"; ObjectID = "Fqr-Rj-IJz"; */
+"Fqr-Rj-IJz.text" = "Scan QR Code";
+
+/* Class = "UILabel"; text = "Device name"; ObjectID = "GrX-FO-3Ji"; */
+"GrX-FO-3Ji.text" = "Device name";
+
+/* Class = "UINavigationItem"; title = "Approve Device"; ObjectID = "NDq-R2-qRY"; */
+"NDq-R2-qRY.title" = "Approve Device";
+
+/* Class = "UILabel"; text = "Device model"; ObjectID = "Nkd-Vo-Tog"; */
+"Nkd-Vo-Tog.text" = "Device model";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "OQA-LF-zOV"; */
+"OQA-LF-zOV.title" = "Cancel";
+
+/* Class = "UILabel"; text = "Are you sure you want to approve device for this user?"; ObjectID = "UDB-qU-9rI"; */
+"UDB-qU-9rI.text" = "Are you sure you want to approve device for this user?";
+
+/* Class = "UIBarButtonItem"; title = "Approve"; ObjectID = "WXs-qZ-yLD"; */
+"WXs-qZ-yLD.title" = "Approve";
+
+/* Class = "UIView"; accessibilityHint = "Receive verification codes as text messages, or use this AppleConnect mobile application to generate codes. With two-step verification, you will need your password and a verification code to manage your AppleConnect account."; ObjectID = "YJm-D5-MV4"; */
+"YJm-D5-MV4.accessibilityHint" = "Receive verification codes as text messages, or use this AppleConnect mobile application to generate codes. With two-step verification, you will need your password and a verification code to manage your AppleConnect account.";
+
+/* Class = "UIView"; accessibilityLabel = "Security Codes: How does it work?"; ObjectID = "YJm-D5-MV4"; */
+"YJm-D5-MV4.accessibilityLabel" = "Security Codes: How does it work?";
+
+/* Class = "UILabel"; text = "Cannot recognize the code"; ObjectID = "ctp-Hu-1aB"; */
+"ctp-Hu-1aB.text" = "Cannot recognize the code";
+
+/* Class = "UILabel"; text = "<do not localize>"; ObjectID = "nd9-Vb-YPK"; */
+"nd9-Vb-YPK.text" = "<do not localize>";
+
+/* Class = "UILabel"; text = "<do not localize>"; ObjectID = "tu8-i3-pN9"; */
+"tu8-i3-pN9.text" = "<do not localize>";
+
+/* Class = "UILabel"; text = "User name"; ObjectID = "uwY-Ih-H34"; */
+"uwY-Ih-H34.text" = "User name";
+
+/* Class = "UINavigationItem"; title = "Approve Device"; ObjectID = "x5r-Me-DWg"; */
+"x5r-Me-DWg.title" = "Approve Device";

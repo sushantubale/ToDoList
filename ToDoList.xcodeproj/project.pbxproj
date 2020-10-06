@@ -123,6 +123,20 @@
 			remoteGlobalIDString = 1E9E5BC424E454AA00A67728;
 			remoteInfo = "ToDoList (macOS)";
 		};
+		1EF2FD8B252D15AB00C55547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EF2FD82252D15AB00C55547 /* AppleConnectIntegration.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEAE22331BEA84A1002DD349;
+			remoteInfo = AppleConnectApp;
+		};
+		1EF2FD8D252D15AB00C55547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EF2FD82252D15AB00C55547 /* AppleConnectIntegration.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEAE22821BEA9BE6002DD349;
+			remoteInfo = AppleConnectClient;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -195,6 +209,11 @@
 		1EE4D017251574890085414A /* AppleConnectDidCancelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleConnectDidCancelView.swift; sourceTree = "<group>"; };
 		1EE4D02D2515795C0085414A /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1EE4D02F251579C60085414A /* AppleConnectHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleConnectHelper.swift; sourceTree = "<group>"; };
+		1EF2FD7F252D15AB00C55547 /* AppleConnectClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppleConnectClient.framework; sourceTree = "<group>"; };
+		1EF2FD81252D15AB00C55547 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1EF2FD82252D15AB00C55547 /* AppleConnectIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AppleConnectIntegration.xcodeproj; sourceTree = "<group>"; };
+		1EF2FD86252D15AB00C55547 /* AppleConnectClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppleConnectClient.framework; sourceTree = "<group>"; };
+		1EF2FD88252D15AB00C55547 /* AppleConnectApp.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = AppleConnectApp.app; sourceTree = "<group>"; };
 		1EF492C924E8749C00FBFDA5 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		1EF492D124E8833300FBFDA5 /* Tasks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tasks.json; sourceTree = "<group>"; };
 		1EF492D524E9B5AD00FBFDA5 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
@@ -352,6 +371,7 @@
 		1E9E5BB024E454A700A67728 = {
 			isa = PBXGroup;
 			children = (
+				1EF2FD7D252D15AB00C55547 /* AppleConnectIntegration */,
 				1E5D4A8C251AFE88009C09DC /* Config */,
 				1E9E5BB524E454A800A67728 /* Shared */,
 				1E9E5BBF24E454AA00A67728 /* iOS */,
@@ -492,6 +512,59 @@
 				1E9E5BB724E454A800A67728 /* ContentView.swift */,
 			);
 			path = MainStartView;
+			sourceTree = "<group>";
+		};
+		1EF2FD7D252D15AB00C55547 /* AppleConnectIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				1EF2FD7E252D15AB00C55547 /* iphoneos */,
+				1EF2FD80252D15AB00C55547 /* AppleConnectApp */,
+				1EF2FD82252D15AB00C55547 /* AppleConnectIntegration.xcodeproj */,
+				1EF2FD85252D15AB00C55547 /* iphonesimulator */,
+			);
+			path = AppleConnectIntegration;
+			sourceTree = "<group>";
+		};
+		1EF2FD7E252D15AB00C55547 /* iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				1EF2FD7F252D15AB00C55547 /* AppleConnectClient.framework */,
+			);
+			path = iphoneos;
+			sourceTree = "<group>";
+		};
+		1EF2FD80252D15AB00C55547 /* AppleConnectApp */ = {
+			isa = PBXGroup;
+			children = (
+				1EF2FD81252D15AB00C55547 /* Images.xcassets */,
+			);
+			path = AppleConnectApp;
+			sourceTree = "<group>";
+		};
+		1EF2FD83252D15AB00C55547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EF2FD8C252D15AB00C55547 /* AppleConnectApp.app */,
+				1EF2FD8E252D15AB00C55547 /* AppleConnectClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EF2FD85252D15AB00C55547 /* iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+				1EF2FD86252D15AB00C55547 /* AppleConnectClient.framework */,
+				1EF2FD87252D15AB00C55547 /* Applications */,
+			);
+			path = iphonesimulator;
+			sourceTree = "<group>";
+		};
+		1EF2FD87252D15AB00C55547 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				1EF2FD88252D15AB00C55547 /* AppleConnectApp.app */,
+			);
+			path = Applications;
 			sourceTree = "<group>";
 		};
 		1EF492C824E8748700FBFDA5 /* Constants */ = {
@@ -646,6 +719,12 @@
 			mainGroup = 1E9E5BB024E454A700A67728;
 			productRefGroup = 1E9E5BBE24E454AA00A67728 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1EF2FD83252D15AB00C55547 /* Products */;
+					ProjectRef = 1EF2FD82252D15AB00C55547 /* AppleConnectIntegration.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1E9E5BBC24E454AA00A67728 /* ToDoList (iOS) */,
@@ -655,6 +734,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1EF2FD8C252D15AB00C55547 /* AppleConnectApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AppleConnectApp.app;
+			remoteRef = 1EF2FD8B252D15AB00C55547 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1EF2FD8E252D15AB00C55547 /* AppleConnectClient.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AppleConnectClient.framework;
+			remoteRef = 1EF2FD8D252D15AB00C55547 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1E9E5BBB24E454AA00A67728 /* Resources */ = {

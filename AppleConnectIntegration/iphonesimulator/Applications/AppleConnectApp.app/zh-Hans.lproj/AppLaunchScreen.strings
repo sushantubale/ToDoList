@@ -1,0 +1,21 @@
+
+/* Class = "UITabBarItem"; title = "Accounts"; ObjectID = "7t7-sf-0tl"; */
+"7t7-sf-0tl.title" = "Accounts";
+
+/* Class = "UINavigationItem"; title = "Accounts"; ObjectID = "BgO-Fk-Pd3"; */
+"BgO-Fk-Pd3.title" = "Accounts";
+
+/* Class = "UIViewController"; title = "Security Codes"; ObjectID = "Jgq-DE-Jwo"; */
+"Jgq-DE-Jwo.title" = "Security Codes";
+
+/* Class = "UIButton"; normalTitle = "Sign In As…"; ObjectID = "N8g-7z-iPd"; */
+"N8g-7z-iPd.normalTitle" = "Sign In As…";
+
+/* Class = "UILabel"; text = "You are not signed in to AppleConnect"; ObjectID = "dcW-u2-fhO"; */
+"dcW-u2-fhO.text" = "You are not signed in to AppleConnect";
+
+/* Class = "UITabBarItem"; title = "Security Codes"; ObjectID = "opU-hl-1mG"; */
+"opU-hl-1mG.title" = "Security Codes";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "rcO-Zw-zTX"; */
+"rcO-Zw-zTX.title" = "Settings";

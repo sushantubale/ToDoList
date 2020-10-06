@@ -1,0 +1,78 @@
+
+/* Class = "UIButton"; normalTitle = "Add to This iPhone"; ObjectID = "0zC-Eq-XVX"; */
+"0zC-Eq-XVX.normalTitle" = "Add to This iPhone";
+
+/* Class = "UILabel"; text = "This iPhone"; ObjectID = "2lI-ze-ers"; */
+"2lI-ze-ers.text" = "This iPhone";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "3CK-dr-sYm"; */
+"3CK-dr-sYm.text" = "Detail";
+
+/* Class = "UILabel"; text = "Paired Apple Watch"; ObjectID = "3dU-xp-wOC"; */
+"3dU-xp-wOC.text" = "Paired Apple Watch";
+
+/* Class = "UIButton"; normalTitle = "Open"; ObjectID = "7ii-3L-jLN"; */
+"7ii-3L-jLN.normalTitle" = "Open";
+
+/* Class = "UIButton"; normalTitle = "Open"; ObjectID = "F0R-b1-cGl"; */
+"F0R-b1-cGl.normalTitle" = "Open";
+
+/* Class = "UILabel"; text = "Deactivated"; ObjectID = "IwC-q5-amg"; */
+"IwC-q5-amg.text" = "Deactivated";
+
+/* Class = "UILabel"; text = "Deactivated"; ObjectID = "JVG-3K-Uzd"; */
+"JVG-3K-Uzd.text" = "Deactivated";
+
+/* Class = "UIButton"; normalTitle = "Add to Paired Watch"; ObjectID = "Na1-Vg-Zz4"; */
+"Na1-Vg-Zz4.normalTitle" = "Add to Paired Watch";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "OlA-af-1Xt"; */
+"OlA-af-1Xt.text" = "Detail";
+
+/* Class = "UIButton"; normalTitle = "Open"; ObjectID = "PYh-Ap-hHz"; */
+"PYh-Ap-hHz.normalTitle" = "Open";
+
+/* Class = "UIButton"; normalTitle = "Open"; ObjectID = "PjI-jZ-d3z"; */
+"PjI-jZ-d3z.normalTitle" = "Open";
+
+/* Class = "UILabel"; text = "\"My Apple Watch\""; ObjectID = "REO-xu-xHX"; */
+"REO-xu-xHX.text" = "\"My Apple Watch\"";
+
+/* Class = "UIButton"; normalTitle = "Add Apple Badge"; ObjectID = "UeF-eX-1X6"; */
+"UeF-eX-1X6.normalTitle" = "Add Apple Badge";
+
+/* Class = "UIButton"; normalTitle = "Add to Paired Watch"; ObjectID = "VD0-hl-hxl"; */
+"VD0-hl-hxl.normalTitle" = "Add to Paired Watch";
+
+/* Class = "UITableViewSection"; headerTitle = "Employee"; ObjectID = "Wf8-Dd-dep"; */
+"Wf8-Dd-dep.headerTitle" = "Employee";
+
+/* Class = "UILabel"; text = "Paired Apple Watch"; ObjectID = "cBV-TD-bCb"; */
+"cBV-TD-bCb.text" = "Paired Apple Watch";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "cmH-vQ-mDQ"; */
+"cmH-vQ-mDQ.text" = "Name";
+
+/* Class = "UILabel"; text = "\"My Apple Watch\""; ObjectID = "exc-8t-zXT"; */
+"exc-8t-zXT.text" = "\"My Apple Watch\"";
+
+/* Class = "UILabel"; text = "\"My iPhone\""; ObjectID = "gs4-5l-HfG"; */
+"gs4-5l-HfG.text" = "\"My iPhone\"";
+
+/* Class = "UINavigationItem"; title = "Apple Badge"; ObjectID = "hFG-JL-Hyy"; */
+"hFG-JL-Hyy.title" = "Apple Badge";
+
+/* Class = "UITableViewSection"; headerTitle = "Added to"; ObjectID = "pEv-gR-Zwt"; */
+"pEv-gR-Zwt.headerTitle" = "Added to";
+
+/* Class = "UILabel"; text = "\"My iPhone\""; ObjectID = "qct-eJ-BWO"; */
+"qct-eJ-BWO.text" = "\"My iPhone\"";
+
+/* Class = "UILabel"; text = "This iPhone"; ObjectID = "wxt-FX-lnP"; */
+"wxt-FX-lnP.text" = "This iPhone";
+
+/* Class = "UIImageView"; accessibilityLabel = "User picture"; ObjectID = "xP9-mg-yfn"; */
+"xP9-mg-yfn.accessibilityLabel" = "User picture";
+
+/* Class = "UILabel"; text = "Badge"; ObjectID = "ywZ-k1-RUo"; */
+"ywZ-k1-RUo.text" = "Badge";
