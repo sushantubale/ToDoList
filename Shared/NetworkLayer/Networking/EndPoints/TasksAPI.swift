@@ -62,7 +62,7 @@ extension TasksAPI: EndPointType {
     public var task: HTTPTask {
         switch self {
         case .tasks:
-            return .requestParameters(bodyParameters: nil, bodyEncoding: ParameterEncoding.jsonEncoding, urlParameters: nil)
+            return .request
         }
     }
     

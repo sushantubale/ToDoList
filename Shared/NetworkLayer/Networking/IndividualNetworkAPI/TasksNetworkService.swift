@@ -24,7 +24,7 @@ public class TasksNetworkService {
     static let environment : NetworkEnvironment = .production
     let router = Router<TasksAPI>()
     
-    func getTasks(completion: @escaping (_ tasks: StateViewModel?,_ error: String?)->()) {
+    func getTasks(completion: @escaping (_ tasks: TasksModel?,_ error: String?)->()) {
         
         let arguments = ProcessInfo.processInfo.arguments
         if arguments.contains("UI_TESTING") {
@@ -50,7 +50,7 @@ public class TasksNetworkService {
                             print(responseData)
                             let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
                             print(jsonData)
-                            let apiResponse = try JSONDecoder().decode(StateViewModel.self, from: responseData)
+                            let apiResponse = try JSONDecoder().decode(TasksModel.self, from: responseData)
                             completion(apiResponse, nil)
                         }catch {
                             print(error)
@@ -64,12 +64,12 @@ public class TasksNetworkService {
         }
     }
     
-    fileprivate func testFetchTasksData(_ completionHandler: @escaping (StateViewModel?, Error?) -> Void) {
+    fileprivate func testFetchTasksData(_ completionHandler: @escaping (TasksModel?, Error?) -> Void) {
         do {
             print(self.tasksData)
             let jsonData = try JSONSerialization.jsonObject(with: self.tasksData, options: .mutableContainers)
             print(jsonData)
-            let apiResponse = try JSONDecoder().decode(StateViewModel.self, from: self.tasksData)
+            let apiResponse = try JSONDecoder().decode(TasksModel.self, from: self.tasksData)
             completionHandler(apiResponse, nil)
         } catch {
             print(error)

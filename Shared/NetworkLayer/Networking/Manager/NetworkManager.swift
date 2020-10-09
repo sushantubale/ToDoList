@@ -12,7 +12,7 @@ public struct NetworkManager {
     static let environment : NetworkEnvironment = .production
     let router = Router<TasksAPI>()
     
-    public func getTasks(completion: @escaping (_ tasks: StateViewModel?,_ error: String?)->()) {
+    public func getTasks(completion: @escaping (_ tasks: TasksModel?,_ error: String?)->()) {
         router.request(.tasks) { (data, response, error) in
             if error != nil {
                 completion(nil, "Please check your network connection.")
@@ -30,7 +30,7 @@ public struct NetworkManager {
                         print(responseData)
                         let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
                         print(jsonData)
-                        let apiResponse = try JSONDecoder().decode(StateViewModel.self, from: responseData)
+                        let apiResponse = try JSONDecoder().decode(TasksModel.self, from: responseData)
                         completion(apiResponse, nil)
                     }catch {
                         print(error)

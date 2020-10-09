@@ -13,7 +13,7 @@ class TasksViewModel: ObservableObject {
     private var tasksNetworkService: TasksNetworkService = TasksNetworkService()
     @Published var taskData: [String: String] = [:]
     @Published var showActivityIndicator: Bool = true
-    @Published var stateViewModel: StateViewModel?
+    @Published var stateViewModel: TasksModel?
     @Published var dummyTaskData: [String: Int] = [:]
     var count = 0
     
@@ -32,7 +32,7 @@ class TasksViewModel: ObservableObject {
         }
     }
     
-    func configureTasksData(_ stateViewModel: StateViewModel) {
+    func configureTasksData(_ stateViewModel: TasksModel) {
         DispatchQueue.main.async { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.stateViewModel = stateViewModel
