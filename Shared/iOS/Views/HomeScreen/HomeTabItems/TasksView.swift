@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TasksView: View, ViewLifeCycle {
     @State private var searchText : String = ""
-    @ObservedObject var taskViewModel: TasksViewModel = TasksViewModel()
+    @ObservedObject var taskViewModel: TaskViewModel = TaskViewModel()
     private var activityIndicator = ActivityIndicatorView()
     @State var didAppear = false
     
@@ -181,7 +181,6 @@ struct TasksView: View, ViewLifeCycle {
     
     func onLoad() {
         if didAppear == false {
-            taskViewModel.getTasksData()
         }
         didAppear = true
     }

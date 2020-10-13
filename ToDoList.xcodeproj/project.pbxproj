@@ -13,16 +13,12 @@
 		1E34DBB2251A798A003E2995 /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB98251A798A003E2995 /* URLParameterEncoding.swift */; };
 		1E34DBB3251A798A003E2995 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB99251A798A003E2995 /* JSONParameterEncoder.swift */; };
 		1E34DBB4251A798A003E2995 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB99251A798A003E2995 /* JSONParameterEncoder.swift */; };
-		1E34DBB5251A798A003E2995 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB9B251A798A003E2995 /* NetworkManager.swift */; };
-		1E34DBB6251A798A003E2995 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB9B251A798A003E2995 /* NetworkManager.swift */; };
 		1E34DBB7251A798A003E2995 /* TasksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB9D251A798A003E2995 /* TasksAPI.swift */; };
 		1E34DBB8251A798A003E2995 /* TasksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB9D251A798A003E2995 /* TasksAPI.swift */; };
 		1E34DBBB251A798A003E2995 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA0251A798A003E2995 /* HTTPTask.swift */; };
 		1E34DBBC251A798A003E2995 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA0251A798A003E2995 /* HTTPTask.swift */; };
 		1E34DBBD251A798A003E2995 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA1251A798A003E2995 /* HTTPMethod.swift */; };
 		1E34DBBE251A798A003E2995 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA1251A798A003E2995 /* HTTPMethod.swift */; };
-		1E34DBBF251A798A003E2995 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA2251A798A003E2995 /* Router.swift */; };
-		1E34DBC0251A798A003E2995 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA2251A798A003E2995 /* Router.swift */; };
 		1E34DBC1251A798A003E2995 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA3251A798A003E2995 /* NetworkLogger.swift */; };
 		1E34DBC2251A798A003E2995 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA3251A798A003E2995 /* NetworkLogger.swift */; };
 		1E34DBC3251A798A003E2995 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA4251A798A003E2995 /* EndPointType.swift */; };
@@ -33,20 +29,13 @@
 		1E34DBD6251A7F4D003E2995 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBD4251A7F4D003E2995 /* Result.swift */; };
 		1E35C4E324EC8AF80086D25C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35C4E224EC8AF80086D25C /* CollectionViewCell.swift */; };
 		1E35C4E424EC8AF80086D25C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35C4E224EC8AF80086D25C /* CollectionViewCell.swift */; };
-		1E4AD20F24E867A20051CA4C /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */; };
-		1E4AD21024E867A20051CA4C /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */; };
-		1E4AD21624E86C1B0051CA4C /* TasksNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */; };
-		1E4AD21724E86C1B0051CA4C /* TasksNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */; };
 		1E4AD21924E86F450051CA4C /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21824E86F450051CA4C /* TasksModel.swift */; };
 		1E4AD21A24E86F450051CA4C /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21824E86F450051CA4C /* TasksModel.swift */; };
-		1E5263A0251DB0E600818226 /* TasksNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */; };
 		1E5263A1251DB11C00818226 /* TasksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB9D251A798A003E2995 /* TasksAPI.swift */; };
-		1E5263A2251DB13A00818226 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA2251A798A003E2995 /* Router.swift */; };
 		1E5263A3251DB15300818226 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA4251A798A003E2995 /* EndPointType.swift */; };
 		1E5263A4251DB15B00818226 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA1251A798A003E2995 /* HTTPMethod.swift */; };
 		1E5263A6251DB16800818226 /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB98251A798A003E2995 /* URLParameterEncoding.swift */; };
 		1E5263A7251DB16B00818226 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB99251A798A003E2995 /* JSONParameterEncoder.swift */; };
-		1E5263A8251DB17100818226 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DB9B251A798A003E2995 /* NetworkManager.swift */; };
 		1E5263A9251DB17500818226 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBD1251A7F3E003E2995 /* NetworkResponse.swift */; };
 		1E5263AA251DB17700818226 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBD4251A7F4D003E2995 /* Result.swift */; };
 		1E5263AB251DB17E00818226 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DBA0251A798A003E2995 /* HTTPTask.swift */; };
@@ -82,6 +71,18 @@
 		1EE4D018251574890085414A /* AppleConnectDidCancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4D017251574890085414A /* AppleConnectDidCancelView.swift */; };
 		1EE4D02E2515795C0085414A /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4D02D2515795C0085414A /* Session.swift */; };
 		1EE4D030251579C60085414A /* AppleConnectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4D02F251579C60085414A /* AppleConnectHelper.swift */; };
+		1EEEB5FA253561E600761587 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB5F9253561E600761587 /* TaskViewModel.swift */; };
+		1EEEB5FB253561E600761587 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB5F9253561E600761587 /* TaskViewModel.swift */; };
+		1EEEB5FC253561E600761587 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB5F9253561E600761587 /* TaskViewModel.swift */; };
+		1EEEB5FD253561E600761587 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB5F9253561E600761587 /* TaskViewModel.swift */; };
+		1EEEB6042535648100761587 /* TasksNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB6032535648100761587 /* TasksNetworkService.swift */; };
+		1EEEB6052535648100761587 /* TasksNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB6032535648100761587 /* TasksNetworkService.swift */; };
+		1EEEB6062535648100761587 /* TasksNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB6032535648100761587 /* TasksNetworkService.swift */; };
+		1EEEB6072535648100761587 /* TasksNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB6032535648100761587 /* TasksNetworkService.swift */; };
+		1EEEB60C253564F900761587 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB60B253564F900761587 /* APIClient.swift */; };
+		1EEEB60D253564F900761587 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB60B253564F900761587 /* APIClient.swift */; };
+		1EEEB60E253564F900761587 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB60B253564F900761587 /* APIClient.swift */; };
+		1EEEB60F253564F900761587 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEB60B253564F900761587 /* APIClient.swift */; };
 		1EF492CA24E8749C00FBFDA5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492C924E8749C00FBFDA5 /* Strings.swift */; };
 		1EF492CB24E8749C00FBFDA5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492C924E8749C00FBFDA5 /* Strings.swift */; };
 		1EF492D224E8833300FBFDA5 /* Tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EF492D124E8833300FBFDA5 /* Tasks.json */; };
@@ -89,7 +90,6 @@
 		1EF492D624E9B5AD00FBFDA5 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492D524E9B5AD00FBFDA5 /* ActivityIndicatorView.swift */; };
 		1EF492D724E9B5AD00FBFDA5 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492D524E9B5AD00FBFDA5 /* ActivityIndicatorView.swift */; };
 		1EF492D924E9BA4C00FBFDA5 /* TasksViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492D824E9BA4C00FBFDA5 /* TasksViewTest.swift */; };
-		1EF492DA24E9BB7800FBFDA5 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */; };
 		1EF492DB24E9BC6800FBFDA5 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5C0024E46E3100A67728 /* TasksView.swift */; };
 		1EF492DC24E9BCD100FBFDA5 /* ListViewWithHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E5BF924E45E2800A67728 /* ListViewWithHeader.swift */; };
 		1EF492DD24E9BCD100FBFDA5 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF492D524E9B5AD00FBFDA5 /* ActivityIndicatorView.swift */; };
@@ -157,18 +157,14 @@
 		1E34DB97251A798A003E2995 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		1E34DB98251A798A003E2995 /* URLParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
 		1E34DB99251A798A003E2995 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
-		1E34DB9B251A798A003E2995 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1E34DB9D251A798A003E2995 /* TasksAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksAPI.swift; sourceTree = "<group>"; };
 		1E34DBA0251A798A003E2995 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
 		1E34DBA1251A798A003E2995 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		1E34DBA2251A798A003E2995 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		1E34DBA3251A798A003E2995 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		1E34DBA4251A798A003E2995 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		1E34DBD1251A7F3E003E2995 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		1E34DBD4251A7F4D003E2995 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		1E35C4E224EC8AF80086D25C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
-		1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksNetworkService.swift; sourceTree = "<group>"; };
 		1E4AD21824E86F450051CA4C /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
 		1E59DF9D25081FB400C06991 /* schema.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.graphql; sourceTree = "<group>"; };
 		1E5D4A8D251AFE96009C09DC /* ToDoList-UAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ToDoList-UAT.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +205,9 @@
 		1EE4D017251574890085414A /* AppleConnectDidCancelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleConnectDidCancelView.swift; sourceTree = "<group>"; };
 		1EE4D02D2515795C0085414A /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1EE4D02F251579C60085414A /* AppleConnectHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleConnectHelper.swift; sourceTree = "<group>"; };
+		1EEEB5F9253561E600761587 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		1EEEB6032535648100761587 /* TasksNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksNetworkService.swift; sourceTree = "<group>"; };
+		1EEEB60B253564F900761587 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		1EF2FD7F252D15AB00C55547 /* AppleConnectClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppleConnectClient.framework; sourceTree = "<group>"; };
 		1EF2FD81252D15AB00C55547 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1EF2FD82252D15AB00C55547 /* AppleConnectIntegration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AppleConnectIntegration.xcodeproj; sourceTree = "<group>"; };
@@ -288,7 +287,6 @@
 		1E34DB9A251A798A003E2995 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				1E34DB9B251A798A003E2995 /* NetworkManager.swift */,
 				1E34DBD1251A7F3E003E2995 /* NetworkResponse.swift */,
 				1E34DBD4251A7F4D003E2995 /* Result.swift */,
 			);
@@ -298,7 +296,6 @@
 		1E34DB9C251A798A003E2995 /* EndPoints */ = {
 			isa = PBXGroup;
 			children = (
-				1E34DB9D251A798A003E2995 /* TasksAPI.swift */,
 			);
 			path = EndPoints;
 			sourceTree = "<group>";
@@ -308,9 +305,9 @@
 			children = (
 				1E34DBA0251A798A003E2995 /* HTTPTask.swift */,
 				1E34DBA1251A798A003E2995 /* HTTPMethod.swift */,
-				1E34DBA2251A798A003E2995 /* Router.swift */,
 				1E34DBA3251A798A003E2995 /* NetworkLogger.swift */,
 				1E34DBA4251A798A003E2995 /* EndPointType.swift */,
+				1EEEB60B253564F900761587 /* APIClient.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -318,7 +315,7 @@
 		1E4AD21224E8694E0051CA4C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1E4AD20E24E867A20051CA4C /* TasksViewModel.swift */,
+				1EEEB5F9253561E600761587 /* TaskViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -363,7 +360,7 @@
 		1E730008251D32870034B9B3 /* IndividualNetworkAPI */ = {
 			isa = PBXGroup;
 			children = (
-				1E4AD21524E86C1B0051CA4C /* TasksNetworkService.swift */,
+				1E34DB9D251A798A003E2995 /* TasksAPI.swift */,
 			);
 			path = IndividualNetworkAPI;
 			sourceTree = "<group>";
@@ -605,6 +602,7 @@
 			isa = PBXGroup;
 			children = (
 				1EF492F824EA13CB00FBFDA5 /* ViewLifeCycle.swift */,
+				1EEEB6032535648100761587 /* TasksNetworkService.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -799,7 +797,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9E5BE124E454AA00A67728 /* ContentView.swift in Sources */,
-				1E4AD21624E86C1B0051CA4C /* TasksNetworkService.swift in Sources */,
 				1E34DBB1251A798A003E2995 /* URLParameterEncoding.swift in Sources */,
 				1EE4D018251574890085414A /* AppleConnectDidCancelView.swift in Sources */,
 				1E34DBD2251A7F3E003E2995 /* NetworkResponse.swift in Sources */,
@@ -809,6 +806,7 @@
 				1E34DBD5251A7F4D003E2995 /* Result.swift in Sources */,
 				1EE4D016251574210085414A /* AppleConnectFacadeLayer.swift in Sources */,
 				1E9E5BF724E4555C00A67728 /* SearchBar.swift in Sources */,
+				1EEEB5FA253561E600761587 /* TaskViewModel.swift in Sources */,
 				1E9E5C0324E46EA000A67728 /* ToolsView.swift in Sources */,
 				1E9E5C0124E46E3100A67728 /* TasksView.swift in Sources */,
 				1E34DBBD251A798A003E2995 /* HTTPMethod.swift in Sources */,
@@ -820,20 +818,19 @@
 				1EF492F924EA13CB00FBFDA5 /* ViewLifeCycle.swift in Sources */,
 				1EE4D030251579C60085414A /* AppleConnectHelper.swift in Sources */,
 				1E9E5BFF24E46E0F00A67728 /* MessagesView.swift in Sources */,
+				1EEEB6042535648100761587 /* TasksNetworkService.swift in Sources */,
 				1E34DBAF251A798A003E2995 /* ParameterEncoding.swift in Sources */,
 				1EE4CFF625151B7D0085414A /* ViewController.swift in Sources */,
-				1E34DBBF251A798A003E2995 /* Router.swift in Sources */,
 				1E4AD21924E86F450051CA4C /* TasksModel.swift in Sources */,
 				1E9E5BDF24E454AA00A67728 /* ToDoListApp.swift in Sources */,
 				1EE4D02E2515795C0085414A /* Session.swift in Sources */,
 				1E34DBB7251A798A003E2995 /* TasksAPI.swift in Sources */,
 				1E34DBB3251A798A003E2995 /* JSONParameterEncoder.swift in Sources */,
 				1E34DBBB251A798A003E2995 /* HTTPTask.swift in Sources */,
-				1E34DBB5251A798A003E2995 /* NetworkManager.swift in Sources */,
 				1E9E5C0524E4716E00A67728 /* TabItem.swift in Sources */,
+				1EEEB60C253564F900761587 /* APIClient.swift in Sources */,
 				1E9E5BF524E454E000A67728 /* ButtonView.swift in Sources */,
 				1E34DBC1251A798A003E2995 /* NetworkLogger.swift in Sources */,
-				1E4AD20F24E867A20051CA4C /* TasksViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,25 +838,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E34DBB6251A798A003E2995 /* NetworkManager.swift in Sources */,
 				1E34DBD3251A7F3E003E2995 /* NetworkResponse.swift in Sources */,
 				1E34DBB0251A798A003E2995 /* ParameterEncoding.swift in Sources */,
 				1E9E5BE224E454AA00A67728 /* ContentView.swift in Sources */,
 				1E34DBC4251A798A003E2995 /* EndPointType.swift in Sources */,
 				1EF492FA24EA13CB00FBFDA5 /* ViewLifeCycle.swift in Sources */,
 				1E4AD21A24E86F450051CA4C /* TasksModel.swift in Sources */,
+				1EEEB6052535648100761587 /* TasksNetworkService.swift in Sources */,
+				1EEEB5FB253561E600761587 /* TaskViewModel.swift in Sources */,
 				1E34DBB8251A798A003E2995 /* TasksAPI.swift in Sources */,
 				1E34DBC2251A798A003E2995 /* NetworkLogger.swift in Sources */,
 				1E34DBBC251A798A003E2995 /* HTTPTask.swift in Sources */,
 				1E34DBB4251A798A003E2995 /* JSONParameterEncoder.swift in Sources */,
 				1E34DBB2251A798A003E2995 /* URLParameterEncoding.swift in Sources */,
-				1E34DBC0251A798A003E2995 /* Router.swift in Sources */,
-				1E4AD21724E86C1B0051CA4C /* TasksNetworkService.swift in Sources */,
-				1E4AD21024E867A20051CA4C /* TasksViewModel.swift in Sources */,
 				1E34DBBE251A798A003E2995 /* HTTPMethod.swift in Sources */,
 				1EF492CB24E8749C00FBFDA5 /* Strings.swift in Sources */,
 				1E34DBD6251A7F4D003E2995 /* Result.swift in Sources */,
 				1E9E5BE024E454AA00A67728 /* ToDoListApp.swift in Sources */,
+				1EEEB60D253564F900761587 /* APIClient.swift in Sources */,
 				1EF492D724E9B5AD00FBFDA5 /* ActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -870,22 +866,21 @@
 			files = (
 				1E5263AC251DB18400818226 /* NetworkLogger.swift in Sources */,
 				1E9E5BD224E454AA00A67728 /* Tests_iOS.swift in Sources */,
-				1EF492DA24E9BB7800FBFDA5 /* TasksViewModel.swift in Sources */,
+				1EEEB60E253564F900761587 /* APIClient.swift in Sources */,
 				1E5263A4251DB15B00818226 /* HTTPMethod.swift in Sources */,
 				1E35C4E424EC8AF80086D25C /* CollectionViewCell.swift in Sources */,
 				1E5263A1251DB11C00818226 /* TasksAPI.swift in Sources */,
 				1EF492E024E9BCD100FBFDA5 /* MessagesView.swift in Sources */,
+				1EEEB5FC253561E600761587 /* TaskViewModel.swift in Sources */,
 				1EF492DF24E9BCD100FBFDA5 /* ButtonView.swift in Sources */,
-				1E5263A2251DB13A00818226 /* Router.swift in Sources */,
+				1EEEB6062535648100761587 /* TasksNetworkService.swift in Sources */,
 				1EF492DC24E9BCD100FBFDA5 /* ListViewWithHeader.swift in Sources */,
 				1E5263A3251DB15300818226 /* EndPointType.swift in Sources */,
 				1EF492DE24E9BCD100FBFDA5 /* TabItem.swift in Sources */,
 				1EF492E524E9BCF100FBFDA5 /* Strings.swift in Sources */,
 				1E5263AB251DB17E00818226 /* HTTPTask.swift in Sources */,
-				1E5263A8251DB17100818226 /* NetworkManager.swift in Sources */,
 				1EF492E324E9BCD100FBFDA5 /* ToolsView.swift in Sources */,
 				1E5263AA251DB17700818226 /* Result.swift in Sources */,
-				1E5263A0251DB0E600818226 /* TasksNetworkService.swift in Sources */,
 				1EF492DD24E9BCD100FBFDA5 /* ActivityIndicatorView.swift in Sources */,
 				1E5263AD251DB1A000818226 /* ParameterEncoding.swift in Sources */,
 				1E5263A9251DB17500818226 /* NetworkResponse.swift in Sources */,
@@ -905,6 +900,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9E5BDD24E454AA00A67728 /* Tests_macOS.swift in Sources */,
+				1EEEB6072535648100761587 /* TasksNetworkService.swift in Sources */,
+				1EEEB5FD253561E600761587 /* TaskViewModel.swift in Sources */,
+				1EEEB60F253564F900761587 /* APIClient.swift in Sources */,
 				1EF492FC24EA13CB00FBFDA5 /* ViewLifeCycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Result<String>{
+public enum Result<String> {
     case success
     case failure(String)
 }
