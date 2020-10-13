@@ -18,7 +18,17 @@ class TaskViewModel: ObservableObject {
     var count = 0
 
     init() {
-        getTasks()
+        //getTasks()
+        
+        cancellationToken =
+            TasksNetworkService
+            .requests(.tasks)
+            .catch { _ in Just((self.stateViewModel!, self.stateViewModel!))}
+            .receive(on: RunLoop.main)
+            .sink { (posts, comments) in
+                self.stateViewModel = posts
+                self.stateViewModel = comments
+        }
     }
     
     func getTasks() {

@@ -15,6 +15,27 @@ enum TasksNetworkService {
 
 extension TasksNetworkService {
     
+    static func requests(_ path: TasksAPI) -> AnyPublisher<(StateViewModel, StateViewModel), Error> {
+        guard
+            let postsURL = URL(string: "UrlType.posts.rawValue"),
+            let commentsURL = URL(string: "UrlType.comments.rawValue")
+            else { fatalError("Invalid URL's")}
+        
+        let urlRequest1 = URLRequest(url: commentsURL)
+        let urlRequest2 = URLRequest(url: postsURL)
+
+        let postsPublisher =
+            URLSession.shared.dataTaskPublisher(for: urlRequest1)
+                .map { $0.data }
+                .decode(type: StateViewModel.self, decoder: JSONDecoder())
+        let commentsPublisher =
+            URLSession.shared.dataTaskPublisher(for: urlRequest2)
+                .map { $0.data }
+                .decode(type: StateViewModel.self, decoder: JSONDecoder())
+        return Publishers.Zip(postsPublisher, commentsPublisher)
+                .eraseToAnyPublisher()
+    }
+    
     static func request(_ path: TasksAPI) -> AnyPublisher<StateViewModel, Error> {
         
         do {
