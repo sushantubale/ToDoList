@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TasksView: View, ViewLifeCycle {
     @State private var searchText : String = ""
-    @ObservedObject var taskViewModel: TaskViewModel = TaskViewModel()
+    @ObservedObject var taskViewModel: TasksCombineViewModel = TasksCombineViewModel()
     private var activityIndicator = ActivityIndicatorView()
     @State var didAppear = false
     
