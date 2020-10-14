@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct StateViewModel: Decodable {
+public struct TasksModel: Decodable {
     var data: DataModel
 }
 

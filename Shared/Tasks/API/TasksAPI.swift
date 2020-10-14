@@ -15,7 +15,7 @@ public enum NetworkEnvironment {
     case dev
 }
 
-public enum TasksAPI {
+    public enum TasksAPI {
     case tasks
 }
 
@@ -23,7 +23,7 @@ extension TasksAPI: EndPointType {
     
     var environmentBaseURL : String {
         let server_url = Environment().configuration(PlistKey.ServerURL)
-
+        
         switch server_url {
         case "UAT":
             return "http://localhost:9002-UAT/graphql?query={todoByPerson{name state}}"
@@ -89,6 +89,7 @@ public struct Environment {
             }
         }
     }
+    
     public func configuration(_ key: PlistKey) -> String {
         switch key {
         case .ServerURL:

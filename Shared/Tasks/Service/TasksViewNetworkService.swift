@@ -1,54 +1,31 @@
 //
-//  TasksNetworkService.swift
+//  TasksViewNetworkService.swift
 //  ToDoList
 //
-//  Created by Sushant-Old on 10/12/20.
+//  Created by Sushant-Old on 10/14/20.
 //
 
 import Foundation
 import Combine
 
-// 1
-enum TasksNetworkService {
-    static let apiClient = APIClient()
-}
-
-extension TasksNetworkService {
+final class TasksViewNetworkService: APIProtocol {
     
-    static func requests(_ path: TasksAPI) -> AnyPublisher<(StateViewModel, StateViewModel), Error> {
-        guard
-            let postsURL = URL(string: "UrlType.posts.rawValue"),
-            let commentsURL = URL(string: "UrlType.comments.rawValue")
-            else { fatalError("Invalid URL's")}
-        
-        let urlRequest1 = URLRequest(url: commentsURL)
-        let urlRequest2 = URLRequest(url: postsURL)
+    var session: URLSession
+    
+    init(configuration: URLSessionConfiguration) {
+        self.session = URLSession(configuration: configuration)
+    }
 
-        let postsPublisher =
-            URLSession.shared.dataTaskPublisher(for: urlRequest1)
-                .map { $0.data }
-                .decode(type: StateViewModel.self, decoder: JSONDecoder())
-        let commentsPublisher =
-            URLSession.shared.dataTaskPublisher(for: urlRequest2)
-                .map { $0.data }
-                .decode(type: StateViewModel.self, decoder: JSONDecoder())
-        return Publishers.Zip(postsPublisher, commentsPublisher)
-                .eraseToAnyPublisher()
+    convenience init() {
+        self.init(configuration: .default)
     }
     
-    static func request(_ path: TasksAPI) -> AnyPublisher<StateViewModel, Error> {
-        
-        do {
-            let request = try! TasksNetworkService.buildRequest(from: path)
-            return apiClient.run(request) // 5
-                .map(\.value) // 6
-                .eraseToAnyPublisher() // 7
-        } catch  {
-            print(error)
-        }
+    func getTasks(_ tasksRequest: TasksAPI) -> AnyPublisher<TasksModel, Error> {
+        let request = try! self.buildRequest(from: tasksRequest)
+        return execute(request, TasksModel.self, .main, 1)
     }
     
-    fileprivate static func buildRequest(from route: EndPointType) throws -> URLRequest {
+    private func buildRequest(from route: EndPointType) throws -> URLRequest {
         
         var request = URLRequest(url: route.baseURL.appendingPathComponent(route.path),
                                  cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
@@ -91,7 +68,7 @@ extension TasksNetworkService {
         }
     }
     
-    fileprivate static func configureParameters(bodyParameters: Parameters?,
+    private func configureParameters(bodyParameters: Parameters?,
                                          bodyEncoding: ParameterEncoding,
                                          urlParameters: Parameters?,
                                          request: inout URLRequest) throws {
@@ -103,34 +80,14 @@ extension TasksNetworkService {
         }
     }
     
-    fileprivate static func addAdditionalHeaders(_ additionalHeaders: HTTPHeaders?, request: inout URLRequest) {
+     func addAdditionalHeaders(_ additionalHeaders: HTTPHeaders?, request: inout URLRequest) {
         guard let headers = additionalHeaders else { return }
         for (key, value) in headers {
             request.setValue(value, forHTTPHeaderField: key)
         }
     }
+}
 
-    fileprivate static func testFetchTasksData(_ completionHandler: @escaping (StateViewModel?, Error?) -> Void) {
-//        do {
-//            print(self.tasksData)
-//            let jsonData = try JSONSerialization.jsonObject(with: self.tasksData, options: .mutableContainers)
-//            print(jsonData)
-//            let apiResponse = try JSONDecoder().decode(StateViewModel.self, from: self.tasksData)
-//            completionHandler(apiResponse, nil)
-//        } catch {
-//            print(error)
-//            completionHandler(nil, error)
-//        }
-    }
+private extension APIError {
     
-    
-    fileprivate static func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
-        switch response.statusCode {
-        case 200...299: return .success
-        case 401...500: return .failure(NetworkResponse.authenticationError.rawValue)
-        case 501...599: return .failure(NetworkResponse.badRequest.rawValue)
-        case 600: return .failure(NetworkResponse.outdated.rawValue)
-        default: return .failure(NetworkResponse.failed.rawValue)
-        }
-    }
 }
