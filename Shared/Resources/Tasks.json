@@ -6,12 +6,16 @@
         "state": "REJECTED"
       },
       {
-        "name": "Todo Item 1",
+        "name": "Todo Item 2",
         "state": "BLOCKED"
       },
       {
-        "name": "Todo Item 5",
-        "state": "BLOCKED"
+        "name": "Todo Item 3",
+        "state": "ACCEPTED"
+      },
+      {
+        "name": "Todo Item 4",
+        "state": "IN-PROGRESS"
       }
     ]
   }

@@ -16,21 +16,21 @@ struct TasksView: View, ViewLifeCycle {
     var body: some View {
         NavigationView {
             GeometryReader { geometryReader in
-                if self.taskViewModel.showActivityIndicator == true {
-                    HStack {
-                         Spacer()
-                        activityIndicator
-                            .frame(width: 100, height: 100, alignment: .center)
+                if self.taskViewModel.showActivityIndicator == false {
+                    VStack(alignment: .center) {
+                        Spacer()
+                            activityIndicator
+                            .frame(width: geometryReader.size.width / 2, height: geometryReader.size.width / 2, alignment: .center)
+                            .padding([.leading, .trailing, .top, .bottom], 100)
                             .foregroundColor(.gray)
-                         Spacer()
+                        Spacer()
                     }
-
                     
-                } else if self.taskViewModel.showActivityIndicator == false {
+                } else if self.taskViewModel.showActivityIndicator == true {
                     
                     ScrollView(.vertical, showsIndicators: false, content: {
                         SearchBar(text: "Search")
-
+                        
                         HStack(alignment: .center, spacing: 20) {
                             
                             NavigationLink(destination: Text("Hi")) {
@@ -52,7 +52,7 @@ struct TasksView: View, ViewLifeCycle {
                             .overlay(
                                 RoundedRectangle(cornerRadius: 20)
                                     .stroke(Color.purple, lineWidth: 2))
-
+                            
                             NavigationLink(destination: Text("Hi")) {
                                 
                                 VStack(alignment: .leading) {
@@ -98,7 +98,7 @@ struct TasksView: View, ViewLifeCycle {
                             .overlay(
                                 RoundedRectangle(cornerRadius: 20)
                                     .stroke(Color.purple, lineWidth: 2))
-
+                            
                             NavigationLink(destination: Text("Hi")) {
                                 
                                 VStack(alignment: .leading) {
@@ -123,7 +123,7 @@ struct TasksView: View, ViewLifeCycle {
                         
                         List {
                             Section(header: Text("STATE")) {
-
+                                
                                 ForEach(self.taskViewModel.dummyTaskData.keys.sorted(), id: \.self) { key in
                                     NavigationLink(
                                         destination: Text("Destination"),
@@ -141,12 +141,10 @@ struct TasksView: View, ViewLifeCycle {
                                                     .multilineTextAlignment(.center)
                                                     .padding()
                                                     .background(Circle().fill(Color.gray))
-
                                             }
                                         })
-
                                 }
-
+                                
                             }
                         }
                         .frame(width: geometryReader.size.width - 5, height: geometryReader.size.height - 50, alignment: .center)
@@ -157,22 +155,19 @@ struct TasksView: View, ViewLifeCycle {
                                                 }) {
                                                     Image(systemName: Constants.ImageNames.gear)
                                                 })
-                        
                     })
-
+                    
                 }
                 
             }
-            
         }
         .tabItem {
             Image(systemName: Constants.ImageNames.checkmarkShield)
             Text("Tasks")
         }.tag(2)
+        .accessibility(label: Text("TasksTab"))
         .onAppear(perform: onLoad)
         .onDisappear(perform: onUnload)
-
-        
     }
     
     func onUnload() {
@@ -180,9 +175,7 @@ struct TasksView: View, ViewLifeCycle {
     }
     
     func onLoad() {
-        if didAppear == false {
-        }
-        didAppear = true
+        
     }
 }
 
@@ -204,7 +197,6 @@ extension View {
             return AnyView(self.navigationViewStyle(StackNavigationViewStyle()))
         } else {
             return AnyView(self)
-            
         }
     }
 }

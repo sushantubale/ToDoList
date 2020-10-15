@@ -21,6 +21,7 @@ final class TasksViewNetworkService: APIProtocol {
     }
     
     func getTasks(_ tasksRequest: TasksAPI) -> AnyPublisher<TasksModel, Error> {
+        
         let request = try! self.buildRequest(from: tasksRequest)
         return execute(request, TasksModel.self, .main, 1)
     }

@@ -27,14 +27,22 @@ class TasksViewTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    override func setUp() {
         app = XCUIApplication()
         app.launchArguments = ["UI_TESTING"]
+    }
+
+    func testExample() throws {
         app.launch()
         app.tabBars["Tab Bar"].buttons["gauge"].tap()
         let tabBarsQuery = XCUIApplication().tabBars
         tabBarsQuery.buttons.element(boundBy: 2).tap()
-        XCTAssertTrue(app.scrollViews.children(matching: .button).matching(identifier: "2\nInbox").element(boundBy: 0).exists)
+        XCUIApplication().tabBars["Tab Bar"].buttons["checkmark.shield"].tap()
+        XCUIApplication().tabBars["Tab Bar"].buttons["checkmark.shield"].tap()
+        
+        XCUIApplication().tabBars["Tab Bar"].buttons["checkmark.shield"].tap()
+
+        
     }
 }
 
