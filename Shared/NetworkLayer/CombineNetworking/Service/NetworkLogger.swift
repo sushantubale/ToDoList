@@ -12,7 +12,7 @@ class NetworkLogger {
     static func log(request: URLRequest) {
         
         print("\n - - - - - - - - - - OUTGOING - - - - - - - - - - \n")
-        defer { print("\n - - - - - - - - - -  END - - - - - - - - - - \n") }
+        defer { print("\n - - - - - - - - - - END - - - - - - - - - - \n") }
         
         let urlAsString = request.url?.absoluteString ?? ""
         let urlComponents = NSURLComponents(string: urlAsString)

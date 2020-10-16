@@ -13,6 +13,7 @@ class Session {
     var environment: ACEnvironment
     var personID: NSNumber?
     var serviceTicket: String?
+    
     init(_ userName: String, environment: ACEnvironment = ACEnvironment.production) {
         self.userName = userName
         self.environment = environment

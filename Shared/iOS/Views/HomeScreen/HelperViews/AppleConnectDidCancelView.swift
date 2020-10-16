@@ -16,7 +16,6 @@ struct AppleConnectDidCancelView: View {
             Text("Show Detail")
         }.sheet(isPresented: $showingDetail) {
             AppleConnectFacadeLayer(storyboard: "Storyboard", VC: "ViewController")
-            
         }
     }
 }
