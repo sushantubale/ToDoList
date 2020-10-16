@@ -16,7 +16,7 @@ struct TasksView: View, ViewLifeCycle {
     var body: some View {
         NavigationView {
             GeometryReader { geometryReader in
-                if self.taskViewModel.showActivityIndicator == false {
+                if self.taskViewModel.showActivityIndicator == true {
                     VStack(alignment: .center) {
                         Spacer()
                             activityIndicator
@@ -26,7 +26,7 @@ struct TasksView: View, ViewLifeCycle {
                         Spacer()
                     }
                     
-                } else if self.taskViewModel.showActivityIndicator == true {
+                } else if self.taskViewModel.showActivityIndicator == false {
                     
                     ScrollView(.vertical, showsIndicators: false, content: {
                         SearchBar(text: "Search")
